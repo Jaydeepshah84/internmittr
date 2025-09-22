@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>InternMitrr - AI Internship Platform</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+    
+    * {
+      font-family: 'Inter', sans-serif;
+    }
+
+    body {
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      min-height: 100vh;
+      overflow-x: hidden;
+    }
+
+    /* Animated background particles */
+    .particle {
+      position: absolute;
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 50%;
+      animation: float 6s ease-in-out infinite;
+    }
+
+    @keyframes float {
+      0%, 100% { transform: translateY(0px) rotate(0deg); opacity: 0.7; }
+      50% { transform: translateY(-20px) rotate(180deg); opacity: 1; }
+    }
+
+    /* Glassmorphism container */
+    .glass-container {
+      background: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(20px);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+    }
+
+    /* Custom dropdown styles */
+    .dropdown {
+      position: relative;
+    }
+
+    .dropdown-content {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      right: 0;
+      background: rgba(255, 255, 255, 0.95);
+      backdrop-filter: blur(20px);
+      border: 1px solid rgba(255, 255, 255, 0.3);
+      border-radius: 12px;
+      max-height: 200px;
+      overflow-y: auto;
+      z-index: 1000;
+      opacity: 0;
+      transform: translateY(-10px);
+      transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+      pointer-events: none;
+    }
+
+    .dropdown-content.show {
+      opacity: 1;
+      transform: translateY(0);
+      pointer-events: all;
+    }
+
+    .dropdown-item {
+      padding: 12px 16px;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .dropdown-item:hover {
+      background: rgba(99, 102, 241, 0.1);
+      color: #6366f1;
+    }
+
+    /* Selected tags */
+    .tag {
+      display: inline-flex;
+      align-items: center;
+      background: linear-gradient(135deg, #667eea, #764ba2);
+      color: white;
+      padding: 8px 16px;
+      margin: 4px;
+      border-radius: 25px;
+      font-size: 14px;
+      font-weight: 500;
+      box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
+      animation: tagSlideIn 0.3s ease-out;
+    }
+
+    @keyframes tagSlideIn {
+      from { transform: scale(0) rotate(180deg); opacity: 0; }
+      to { transform: scale(1) rotate(0deg); opacity: 1; }
+    }
+
+    .tag i {
+      margin-left: 8px;
+      cursor: pointer;
+      padding: 2px;
+      border-radius: 50%;
+      transition: background 0.2s ease;
+    }
+
+    .tag i:hover {
+      background: rgba(255, 255, 255, 0.2);
+    }
+
+    /* Input field styles */
+    .input-field {
+      background: rgba(255, 255, 255, 0.1);
+      border: 2px solid rgba(255, 255, 255, 0.2);
+      backdrop-filter: blur(10px);
+      transition: all 0.3s ease;
+    }
+
+    .input-field:focus {
+      background: rgba(255, 255, 255, 0.2);
+      border-color: rgba(255, 255, 255, 0.4);
+      box-shadow: 0 0 25px rgba(255, 255, 255, 0.2);
+    }
+
+    /* Button animations */
+    .btn-primary {
+      background: linear-gradient(135deg, #667eea, #764ba2);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .btn-primary::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+      transition: left 0.5s ease;
+    }
+
+    .btn-primary:hover::before {
+      left: 100%;
+    }
+
+    /* Result cards */
+    .result-card {
+      background: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(20px);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+      animation: cardSlideUp 0.5s ease-out forwards;
+      opacity: 0;
+      transform: translateY(30px);
+    }
+
+    .result-card:hover {
+      transform: translateY(-10px) scale(1.02);
+      box-shadow: 0 25px 50px rgba(0, 0, 0, 0.2);
+    }
+
+    @keyframes cardSlideUp {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    /* Loading animation */
+    .loading-spinner {
+      width: 40px;
+      height: 40px;
+      border: 4px solid rgba(255, 255, 255, 0.3);
+      border-top: 4px solid #667eea;
+      border-radius: 50%;
+      animation: spin 1s linear infinite;
+    }
+
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+
+    /* Floating elements */
+    .floating-element {
+      position: absolute;
+      animation: floatRandom 8s ease-in-out infinite;
+    }
+
+    @keyframes floatRandom {
+      0%, 100% { transform: translate(0, 0) rotate(0deg); }
+      25% { transform: translate(10px, -15px) rotate(90deg); }
+      50% { transform: translate(-5px, -25px) rotate(180deg); }
+      75% { transform: translate(-15px, -10px) rotate(270deg); }
+    }
+
+    /* Scrollbar customization */
+    .dropdown-content::-webkit-scrollbar {
+      width: 6px;
+    }
+
+    .dropdown-content::-webkit-scrollbar-track {
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 3px;
+    }
+
+    .dropdown-content::-webkit-scrollbar-thumb {
+      background: rgba(102, 126, 234, 0.5);
+      border-radius: 3px;
+    }
+  </style>
+</head>
+<body>
+  <!-- Animated background particles -->
+  <div class="particle" style="width: 6px; height: 6px; top: 20%; left: 10%; animation-delay: 0s;"></div>
+  <div class="particle" style="width: 8px; height: 8px; top: 60%; left: 20%; animation-delay: 2s;"></div>
+  <div class="particle" style="width: 4px; height: 4px; top: 40%; left: 70%; animation-delay: 4s;"></div>
+  <div class="particle" style="width: 10px; height: 10px; top: 80%; left: 80%; animation-delay: 1s;"></div>
+  <div class="particle" style="width: 5px; height: 5px; top: 30%; left: 90%; animation-delay: 3s;"></div>
+
+  <div class="container mx-auto px-4 py-12 relative">
+    <!-- Floating decorative elements -->
+    <div class="floating-element top-20 left-10 w-16 h-16 bg-white bg-opacity-10 rounded-full"></div>
+    <div class="floating-element top-32 right-20 w-8 h-8 bg-white bg-opacity-5 rounded-full"></div>
+
+    <!-- Header -->
+    <div class="text-center mb-16">
+      <h1 class="text-6xl font-bold text-white mb-4">
+        <span class="bg-gradient-to-r from-white to-purple-200 bg-clip-text text-transparent">InternMitrr</span>
+      </h1>
+      <p class="text-xl text-purple-100 font-light">AI-Powered Internship Discovery Platform</p>
+      <div class="w-24 h-1 bg-gradient-to-r from-purple-400 to-pink-400 mx-auto mt-6 rounded-full"></div>
+    </div>
+
+    <!-- Main Form -->
+    <div class="glass-container p-10 rounded-3xl max-w-4xl mx-auto mb-16">
+      <div class="grid md:grid-cols-2 gap-8">
+        
+        <!-- Education Dropdown -->
+        <div class="space-y-3">
+          <label class="block text-white font-semibold text-lg flex items-center gap-2">
+            <i class="fas fa-graduation-cap text-purple-300"></i>
+            Education Level
+          </label>
+          <div class="dropdown">
+            <div class="input-field w-full rounded-xl px-6 py-4 text-white placeholder-purple-200 focus:outline-none cursor-pointer flex items-center justify-between" id="education-dropdown">
+              <span id="education-selected">Select your education level</span>
+              <i class="fas fa-chevron-down transition-transform duration-300" id="education-arrow"></i>
+            </div>
+            <div class="dropdown-content mt-2" id="education-content">
+              <div class="dropdown-item" data-value="high-school">
+                <i class="fas fa-school"></i>
+                High School Diploma
+              </div>
+              <div class="dropdown-item" data-value="associate">
+                <i class="fas fa-certificate"></i>
+                Associate Degree
+              </div>
+              <div class="dropdown-item" data-value="bachelor">
+                <i class="fas fa-graduation-cap"></i>
+                Bachelor's Degree
+              </div>
+              <div class="dropdown-item" data-value="master">
+                <i class="fas fa-user-graduate"></i>
+                Master's Degree
+              </div>
+              <div class="dropdown-item" data-value="phd">
+                <i class="fas fa-award"></i>
+                PhD / Doctorate
+              </div>
+              <div class="dropdown-item" data-value="diploma">
+                <i class="fas fa-scroll"></i>
+                Professional Diploma
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Location Input -->
+        <div class="space-y-3">
+          <label class="block text-white font-semibold text-lg flex items-center gap-2">
+            <i class="fas fa-map-marker-alt text-purple-300"></i>
+            Preferred Location
+          </label>
+          <input id="location" type="text" placeholder="Enter your preferred city" 
+                 class="input-field w-full rounded-xl px-6 py-4 text-white placeholder-purple-200 focus:outline-none">
+        </div>
+
+        <!-- Skills Multi-select -->
+        <div class="space-y-3">
+          <label class="block text-white font-semibold text-lg flex items-center gap-2">
+            <i class="fas fa-tools text-purple-300"></i>
+            Technical Skills
+          </label>
+          <div class="dropdown">
+            <div class="input-field w-full rounded-xl px-6 py-4 text-white placeholder-purple-200 focus:outline-none cursor-pointer flex items-center justify-between" id="skills-dropdown">
+              <span id="skills-placeholder">Select your skills</span>
+              <i class="fas fa-chevron-down transition-transform duration-300" id="skills-arrow"></i>
+            </div>
+            <div class="dropdown-content mt-2" id="skills-content">
+              <div class="dropdown-item" data-value="python">
+                <i class="fab fa-python"></i>
+                Python
+              </div>
+              <div class="dropdown-item" data-value="javascript">
+                <i class="fab fa-js"></i>
+                JavaScript
+              </div>
+              <div class="dropdown-item" data-value="java">
+                <i class="fab fa-java"></i>
+                Java
+              </div>
+              <div class="dropdown-item" data-value="react">
+                <i class="fab fa-react"></i>
+                React
+              </div>
+              <div class="dropdown-item" data-value="nodejs">
+                <i class="fab fa-node-js"></i>
+                Node.js
+              </div>
+              <div class="dropdown-item" data-value="sql">
+                <i class="fas fa-database"></i>
+                SQL
+              </div>
+              <div class="dropdown-item" data-value="machine-learning">
+                <i class="fas fa-brain"></i>
+                Machine Learning
+              </div>
+              <div class="dropdown-item" data-value="data-science">
+                <i class="fas fa-chart-line"></i>
+                Data Science
+              </div>
+              <div class="dropdown-item" data-value="ui-ux">
+                <i class="fas fa-paint-brush"></i>
+                UI/UX Design
+              </div>
+              <div class="dropdown-item" data-value="cloud">
+                <i class="fas fa-cloud"></i>
+                Cloud Computing
+              </div>
+            </div>
+          </div>
+          <div id="skills-tags" class="flex flex-wrap mt-3"></div>
+        </div>
+
+        <!-- Interests Multi-select -->
+        <div class="space-y-3">
+          <label class="block text-white font-semibold text-lg flex items-center gap-2">
+            <i class="fas fa-heart text-purple-300"></i>
+            Interests
+          </label>
+          <div class="dropdown">
+            <div class="input-field w-full rounded-xl px-6 py-4 text-white placeholder-purple-200 focus:outline-none cursor-pointer flex items-center justify-between" id="interests-dropdown">
+              <span id="interests-placeholder">Select your interests</span>
+              <i class="fas fa-chevron-down transition-transform duration-300" id="interests-arrow"></i>
+            </div>
+            <div class="dropdown-content mt-2" id="interests-content">
+              <div class="dropdown-item" data-value="web-development">
+                <i class="fas fa-globe"></i>
+                Web Development
+              </div>
+              <div class="dropdown-item" data-value="mobile-development">
+                <i class="fas fa-mobile-alt"></i>
+                Mobile Development
+              </div>
+              <div class="dropdown-item" data-value="artificial-intelligence">
+                <i class="fas fa-robot"></i>
+                Artificial Intelligence
+              </div>
+              <div class="dropdown-item" data-value="cybersecurity">
+                <i class="fas fa-shield-alt"></i>
+                Cybersecurity
+              </div>
+              <div class="dropdown-item" data-value="fintech">
+                <i class="fas fa-coins"></i>
+                FinTech
+              </div>
+              <div class="dropdown-item" data-value="healthcare-tech">
+                <i class="fas fa-heartbeat"></i>
+                Healthcare Tech
+              </div>
+              <div class="dropdown-item" data-value="gaming">
+                <i class="fas fa-gamepad"></i>
+                Game Development
+              </div>
+              <div class="dropdown-item" data-value="blockchain">
+                <i class="fas fa-link"></i>
+                Blockchain
+              </div>
+              <div class="dropdown-item" data-value="digital-marketing">
+                <i class="fas fa-bullhorn"></i>
+                Digital Marketing
+              </div>
+              <div class="dropdown-item" data-value="product-management">
+                <i class="fas fa-cog"></i>
+                Product Management
+              </div>
+            </div>
+          </div>
+          <div id="interests-tags" class="flex flex-wrap mt-3"></div>
+        </div>
+
+      </div>
+
+      <!-- Submit Button -->
+      <div class="mt-10 text-center">
+        <button id="recommend-btn" class="btn-primary text-white font-bold py-4 px-12 rounded-full text-lg transition-all duration-300 hover:scale-105 hover:shadow-2xl relative overflow-hidden">
+          <span class="relative z-10 flex items-center gap-3">
+            <i class="fas fa-magic"></i>
+            Discover My Perfect Internship
+          </span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Results Section -->
+    <div id="results" class="grid gap-8 md:grid-cols-2 lg:grid-cols-3"></div>
+  </div>
+
+  <script>
+    let selectedEducation = '';
+    let selectedSkills = new Set();
+    let selectedInterests = new Set();
+
+    // Dropdown functionality
+    function setupDropdown(dropdownId, contentId, arrowId, isMultiSelect = false, selectedSet = null, tagsId = null, placeholderId = null) {
+      const dropdown = document.getElementById(dropdownId);
+      const content = document.getElementById(contentId);
+      const arrow = document.getElementById(arrowId);
+
+      dropdown.addEventListener('click', () => {
+        content.classList.toggle('show');
+        arrow.style.transform = content.classList.contains('show') ? 'rotate(180deg)' : 'rotate(0deg)';
+      });
+
+      // Handle item selection
+      content.addEventListener('click', (e) => {
+        const item = e.target.closest('.dropdown-item');
+        if (!item) return;
+
+        const value = item.dataset.value;
+        const text = item.textContent.trim();
+
+        if (isMultiSelect) {
+          if (!selectedSet.has(value)) {
+            selectedSet.add(value);
+            addTag(value, text, tagsId, selectedSet, placeholderId);
+          }
+          content.classList.remove('show');
+          arrow.style.transform = 'rotate(0deg)';
+        } else {
+          selectedEducation = value;
+          dropdown.querySelector('span').textContent = text;
+          content.classList.remove('show');
+          arrow.style.transform = 'rotate(0deg)';
+        }
+      });
+
+      // Close dropdown when clicking outside
+      document.addEventListener('click', (e) => {
+        if (!dropdown.contains(e.target)) {
+          content.classList.remove('show');
+          arrow.style.transform = 'rotate(0deg)';
+        }
+      });
+    }
+
+    // Add tag functionality
+    function addTag(value, text, containerId, selectedSet, placeholderId) {
+      const container = document.getElementById(containerId);
+      const tag = document.createElement('span');
+      tag.className = 'tag';
+      tag.innerHTML = `${text} <i class="fas fa-times"></i>`;
+      
+      tag.querySelector('i').addEventListener('click', () => {
+        selectedSet.delete(value);
+        tag.remove();
+        updatePlaceholder(placeholderId, selectedSet);
+      });
+      
+      container.appendChild(tag);
+      updatePlaceholder(placeholderId, selectedSet);
+    }
+
+    // Update placeholder text
+    function updatePlaceholder(placeholderId, selectedSet) {
+      const placeholder = document.getElementById(placeholderId);
+      if (selectedSet.size === 0) {
+        placeholder.textContent = placeholderId.includes('skills') ? 'Select your skills' : 'Select your interests';
+      } else {
+        placeholder.textContent = `${selectedSet.size} selected`;
+      }
+    }
+
+    // Initialize dropdowns
+    setupDropdown('education-dropdown', 'education-content', 'education-arrow');
+    setupDropdown('skills-dropdown', 'skills-content', 'skills-arrow', true, selectedSkills, 'skills-tags', 'skills-placeholder');
+    setupDropdown('interests-dropdown', 'interests-content', 'interests-arrow', true, selectedInterests, 'interests-tags', 'interests-placeholder');
+
+    // Handle form submission
+    document.getElementById('recommend-btn').addEventListener('click', async () => {
+      const location = document.getElementById('location').value.trim();
+
+      if (!selectedEducation && selectedSkills.size === 0 && selectedInterests.size === 0 && !location) {
+        alert('Please provide at least one input!');
+        return;
+      }
+
+      const payload = {
+        education: selectedEducation,
+        skills: Array.from(selectedSkills),
+        interests: Array.from(selectedInterests),
+        location: location,
+        top_k: 6
+      };
+
+      const resultsContainer = document.getElementById('results');
+      resultsContainer.innerHTML = `
+        <div class="col-span-full flex justify-center items-center py-16">
+          <div class="text-center">
+            <div class="loading-spinner mx-auto mb-4"></div>
+            <p class="text-white text-lg">Discovering perfect internships for you...</p>
+          </div>
+        </div>
+      `;
+
+      try {
+        const res = await fetch("http://127.0.0.1:5000/recommend", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify(payload)
+        });
+
+        const data = await res.json();
+        resultsContainer.innerHTML = "";
+
+        if (data.error) {
+          resultsContainer.innerHTML = `<p class="text-red-300 col-span-full text-center text-lg">${data.error}</p>`;
+          return;
+        }
+
+        data.forEach((item, index) => {
+          const card = document.createElement("div");
+          card.className = "result-card rounded-2xl p-8 hover:shadow-2xl transition-all duration-500 flex flex-col justify-between";
+          card.style.animationDelay = `${index * 0.1}s`;
+          
+          card.innerHTML = `
+            <div>
+              <div class="flex items-center justify-between mb-4">
+                <h2 class="font-bold text-xl text-white">${item.short_title}</h2>
+                <i class="fas fa-bookmark text-purple-300 text-lg"></i>
+              </div>
+              <p class="text-purple-100 mb-4 leading-relaxed">${item.short_description}</p>
+              <div class="space-y-3 mb-6">
+                <div class="flex items-center gap-3">
+                  <i class="fas fa-tools text-purple-300"></i>
+                  <span class="text-sm text-purple-200">Skills: ${item.key_skills.join(", ")}</span>
+                </div>
+                <div class="flex items-center gap-3">
+                  <i class="fas fa-map-marker-alt text-purple-300"></i>
+                  <span class="text-sm text-purple-200">${item.location}</span>
+                </div>
+                <div class="flex items-center gap-3">
+                  <i class="fas fa-lightbulb text-purple-300"></i>
+                  <span class="text-sm text-purple-200">${item.reason}</span>
+                </div>
+              </div>
+            </div>
+            <a href="${item.apply_link}" target="_blank" 
+               class="btn-primary text-white font-semibold py-3 px-6 rounded-xl text-center transition-all duration-300 hover:scale-105 flex items-center justify-center gap-2">
+              <i class="fas fa-paper-plane"></i>
+              Apply Now
+            </a>
+          `;
+          resultsContainer.appendChild(card);
+        });
+
+      } catch (err) {
+        resultsContainer.innerHTML = `
+          <div class="col-span-full text-center py-16">
+            <i class="fas fa-exclamation-triangle text-red-300 text-4xl mb-4"></i>
+            <p class="text-red-300 text-lg">Unable to fetch recommendations. Please try again.</p>
+          </div>
+        `;
+        console.error(err);
+      }
+    });
+  </script>
+</body>
+</html>

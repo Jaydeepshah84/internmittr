@@ -1,0 +1,836 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>InternMitrr - Internship Recommendation System</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f5f5f5;
+      
+    }
+    
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+    
+    .form-section {
+      background: white;
+      border: 1px solid #d1d5db;
+      border-radius: 8px;
+      padding: 30px;
+      margin-bottom: 20px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .form-section::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 4px;
+      background: linear-gradient(90deg, #3b82f6, #6366f1, #8b5cf6);
+    }
+
+    .section-icon {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 40px;
+      height: 40px;
+      background: linear-gradient(135deg, #3b82f6, #6366f1);
+      color: white;
+      border-radius: 50%;
+      margin-right: 15px;
+      font-size: 18px;
+    }
+    
+    .form-group {
+      margin-bottom: 20px;
+    }
+    
+    .form-label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: 600;
+      color: #374151;
+      font-size: 14px;
+    }
+    
+    .form-input {
+      width: 100%;
+      padding: 8px 12px;
+      border: 1px solid #d1d5db;
+      border-radius: 4px;
+      font-size: 14px;
+      background-color: white;
+    }
+    
+    .form-input:focus {
+      outline: none;
+      border-color: #2563eb;
+      box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.1);
+    }
+    
+    .form-select {
+      width: 100%;
+      padding: 8px 12px;
+      border: 1px solid #d1d5db;
+      border-radius: 4px;
+      font-size: 14px;
+      background-color: white;
+      cursor: pointer;
+    }
+    
+    .form-select:focus {
+      outline: none;
+      border-color: #2563eb;
+      box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.1);
+    }
+    
+    .checkbox-group {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 10px;
+      margin-top: 10px;
+    }
+    
+    .checkbox-item {
+      display: flex;
+      align-items: center;
+      padding: 5px;
+    }
+    
+    .checkbox-item input[type="checkbox"] {
+      margin-right: 8px;
+      width: 16px;
+      height: 16px;
+    }
+    
+    .checkbox-item label {
+      font-size: 14px;
+      color: #374151;
+      cursor: pointer;
+    }
+    
+    .submit-btn {
+      background-color: #2563eb;
+      color: white;
+      padding: 12px 24px;
+      border: none;
+      border-radius: 4px;
+      font-size: 16px;
+      font-weight: 600;
+      cursor: pointer;
+      width: 100%;
+    }
+    
+    .submit-btn:hover {
+      background-color: #1d4ed8;
+    }
+    
+    .submit-btn:disabled {
+      background-color: #9ca3af;
+      cursor: not-allowed;
+    }
+    
+    .result-card {
+      background: white;
+      border: 1px solid #d1d5db;
+      border-radius: 4px;
+      padding: 20px;
+      margin-bottom: 20px;
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    }
+    
+    .result-title {
+      font-size: 18px;
+      font-weight: 600;
+      color: #1f2937;
+      margin-bottom: 8px;
+    }
+    
+    .result-description {
+      color: #6b7280;
+      margin-bottom: 12px;
+      line-height: 1.5;
+    }
+    
+    .result-details {
+      font-size: 14px;
+      color: #4b5563;
+      margin-bottom: 4px;
+    }
+    
+    .apply-btn {
+      background-color: #059669;
+      color: white;
+      padding: 8px 16px;
+      border: none;
+      border-radius: 4px;
+      font-size: 14px;
+      text-decoration: none;
+      display: inline-block;
+      margin-top: 10px;
+    }
+    
+    .apply-btn:hover {
+      background-color: #047857;
+    }
+    
+    .loading {
+      text-align: center;
+      padding: 40px;
+      color: #6b7280;
+    }
+    
+    .error {
+      color: #dc2626;
+      background-color: #fef2f2;
+      border: 1px solid #fecaca;
+      padding: 12px;
+      border-radius: 4px;
+      margin: 20px 0;
+    }
+    
+    .success {
+      color: #065f46;
+      background-color: #ecfdf5;
+      border: 1px solid #a7f3d0;
+      padding: 12px;
+      border-radius: 4px;
+      margin: 20px 0;
+    }
+
+    .header {
+      background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%);
+      color: white;
+      padding: 20px 0;
+      margin-bottom: 30px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .header::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.05'%3E%3Ccircle cx='30' cy='30' r='2'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    }
+
+    .header-content {
+      position: relative;
+      z-index: 1;
+    }
+
+    .logo-container {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      margin-bottom: 10px;
+    }
+
+    .logo {
+      width: 50px;
+      height: 50px;
+      background: white;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 24px;
+      color: #1e3a8a;
+      font-weight: bold;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    }
+
+    .header h1 {
+      margin: 0;
+      font-size: 24px;
+      font-weight: 600;
+    }
+
+    .header p {
+      margin: 5px 0 0 0;
+      color: #d1d5db;
+      font-size: 14px;
+    }
+
+    .section-title {
+      font-size: 20px;
+      font-weight: 600;
+      color: #1f2937;
+      margin-bottom: 20px;
+      border-bottom: 2px solid #e5e7eb;
+      padding-bottom: 10px;
+      display: flex;
+      align-items: center;
+    }
+
+    .stats-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+      margin-bottom: 30px;
+    }
+
+    .stat-card {
+      background: white;
+      border: 1px solid #e5e7eb;
+      border-radius: 8px;
+      padding: 20px;
+      text-align: center;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .stat-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 3px;
+      background: linear-gradient(90deg, #10b981, #059669);
+    }
+
+    .stat-number {
+      font-size: 28px;
+      font-weight: bold;
+      color: #059669;
+      margin-bottom: 5px;
+    }
+
+    .stat-label {
+      color: #6b7280;
+      font-size: 14px;
+    }
+
+    .illustration {
+      text-align: center;
+      margin: 20px 0;
+    }
+
+    .illustration svg {
+      max-width: 100%;
+      height: auto;
+    }
+
+    .required {
+      color: #dc2626;
+    }
+
+    .help-text {
+      font-size: 12px;
+      color: #6b7280;
+      margin-top: 4px;
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <div class="header">
+    <div class="container">
+      <div class="header-content">
+        <div class="logo-container">
+          <div class="logo">IM</div>
+          <div>
+            <h1 style="margin: 0; font-size: 24px; font-weight: 600;">InternMitrr - Internship Recommendation System</h1>
+            <p style="margin: 5px 0 0 0; color: #e0e7ff; font-size: 14px;">Government of India | Ministry of Education | Skill Development Initiative</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <!-- Statistics Section -->
+    <div class="stats-container">
+      <div class="stat-card">
+        <div class="stat-number">25,000+</div>
+        <div class="stat-label">Active Internships</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-number">500+</div>
+        <div class="stat-label">Partner Companies</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-number">1,00,000+</div>
+        <div class="stat-label">Students Registered</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-number">99.9%</div>
+        <div class="stat-label">Success Rate</div>
+      </div>
+    </div>
+
+    <!-- Illustration -->
+    <div class="illustration">
+      <svg width="400" height="200" viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" style="stop-color:#3b82f6;stop-opacity:1" />
+            <stop offset="100%" style="stop-color:#6366f1;stop-opacity:1" />
+          </linearGradient>
+        </defs>
+        
+        <!-- Background -->
+        <rect width="400" height="200" fill="#f8fafc" rx="10"/>
+        
+        <!-- Building (Company) -->
+        <rect x="50" y="80" width="80" height="100" fill="url(#grad1)" rx="4"/>
+        <rect x="60" y="90" width="12" height="12" fill="white" opacity="0.8"/>
+        <rect x="78" y="90" width="12" height="12" fill="white" opacity="0.8"/>
+        <rect x="96" y="90" width="12" height="12" fill="white" opacity="0.8"/>
+        <rect x="114" y="90" width="12" height="12" fill="white" opacity="0.8"/>
+        <rect x="60" y="108" width="12" height="12" fill="white" opacity="0.8"/>
+        <rect x="78" y="108" width="12" height="12" fill="white" opacity="0.8"/>
+        <rect x="96" y="108" width="12" height="12" fill="white" opacity="0.8"/>
+        <rect x="114" y="108" width="12" height="12" fill="white" opacity="0.8"/>
+        
+        <!-- Student (Person) -->
+        <circle cx="300" cy="110" r="20" fill="#fbbf24"/>
+        <rect x="285" y="130" width="30" height="40" fill="#3b82f6" rx="15"/>
+        
+        <!-- Connection Line -->
+        <path d="M 130 130 Q 200 100 280 130" stroke="#6366f1" stroke-width="3" fill="none" stroke-dasharray="5,5">
+          <animate attributeName="stroke-dashoffset" values="0;-10" dur="2s" repeatCount="indefinite"/>
+        </path>
+        
+        <!-- Documents/Applications -->
+        <rect x="180" y="60" width="40" height="30" fill="white" stroke="#d1d5db" rx="2"/>
+        <rect x="185" y="65" width="30" height="2" fill="#6b7280"/>
+        <rect x="185" y="70" width="25" height="2" fill="#6b7280"/>
+        <rect x="185" y="75" width="20" height="2" fill="#6b7280"/>
+        
+        <!-- Success Icon -->
+        <circle cx="350" cy="60" r="15" fill="#10b981"/>
+        <path d="M 345 60 L 349 64 L 355 56" stroke="white" stroke-width="2" fill="none"/>
+        
+        <!-- Title -->
+        <text x="200" y="25" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#1f2937">Find Your Perfect Internship Match</text>
+      </svg>
+    </div>
+    <!-- Instructions -->
+    <div class="form-section">
+      <h2 class="section-title">
+        <div class="section-icon">📋</div>
+        Application Instructions
+      </h2>
+      <ul style="color: #4b5563; line-height: 1.6;">
+        <li>Please fill all required fields marked with <span class="required">*</span></li>
+        <li>Select your current education level from the dropdown menu</li>
+        <li>Choose all applicable technical skills and career interests</li>
+        <li>Provide your preferred location for internship opportunities</li>
+        <li>Click "Get Recommendations" to view matching internship opportunities</li>
+      </ul>
+    </div>
+
+    <!-- Main Form -->
+    <div class="form-section">
+      <h2 class="section-title">
+        <div class="section-icon">🎓</div>
+        Personal & Educational Information
+      </h2>
+      
+      <!-- Education Level -->
+      <div class="form-group">
+        <label class="form-label" for="education">
+          Education Level <span class="required">*</span>
+        </label>
+        <select id="education" class="form-select" required>
+          <option value="">-- Please select your education level --</option>
+          <optgroup label="School Level">
+            <option value="class-10">Class 10th (Secondary)</option>
+            <option value="class-12-science">Class 12th (Science Stream)</option>
+            <option value="class-12-commerce">Class 12th (Commerce Stream)</option>
+            <option value="class-12-arts">Class 12th (Arts/Humanities Stream)</option>
+          </optgroup>
+          <optgroup label="Diploma Courses">
+            <option value="diploma-engineering">Diploma in Engineering</option>
+            <option value="diploma-computer">Diploma in Computer Science</option>
+            <option value="diploma-mechanical">Diploma in Mechanical Engineering</option>
+            <option value="diploma-civil">Diploma in Civil Engineering</option>
+            <option value="diploma-electrical">Diploma in Electrical Engineering</option>
+            <option value="polytechnic">Polytechnic</option>
+          </optgroup>
+          <optgroup label="Undergraduate Degrees">
+            <option value="btech-cse">B.Tech Computer Science Engineering</option>
+            <option value="btech-it">B.Tech Information Technology</option>
+            <option value="btech-ece">B.Tech Electronics & Communication</option>
+            <option value="btech-mechanical">B.Tech Mechanical Engineering</option>
+            <option value="btech-civil">B.Tech Civil Engineering</option>
+            <option value="btech-electrical">B.Tech Electrical Engineering</option>
+            <option value="be">Bachelor of Engineering (B.E.)</option>
+            <option value="bca">Bachelor of Computer Applications (BCA)</option>
+            <option value="bsc-cs">B.Sc Computer Science</option>
+            <option value="bsc-it">B.Sc Information Technology</option>
+            <option value="bsc">B.Sc (Other Streams)</option>
+            <option value="bcom">B.Com (Commerce)</option>
+            <option value="ba">B.A. (Arts/Humanities)</option>
+            <option value="bba">Bachelor of Business Administration (BBA)</option>
+            <option value="bmm">Bachelor of Mass Media (BMM)</option>
+            <option value="bdes">Bachelor of Design (B.Des)</option>
+          </optgroup>
+          <optgroup label="Postgraduate Degrees">
+            <option value="mtech-cse">M.Tech Computer Science Engineering</option>
+            <option value="mtech-it">M.Tech Information Technology</option>
+            <option value="mtech-ece">M.Tech Electronics & Communication</option>
+            <option value="mtech-mechanical">M.Tech Mechanical Engineering</option>
+            <option value="mtech-civil">M.Tech Civil Engineering</option>
+            <option value="me">Master of Engineering (M.E.)</option>
+            <option value="mca">Master of Computer Applications (MCA)</option>
+            <option value="msc-cs">M.Sc Computer Science</option>
+            <option value="msc-it">M.Sc Information Technology</option>
+            <option value="msc">M.Sc (Other Streams)</option>
+            <option value="mba">Master of Business Administration (MBA)</option>
+            <option value="mcom">M.Com (Commerce)</option>
+            <option value="ma">M.A. (Arts/Humanities)</option>
+            <option value="mdes">Master of Design (M.Des)</option>
+          </optgroup>
+          <optgroup label="Doctoral & Research">
+            <option value="phd-engineering">Ph.D in Engineering</option>
+            <option value="phd-computer">Ph.D in Computer Science</option>
+            <option value="phd-management">Ph.D in Management</option>
+            <option value="phd-science">Ph.D in Science</option>
+            <option value="phd-other">Ph.D (Other Fields)</option>
+          </optgroup>
+          <optgroup label="Professional Courses">
+            <option value="ca">Chartered Accountant (CA)</option>
+            <option value="cs">Company Secretary (CS)</option>
+            <option value="cma">Cost & Management Accountant (CMA)</option>
+            <option value="law">Law Degree (LLB/LLM)</option>
+            <option value="medical">Medical (MBBS/MD)</option>
+            <option value="certification">Professional Certification</option>
+          </optgroup>
+        </select>
+        <div class="help-text">Select your current or highest completed education level</div>
+      </div>
+
+      <!-- Location -->
+      <div class="form-group">
+        <label class="form-label" for="location">
+          Preferred Location <span class="required">*</span>
+        </label>
+        <input type="text" id="location" class="form-input" placeholder="e.g., Delhi, Mumbai, Bangalore, Remote" required>
+        <div class="help-text">Enter your preferred city/state for internship or type "Remote" for work-from-home</div>
+      </div>
+    </div>
+
+    <!-- Skills Section -->
+    <div class="form-section">
+      <h2 class="section-title">Technical Skills</h2>
+      <label class="form-label">
+        Select all technical skills that apply to you:
+      </label>
+      <div class="checkbox-group" id="skills-section">
+        <div class="checkbox-item">
+          <input type="checkbox" id="skill-python" value="python">
+          <label for="skill-python">Python Programming</label>
+        </div>
+        <div class="checkbox-item">
+          <input type="checkbox" id="skill-java" value="java">
+          <label for="skill-java">Java Programming</label>
+        </div>
+        <div class="checkbox-item">
+          <input type="checkbox" id="skill-javascript" value="javascript">
+          <label for="skill-javascript">JavaScript</label>
+        </div>
+        <div class="checkbox-item">
+          <input type="checkbox" id="skill-html-css" value="html-css">
+          <label for="skill-html-css">HTML/CSS</label>
+        </div>
+        <div class="checkbox-item">
+          <input type="checkbox" id="skill-react" value="react">
+          <label for="skill-react">React.js</label>
+        </div>
+        <div class="checkbox-item">
+          <input type="checkbox" id="skill-nodejs" value="nodejs">
+          <label for="skill-nodejs">Node.js</label>
+        </div>
+        <div class="checkbox-item">
+          <input type="checkbox" id="skill-sql" value="sql">
+          <label for="skill-sql">SQL/Database</label>
+        </div>
+        <div class="checkbox-item">
+          <input type="checkbox" id="skill-ml" value="machine-learning">
+          <label for="skill-ml">Machine Learning</label>
+        </div>
+        <div class="checkbox-item">
+          <input type="checkbox" id="skill-data-science" value="data-science">
+          <label for="skill-data-science">Data Science</label>
+        </div>
+        <div class="checkbox-item">
+          <input type="checkbox" id="skill-android" value="android">
+          <label for="skill-android">Android Development</label>
+        </div>
+        <div class="checkbox-item">
+          <input type="checkbox" id="skill-ios" value="ios">
+          <label for="skill-ios">iOS Development</label>
+        </div>
+        <div class="checkbox-item">
+          <input type="checkbox" id="skill-cloud" value="cloud">
+          <label for="skill-cloud">Cloud Computing</label>
+        </div>
+        <div class="checkbox-item">
+          <input type="checkbox" id="skill-cybersecurity" value="cybersecurity">
+          <label for="skill-cybersecurity">Cybersecurity</label>
+        </div>
+        <div class="checkbox-item">
+          <input type="checkbox" id="skill-ui-ux" value="ui-ux">
+          <label for="skill-ui-ux">UI/UX Design</label>
+        </div>
+        <div class="checkbox-item">
+          <input type="checkbox" id="skill-digital-marketing" value="digital-marketing">
+          <label for="skill-digital-marketing">Digital Marketing</label>
+        </div>
+        <div class="checkbox-item">
+          <input type="checkbox" id="skill-content-writing" value="content-writing">
+          <label for="skill-content-writing">Content Writing</label>
+        </div>
+      </div>
+    </div>
+
+    <!-- Interests Section -->
+    <div class="form-section">
+      <h2 class="section-title">Career Interests</h2>
+      <label class="form-label">
+        Select areas you are interested in pursuing:
+      </label>
+      <div class="checkbox-group" id="interests-section">
+        <div class="checkbox-item">
+          <input type="checkbox" id="interest-software" value="software-development">
+          <label for="interest-software">Software Development</label>
+        </div>
+        <div class="checkbox-item">
+          <input type="checkbox" id="interest-web" value="web-development">
+          <label for="interest-web">Web Development</label>
+        </div>
+        <div class="checkbox-item">
+          <input type="checkbox" id="interest-mobile" value="mobile-development">
+          <label for="interest-mobile">Mobile App Development</label>
+        </div>
+        <div class="checkbox-item">
+          <input type="checkbox" id="interest-ai" value="artificial-intelligence">
+          <label for="interest-ai">Artificial Intelligence</label>
+        </div>
+        <div class="checkbox-item">
+          <input type="checkbox" id="interest-data" value="data-analytics">
+          <label for="interest-data">Data Analytics</label>
+        </div>
+        <div class="checkbox-item">
+          <input type="checkbox" id="interest-design" value="design">
+          <label for="interest-design">Design & User Experience</label>
+        </div>
+        <div class="checkbox-item">
+          <input type="checkbox" id="interest-marketing" value="marketing">
+          <label for="interest-marketing">Digital Marketing</label>
+        </div>
+        <div class="checkbox-item">
+          <input type="checkbox" id="interest-finance" value="finance">
+          <label for="interest-finance">Finance & FinTech</label>
+        </div>
+        <div class="checkbox-item">
+          <input type="checkbox" id="interest-healthcare" value="healthcare">
+          <label for="interest-healthcare">Healthcare Technology</label>
+        </div>
+        <div class="checkbox-item">
+          <input type="checkbox" id="interest-education" value="education">
+          <label for="interest-education">Education Technology</label>
+        </div>
+        <div class="checkbox-item">
+          <input type="checkbox" id="interest-ecommerce" value="ecommerce">
+          <label for="interest-ecommerce">E-commerce</label>
+        </div>
+        <div class="checkbox-item">
+          <input type="checkbox" id="interest-gaming" value="gaming">
+          <label for="interest-gaming">Game Development</label>
+        </div>
+        <div class="checkbox-item">
+          <input type="checkbox" id="interest-research" value="research">
+          <label for="interest-research">Research & Development</label>
+        </div>
+        <div class="checkbox-item">
+          <input type="checkbox" id="interest-consulting" value="consulting">
+          <label for="interest-consulting">Consulting</label>
+        </div>
+      </div>
+    </div>
+
+    <!-- Submit Button -->
+    <div class="form-section">
+      <button id="submit-btn" class="submit-btn">
+        Get Internship Recommendations
+      </button>
+    </div>
+
+    <!-- Results Section -->
+    <div id="results-container"></div>
+  </div>
+
+  <script>
+    // Mock data for demonstration
+    const mockInternships = [
+      {
+        short_title: "Software Developer Intern - TCS",
+        short_description: "Work on enterprise software solutions using Java and Spring framework. Gain experience in large-scale application development.",
+        key_skills: ["Java", "Spring", "SQL"],
+        location: "Bangalore, Karnataka",
+        reason: "Matches your Java programming skills and software development interest",
+        apply_link: "https://careers.tcs.com"
+      },
+      {
+        short_title: "Data Analyst Intern - Infosys",
+        short_description: "Analyze business data and create insights using Python and SQL. Work with real client datasets and visualization tools.",
+        key_skills: ["Python", "SQL", "Data Analysis"],
+        location: "Pune, Maharashtra",
+        reason: "Perfect match for your Python skills and data analytics interest",
+        apply_link: "https://careers.infosys.com"
+      },
+      {
+        short_title: "Frontend Developer Intern - Flipkart",
+        short_description: "Develop user interfaces for e-commerce platform using React.js. Contribute to India's largest online marketplace.",
+        key_skills: ["React.js", "JavaScript", "HTML/CSS"],
+        location: "Bangalore, Karnataka",
+        reason: "Your React.js and web development skills are ideal for this role",
+        apply_link: "https://careers.flipkart.com"
+      },
+      {
+        short_title: "Mobile App Intern - Paytm",
+        short_description: "Build mobile applications for digital payments and financial services. Work on Android and iOS development.",
+        key_skills: ["Android", "iOS", "Mobile Development"],
+        location: "Noida, Uttar Pradesh",
+        reason: "Matches your mobile development interest and technical skills",
+        apply_link: "https://jobs.paytm.com"
+      },
+      {
+        short_title: "Digital Marketing Intern - BYJU'S",
+        short_description: "Create marketing campaigns for India's leading education technology platform. Work on content strategy and user acquisition.",
+        key_skills: ["Digital Marketing", "Content Writing"],
+        location: "Bangalore, Karnataka",
+        reason: "Your digital marketing skills align with education technology focus",
+        apply_link: "https://careers.byjus.com"
+      },
+      {
+        short_title: "AI Research Intern - IIT Delhi",
+        short_description: "Contribute to artificial intelligence research projects. Work with faculty on machine learning algorithms and applications.",
+        key_skills: ["Python", "Machine Learning", "Research"],
+        location: "New Delhi",
+        reason: "Your AI interest and Python skills match this research opportunity",
+        apply_link: "https://www.iitd.ac.in/careers"
+      }
+    ];
+
+    document.getElementById('submit-btn').addEventListener('click', function() {
+      // Get form values
+      const education = document.getElementById('education').value;
+      const location = document.getElementById('location').value.trim();
+      
+      // Get selected skills
+      const skills = [];
+      document.querySelectorAll('#skills-section input[type="checkbox"]:checked').forEach(checkbox => {
+        skills.push(checkbox.value);
+      });
+      
+      // Get selected interests
+      const interests = [];
+      document.querySelectorAll('#interests-section input[type="checkbox"]:checked').forEach(checkbox => {
+        interests.push(checkbox.value);
+      });
+
+      // Basic validation
+      if (!education) {
+        showMessage('Please select your education level.', 'error');
+        return;
+      }
+
+      if (!location) {
+        showMessage('Please enter your preferred location.', 'error');
+        return;
+      }
+
+      if (skills.length === 0 && interests.length === 0) {
+        showMessage('Please select at least one skill or interest.', 'error');
+        return;
+      }
+
+      // Show loading
+      const resultsContainer = document.getElementById('results-container');
+      resultsContainer.innerHTML = `
+        <div class="form-section">
+          <div class="loading">
+            <p>Processing your application...</p>
+            <p>Finding matching internship opportunities...</p>
+          </div>
+        </div>
+      `;
+
+      // Simulate API call
+      setTimeout(() => {
+        displayResults(mockInternships);
+      }, 2000);
+    });
+
+    function displayResults(internships) {
+      const resultsContainer = document.getElementById('results-container');
+      
+      if (internships.length === 0) {
+        resultsContainer.innerHTML = `
+          <div class="form-section">
+            <h2 class="section-title">No Results Found</h2>
+            <p>No internship opportunities match your current criteria. Please try adjusting your selections and search again.</p>
+          </div>
+        `;
+        return;
+      }
+
+      let resultsHTML = `
+        <div class="form-section">
+          <h2 class="section-title">Recommended Internship Opportunities</h2>
+          <div class="success">
+            Found ${internships.length} internship opportunities matching your profile.
+          </div>
+        </div>
+      `;
+
+      internships.forEach((internship, index) => {
+        resultsHTML += `
+          <div class="result-card">
+            <div class="result-title">${internship.short_title}</div>
+            <div class="result-description">${internship.short_description}</div>
+            <div class="result-details"><strong>Required Skills:</strong> ${internship.key_skills.join(', ')}</div>
+            <div class="result-details"><strong>Location:</strong> ${internship.location}</div>
+            <div class="result-details"><strong>Why this matches:</strong> ${internship.reason}</div>
+            <a href="${internship.apply_link}" target="_blank" class="apply-btn">Apply Now</a>
+          </div>
+        `;
+      });
+
+      resultsContainer.innerHTML = resultsHTML;
+      
+      // Scroll to results
+      resultsContainer.scrollIntoView({ behavior: 'smooth' });
+    }
+
+    function showMessage(message, type) {
+      const resultsContainer = document.getElementById('results-container');
+      resultsContainer.innerHTML = `
+        <div class="form-section">
+          <div class="${type}">${message}</div>
+        </div>
+      `;
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,1001 @@
+id,title,description,skills,location,duration,organization
+1,Java Backend Intern,Develop REST APIs and services using Java Spring Boot.,Java;Spring;REST API,Dehradun,5 weeks,CodeCrafters
+2,Android Developer Intern,Build Android apps with Java/Kotlin.,Java;Kotlin;APIs,Chennai,2 months,Analytics Hub
+3,BCA Project Intern,"Help with college project using PHP, MySQL.",PHP;MySQL;HTML;CSS,Pune,2 months,College Labs
+4,Machine Learning Intern,Work on predictive analytics using Python and scikit-learn.,Python;Machine Learning;Statistics,Noida,4 months,Tech Startup
+5,Frontend React Intern,Create responsive UI with React and TailwindCSS.,HTML;CSS;JavaScript;React,Hyderabad,1 month,DataWorks
+6,Android Developer Intern,Build Android apps with Java/Kotlin.,Java;Kotlin;APIs,Jaipur,2 months,Tech Startup
+7,BCA Project Intern,"Help with college project using PHP, MySQL.",PHP;MySQL;HTML;CSS,Lucknow,2 months,WebSolutions
+8,Web Development Intern,Front-end using React and backend Node.js.,HTML;CSS;JavaScript;React;Node,Ahmedabad,1 month,Analytics Hub
+9,BCA Project Intern,"Help with college project using PHP, MySQL.",PHP;MySQL;HTML;CSS,Bhubaneswar,5 weeks,CodeCrafters
+10,Web Development Intern,Front-end using React and backend Node.js.,HTML;CSS;JavaScript;React;Node,Gurgaon,5 weeks,DataWorks
+11,Data Analyst Intern,Perform data cleaning and visualization using Python and Excel.,Python;SQL;Excel,Delhi,5 weeks,MarketCo
+12,Marketing Intern,Manage social media and content creation.,Communication;Marketing;Social Media,Bhubaneswar,3 months,FinLabs
+13,BCA Project Intern,"Help with college project using PHP, MySQL.",PHP;MySQL;HTML;CSS,Gurgaon,3 months,MarketCo
+14,Marketing Intern,Manage social media and content creation.,Communication;Marketing;Social Media,Gurgaon,5 weeks,CodeCrafters
+15,Machine Learning Intern,Work on predictive analytics using Python and scikit-learn.,Python;Machine Learning;Statistics,Gurgaon,2 months,WebSolutions
+16,Frontend React Intern,Create responsive UI with React and TailwindCSS.,HTML;CSS;JavaScript;React,Delhi,2 months,DesignStudios
+17,Frontend React Intern,Create responsive UI with React and TailwindCSS.,HTML;CSS;JavaScript;React,Gurgaon,6 months,Tech Startup
+18,Data Analyst Intern,Perform data cleaning and visualization using Python and Excel.,Python;SQL;Excel,Mumbai,6 months,College Labs
+19,Android Developer Intern,Build Android apps with Java/Kotlin.,Java;Kotlin;APIs,Pune,6 months,DataWorks
+20,BCA Project Intern,"Help with college project using PHP, MySQL.",PHP;MySQL;HTML;CSS,Jaipur,4 months,MobileWorks
+21,BCA Project Intern,"Help with college project using PHP, MySQL.",PHP;MySQL;HTML;CSS,Bhubaneswar,2 months,DesignStudios
+22,Data Science Intern,Work on ML models and data analysis.,Python;SQL;Machine Learning,Bhubaneswar,4 months,MobileWorks
+23,UI/UX Design Intern,Design wireframes and prototypes using Figma and Adobe XD.,Figma;Adobe XD;Design,Goa,3 months,DataWorks
+24,Web Development Intern,Front-end using React and backend Node.js.,HTML;CSS;JavaScript;React;Node,Gurgaon,5 weeks,CodeCrafters
+25,Android Developer Intern,Build Android apps with Java/Kotlin.,Java;Kotlin;APIs,Kolkata,3 months,DesignStudios
+26,UI/UX Design Intern,Design wireframes and prototypes using Figma and Adobe XD.,Figma;Adobe XD;Design,Ahmedabad,5 weeks,FinLabs
+27,Web Development Intern,Front-end using React and backend Node.js.,HTML;CSS;JavaScript;React;Node,Ahmedabad,1 month,WebSolutions
+28,UI/UX Design Intern,Design wireframes and prototypes using Figma and Adobe XD.,Figma;Adobe XD;Design,Bhubaneswar,2 months,CodeCrafters
+29,Data Analyst Intern,Perform data cleaning and visualization using Python and Excel.,Python;SQL;Excel,Goa,4 months,MarketCo
+30,Marketing Intern,Manage social media and content creation.,Communication;Marketing;Social Media,Bengaluru,1 month,FinLabs
+31,Data Science Intern,Work on ML models and data analysis.,Python;SQL;Machine Learning,Bengaluru,2 months,CodeCrafters
+32,Android Developer Intern,Build Android apps with Java/Kotlin.,Java;Kotlin;APIs,Bhubaneswar,5 weeks,CodeCrafters
+33,BCA Project Intern,"Help with college project using PHP, MySQL.",PHP;MySQL;HTML;CSS,Delhi,3 months,Tech Startup
+34,Data Analyst Intern,Perform data cleaning and visualization using Python and Excel.,Python;SQL;Excel,Bengaluru,6 months,FinLabs
+35,Data Science Intern,Work on ML models and data analysis.,Python;SQL;Machine Learning,Delhi,6 months,Analytics Hub
+36,Web Development Intern,Front-end using React and backend Node.js.,HTML;CSS;JavaScript;React;Node,Kolkata,4 months,WebSolutions
+37,Frontend React Intern,Create responsive UI with React and TailwindCSS.,HTML;CSS;JavaScript;React,Delhi,3 months,Analytics Hub
+38,Data Science Intern,Work on ML models and data analysis.,Python;SQL;Machine Learning,Hyderabad,2 months,DataWorks
+39,UI/UX Design Intern,Design wireframes and prototypes using Figma and Adobe XD.,Figma;Adobe XD;Design,Dehradun,4 months,FinLabs
+40,UI/UX Design Intern,Design wireframes and prototypes using Figma and Adobe XD.,Figma;Adobe XD;Design,Delhi,1 month,DataWorks
+41,Frontend React Intern,Create responsive UI with React and TailwindCSS.,HTML;CSS;JavaScript;React,Jaipur,4 months,College Labs
+42,Java Backend Intern,Develop REST APIs and services using Java Spring Boot.,Java;Spring;REST API,Noida,1 month,College Labs
+43,Java Backend Intern,Develop REST APIs and services using Java Spring Boot.,Java;Spring;REST API,Hyderabad,3 months,College Labs
+44,Data Science Intern,Work on ML models and data analysis.,Python;SQL;Machine Learning,Chennai,4 months,College Labs
+45,Java Backend Intern,Develop REST APIs and services using Java Spring Boot.,Java;Spring;REST API,Jaipur,1 month,MarketCo
+46,Android Developer Intern,Build Android apps with Java/Kotlin.,Java;Kotlin;APIs,Goa,2 months,College Labs
+47,Machine Learning Intern,Work on predictive analytics using Python and scikit-learn.,Python;Machine Learning;Statistics,Delhi,4 months,WebSolutions
+48,Frontend React Intern,Create responsive UI with React and TailwindCSS.,HTML;CSS;JavaScript;React,Jaipur,3 months,FinLabs
+49,Machine Learning Intern,Work on predictive analytics using Python and scikit-learn.,Python;Machine Learning;Statistics,Chennai,1 month,Tech Startup
+50,Frontend React Intern,Create responsive UI with React and TailwindCSS.,HTML;CSS;JavaScript;React,Bhubaneswar,2 months,College Labs
+51,Data Science Intern,Work on ML models and data analysis.,Python;SQL;Machine Learning,Kolkata,5 weeks,DesignStudios
+52,Web Development Intern,Front-end using React and backend Node.js.,HTML;CSS;JavaScript;React;Node,Kolkata,2 months,CodeCrafters
+53,Android Developer Intern,Build Android apps with Java/Kotlin.,Java;Kotlin;APIs,Jaipur,2 months,FinLabs
+54,Data Analyst Intern,Perform data cleaning and visualization using Python and Excel.,Python;SQL;Excel,Lucknow,1 month,Analytics Hub
+55,UI/UX Design Intern,Design wireframes and prototypes using Figma and Adobe XD.,Figma;Adobe XD;Design,Bhubaneswar,2 months,WebSolutions
+56,UI/UX Design Intern,Design wireframes and prototypes using Figma and Adobe XD.,Figma;Adobe XD;Design,Gurgaon,1 month,DataWorks
+57,Android Developer Intern,Build Android apps with Java/Kotlin.,Java;Kotlin;APIs,Chennai,4 months,College Labs
+58,Android Developer Intern,Build Android apps with Java/Kotlin.,Java;Kotlin;APIs,Mumbai,5 weeks,DesignStudios
+59,Data Analyst Intern,Perform data cleaning and visualization using Python and Excel.,Python;SQL;Excel,Gurgaon,2 months,MarketCo
+60,Data Science Intern,Work on ML models and data analysis.,Python;SQL;Machine Learning,Gurgaon,1 month,Analytics Hub
+61,Data Science Intern,Work on ML models and data analysis.,Python;SQL;Machine Learning,Delhi,5 weeks,Tech Startup
+62,BCA Project Intern,"Help with college project using PHP, MySQL.",PHP;MySQL;HTML;CSS,Kolkata,4 months,College Labs
+63,BCA Project Intern,"Help with college project using PHP, MySQL.",PHP;MySQL;HTML;CSS,Lucknow,6 months,MobileWorks
+64,Java Backend Intern,Develop REST APIs and services using Java Spring Boot.,Java;Spring;REST API,Ahmedabad,3 months,Analytics Hub
+65,Web Development Intern,Front-end using React and backend Node.js.,HTML;CSS;JavaScript;React;Node,Lucknow,3 months,WebSolutions
+66,Frontend React Intern,Create responsive UI with React and TailwindCSS.,HTML;CSS;JavaScript;React,Goa,4 months,CodeCrafters
+67,Marketing Intern,Manage social media and content creation.,Communication;Marketing;Social Media,Gurgaon,1 month,CodeCrafters
+68,Frontend React Intern,Create responsive UI with React and TailwindCSS.,HTML;CSS;JavaScript;React,Gurgaon,3 months,CodeCrafters
+69,UI/UX Design Intern,Design wireframes and prototypes using Figma and Adobe XD.,Figma;Adobe XD;Design,Lucknow,6 months,DataWorks
+70,Frontend React Intern,Create responsive UI with React and TailwindCSS.,HTML;CSS;JavaScript;React,Pune,5 weeks,FinLabs
+71,Machine Learning Intern,Work on predictive analytics using Python and scikit-learn.,Python;Machine Learning;Statistics,Lucknow,5 weeks,MobileWorks
+72,Web Development Intern,Front-end using React and backend Node.js.,HTML;CSS;JavaScript;React;Node,Jaipur,3 months,Tech Startup
+73,UI/UX Design Intern,Design wireframes and prototypes using Figma and Adobe XD.,Figma;Adobe XD;Design,Lucknow,5 weeks,DesignStudios
+74,Android Developer Intern,Build Android apps with Java/Kotlin.,Java;Kotlin;APIs,Jaipur,3 months,College Labs
+75,Web Development Intern,Front-end using React and backend Node.js.,HTML;CSS;JavaScript;React;Node,Bhubaneswar,1 month,MobileWorks
+76,Web Development Intern,Front-end using React and backend Node.js.,HTML;CSS;JavaScript;React;Node,Kolkata,4 months,DataWorks
+77,Marketing Intern,Manage social media and content creation.,Communication;Marketing;Social Media,Ahmedabad,3 months,College Labs
+78,Machine Learning Intern,Work on predictive analytics using Python and scikit-learn.,Python;Machine Learning;Statistics,Pune,2 months,CodeCrafters
+79,Web Development Intern,Front-end using React and backend Node.js.,HTML;CSS;JavaScript;React;Node,Gurgaon,5 weeks,Analytics Hub
+80,UI/UX Design Intern,Design wireframes and prototypes using Figma and Adobe XD.,Figma;Adobe XD;Design,Goa,1 month,College Labs
+81,UI/UX Design Intern,Design wireframes and prototypes using Figma and Adobe XD.,Figma;Adobe XD;Design,Hyderabad,1 month,DataWorks
+82,Data Science Intern,Work on ML models and data analysis.,Python;SQL;Machine Learning,Dehradun,1 month,MarketCo
+83,Android Developer Intern,Build Android apps with Java/Kotlin.,Java;Kotlin;APIs,Lucknow,4 months,Tech Startup
+84,BCA Project Intern,"Help with college project using PHP, MySQL.",PHP;MySQL;HTML;CSS,Noida,3 months,WebSolutions
+85,Java Backend Intern,Develop REST APIs and services using Java Spring Boot.,Java;Spring;REST API,Goa,1 month,College Labs
+86,Data Science Intern,Work on ML models and data analysis.,Python;SQL;Machine Learning,Hyderabad,1 month,DataWorks
+87,Android Developer Intern,Build Android apps with Java/Kotlin.,Java;Kotlin;APIs,Chennai,6 months,DesignStudios
+88,Android Developer Intern,Build Android apps with Java/Kotlin.,Java;Kotlin;APIs,Lucknow,2 months,DesignStudios
+89,Data Science Intern,Work on ML models and data analysis.,Python;SQL;Machine Learning,Goa,1 month,College Labs
+90,Java Backend Intern,Develop REST APIs and services using Java Spring Boot.,Java;Spring;REST API,Chennai,4 months,College Labs
+91,Java Backend Intern,Develop REST APIs and services using Java Spring Boot.,Java;Spring;REST API,Delhi,4 months,FinLabs
+92,Machine Learning Intern,Work on predictive analytics using Python and scikit-learn.,Python;Machine Learning;Statistics,Chennai,5 weeks,FinLabs
+93,UI/UX Design Intern,Design wireframes and prototypes using Figma and Adobe XD.,Figma;Adobe XD;Design,Goa,4 months,MarketCo
+94,Machine Learning Intern,Work on predictive analytics using Python and scikit-learn.,Python;Machine Learning;Statistics,Pune,4 months,CodeCrafters
+95,Web Development Intern,Front-end using React and backend Node.js.,HTML;CSS;JavaScript;React;Node,Bengaluru,4 months,Tech Startup
+96,BCA Project Intern,"Help with college project using PHP, MySQL.",PHP;MySQL;HTML;CSS,Jaipur,3 months,College Labs
+97,UI/UX Design Intern,Design wireframes and prototypes using Figma and Adobe XD.,Figma;Adobe XD;Design,Jaipur,6 months,Tech Startup
+98,Android Developer Intern,Build Android apps with Java/Kotlin.,Java;Kotlin;APIs,Chennai,4 months,CodeCrafters
+99,BCA Project Intern,"Help with college project using PHP, MySQL.",PHP;MySQL;HTML;CSS,Bhubaneswar,6 months,DesignStudios
+100,Frontend React Intern,Create responsive UI with React and TailwindCSS.,HTML;CSS;JavaScript;React,Ahmedabad,6 months,College Labs
+101,Data Analyst Intern,Perform data cleaning and visualization using Python and Excel.,Python;SQL;Excel,Pune,1 month,Analytics Hub
+102,Android Developer Intern,Build Android apps with Java/Kotlin.,Java;Kotlin;APIs,Lucknow,2 months,CodeCrafters
+103,Android Developer Intern,Build Android apps with Java/Kotlin.,Java;Kotlin;APIs,Goa,1 month,DesignStudios
+104,UI/UX Design Intern,Design wireframes and prototypes using Figma and Adobe XD.,Figma;Adobe XD;Design,Mumbai,6 months,Tech Startup
+105,Frontend React Intern,Create responsive UI with React and TailwindCSS.,HTML;CSS;JavaScript;React,Jaipur,6 months,MobileWorks
+106,Java Backend Intern,Develop REST APIs and services using Java Spring Boot.,Java;Spring;REST API,Bhubaneswar,5 weeks,DataWorks
+107,Data Analyst Intern,Perform data cleaning and visualization using Python and Excel.,Python;SQL;Excel,Mumbai,2 months,College Labs
+108,Machine Learning Intern,Work on predictive analytics using Python and scikit-learn.,Python;Machine Learning;Statistics,Kolkata,2 months,CodeCrafters
+109,BCA Project Intern,"Help with college project using PHP, MySQL.",PHP;MySQL;HTML;CSS,Hyderabad,6 months,DesignStudios
+110,Data Analyst Intern,Perform data cleaning and visualization using Python and Excel.,Python;SQL;Excel,Mumbai,3 months,MarketCo
+111,Frontend React Intern,Create responsive UI with React and TailwindCSS.,HTML;CSS;JavaScript;React,Lucknow,5 weeks,WebSolutions
+112,UI/UX Design Intern,Design wireframes and prototypes using Figma and Adobe XD.,Figma;Adobe XD;Design,Kolkata,5 weeks,CodeCrafters
+113,Web Development Intern,Front-end using React and backend Node.js.,HTML;CSS;JavaScript;React;Node,Ahmedabad,6 months,DataWorks
+114,Web Development Intern,Front-end using React and backend Node.js.,HTML;CSS;JavaScript;React;Node,Goa,6 months,FinLabs
+115,Web Development Intern,Front-end using React and backend Node.js.,HTML;CSS;JavaScript;React;Node,Chennai,5 weeks,Tech Startup
+116,UI/UX Design Intern,Design wireframes and prototypes using Figma and Adobe XD.,Figma;Adobe XD;Design,Kolkata,6 months,College Labs
+117,BCA Project Intern,"Help with college project using PHP, MySQL.",PHP;MySQL;HTML;CSS,Bengaluru,1 month,CodeCrafters
+118,Data Science Intern,Work on ML models and data analysis.,Python;SQL;Machine Learning,Kolkata,6 months,DataWorks
+119,UI/UX Design Intern,Design wireframes and prototypes using Figma and Adobe XD.,Figma;Adobe XD;Design,Delhi,1 month,WebSolutions
+120,BCA Project Intern,"Help with college project using PHP, MySQL.",PHP;MySQL;HTML;CSS,Bengaluru,3 months,DesignStudios
+121,Android Developer Intern,Build Android apps with Java/Kotlin.,Java;Kotlin;APIs,Bhubaneswar,4 months,Tech Startup
+122,Android Developer Intern,Build Android apps with Java/Kotlin.,Java;Kotlin;APIs,Lucknow,1 month,WebSolutions
+123,Marketing Intern,Manage social media and content creation.,Communication;Marketing;Social Media,Hyderabad,5 weeks,Analytics Hub
+124,Data Analyst Intern,Perform data cleaning and visualization using Python and Excel.,Python;SQL;Excel,Delhi,3 months,Analytics Hub
+125,Java Backend Intern,Develop REST APIs and services using Java Spring Boot.,Java;Spring;REST API,Jaipur,5 weeks,Analytics Hub
+126,Java Backend Intern,Develop REST APIs and services using Java Spring Boot.,Java;Spring;REST API,Bhubaneswar,5 weeks,MobileWorks
+127,UI/UX Design Intern,Design wireframes and prototypes using Figma and Adobe XD.,Figma;Adobe XD;Design,Ahmedabad,1 month,WebSolutions
+128,UI/UX Design Intern,Design wireframes and prototypes using Figma and Adobe XD.,Figma;Adobe XD;Design,Noida,3 months,MarketCo
+129,Machine Learning Intern,Work on predictive analytics using Python and scikit-learn.,Python;Machine Learning;Statistics,Hyderabad,1 month,MarketCo
+130,Data Analyst Intern,Perform data cleaning and visualization using Python and Excel.,Python;SQL;Excel,Dehradun,6 months,DesignStudios
+131,Data Analyst Intern,Perform data cleaning and visualization using Python and Excel.,Python;SQL;Excel,Gurgaon,3 months,MobileWorks
+132,UI/UX Design Intern,Design wireframes and prototypes using Figma and Adobe XD.,Figma;Adobe XD;Design,Goa,2 months,Tech Startup
+133,Machine Learning Intern,Work on predictive analytics using Python and scikit-learn.,Python;Machine Learning;Statistics,Hyderabad,2 months,Analytics Hub
+134,Frontend React Intern,Create responsive UI with React and TailwindCSS.,HTML;CSS;JavaScript;React,Kolkata,4 months,DesignStudios
+135,Machine Learning Intern,Work on predictive analytics using Python and scikit-learn.,Python;Machine Learning;Statistics,Dehradun,1 month,MobileWorks
+136,BCA Project Intern,"Help with college project using PHP, MySQL.",PHP;MySQL;HTML;CSS,Noida,5 weeks,College Labs
+137,Data Science Intern,Work on ML models and data analysis.,Python;SQL;Machine Learning,Mumbai,1 month,College Labs
+138,Java Backend Intern,Develop REST APIs and services using Java Spring Boot.,Java;Spring;REST API,Gurgaon,5 weeks,Tech Startup
+139,Data Analyst Intern,Perform data cleaning and visualization using Python and Excel.,Python;SQL;Excel,Lucknow,3 months,CodeCrafters
+140,Web Development Intern,Front-end using React and backend Node.js.,HTML;CSS;JavaScript;React;Node,Gurgaon,4 months,Tech Startup
+141,Web Development Intern,Front-end using React and backend Node.js.,HTML;CSS;JavaScript;React;Node,Chennai,2 months,FinLabs
+142,UI/UX Design Intern,Design wireframes and prototypes using Figma and Adobe XD.,Figma;Adobe XD;Design,Bengaluru,1 month,MarketCo
+143,Data Analyst Intern,Perform data cleaning and visualization using Python and Excel.,Python;SQL;Excel,Mumbai,5 weeks,CodeCrafters
+144,Machine Learning Intern,Work on predictive analytics using Python and scikit-learn.,Python;Machine Learning;Statistics,Mumbai,6 months,MobileWorks
+145,Data Analyst Intern,Perform data cleaning and visualization using Python and Excel.,Python;SQL;Excel,Pune,4 months,FinLabs
+146,BCA Project Intern,"Help with college project using PHP, MySQL.",PHP;MySQL;HTML;CSS,Delhi,1 month,DesignStudios
+147,Marketing Intern,Manage social media and content creation.,Communication;Marketing;Social Media,Noida,2 months,Tech Startup
+148,Android Developer Intern,Build Android apps with Java/Kotlin.,Java;Kotlin;APIs,Hyderabad,5 weeks,CodeCrafters
+149,Machine Learning Intern,Work on predictive analytics using Python and scikit-learn.,Python;Machine Learning;Statistics,Bhubaneswar,3 months,WebSolutions
+150,Data Science Intern,Work on ML models and data analysis.,Python;SQL;Machine Learning,Pune,6 months,MarketCo
+151,UI/UX Design Intern,Design wireframes and prototypes using Figma and Adobe XD.,Figma;Adobe XD;Design,Mumbai,6 months,MobileWorks
+152,Android Developer Intern,Build Android apps with Java/Kotlin.,Java;Kotlin;APIs,Delhi,6 months,DesignStudios
+153,Java Backend Intern,Develop REST APIs and services using Java Spring Boot.,Java;Spring;REST API,Bengaluru,5 weeks,FinLabs
+154,Android Developer Intern,Build Android apps with Java/Kotlin.,Java;Kotlin;APIs,Bengaluru,1 month,Analytics Hub
+155,Data Science Intern,Work on ML models and data analysis.,Python;SQL;Machine Learning,Goa,6 months,Analytics Hub
+156,BCA Project Intern,"Help with college project using PHP, MySQL.",PHP;MySQL;HTML;CSS,Pune,3 months,FinLabs
+157,Android Developer Intern,Build Android apps with Java/Kotlin.,Java;Kotlin;APIs,Jaipur,4 months,WebSolutions
+158,UI/UX Design Intern,Design wireframes and prototypes using Figma and Adobe XD.,Figma;Adobe XD;Design,Bengaluru,1 month,DataWorks
+159,Data Science Intern,Work on ML models and data analysis.,Python;SQL;Machine Learning,Hyderabad,4 months,Analytics Hub
+160,Data Analyst Intern,Perform data cleaning and visualization using Python and Excel.,Python;SQL;Excel,Chennai,3 months,MarketCo
+161,Machine Learning Intern,Work on predictive analytics using Python and scikit-learn.,Python;Machine Learning;Statistics,Bhubaneswar,2 months,Tech Startup
+162,Java Backend Intern,Develop REST APIs and services using Java Spring Boot.,Java;Spring;REST API,Ahmedabad,5 weeks,DataWorks
+163,Android Developer Intern,Build Android apps with Java/Kotlin.,Java;Kotlin;APIs,Noida,1 month,Tech Startup
+164,Frontend React Intern,Create responsive UI with React and TailwindCSS.,HTML;CSS;JavaScript;React,Goa,4 months,Analytics Hub
+165,UI/UX Design Intern,Design wireframes and prototypes using Figma and Adobe XD.,Figma;Adobe XD;Design,Dehradun,2 months,CodeCrafters
+166,Java Backend Intern,Develop REST APIs and services using Java Spring Boot.,Java;Spring;REST API,Chennai,5 weeks,WebSolutions
+167,Frontend React Intern,Create responsive UI with React and TailwindCSS.,HTML;CSS;JavaScript;React,Mumbai,2 months,MobileWorks
+168,Frontend React Intern,Create responsive UI with React and TailwindCSS.,HTML;CSS;JavaScript;React,Jaipur,1 month,College Labs
+169,Android Developer Intern,Build Android apps with Java/Kotlin.,Java;Kotlin;APIs,Gurgaon,2 months,MobileWorks
+170,Data Science Intern,Work on ML models and data analysis.,Python;SQL;Machine Learning,Ahmedabad,5 weeks,DesignStudios
+171,Data Analyst Intern,Perform data cleaning and visualization using Python and Excel.,Python;SQL;Excel,Bengaluru,2 months,College Labs
+172,UI/UX Design Intern,Design wireframes and prototypes using Figma and Adobe XD.,Figma;Adobe XD;Design,Chennai,1 month,Tech Startup
+173,Data Analyst Intern,Perform data cleaning and visualization using Python and Excel.,Python;SQL;Excel,Bengaluru,6 months,FinLabs
+174,Web Development Intern,Front-end using React and backend Node.js.,HTML;CSS;JavaScript;React;Node,Kolkata,5 weeks,MobileWorks
+175,Data Analyst Intern,Perform data cleaning and visualization using Python and Excel.,Python;SQL;Excel,Lucknow,4 months,DataWorks
+176,Java Backend Intern,Develop REST APIs and services using Java Spring Boot.,Java;Spring;REST API,Noida,1 month,MarketCo
+177,Java Backend Intern,Develop REST APIs and services using Java Spring Boot.,Java;Spring;REST API,Goa,5 weeks,Analytics Hub
+178,Frontend React Intern,Create responsive UI with React and TailwindCSS.,HTML;CSS;JavaScript;React,Lucknow,2 months,Tech Startup
+179,Frontend React Intern,Create responsive UI with React and TailwindCSS.,HTML;CSS;JavaScript;React,Noida,3 months,DataWorks
+180,Machine Learning Intern,Work on predictive analytics using Python and scikit-learn.,Python;Machine Learning;Statistics,Goa,4 months,MarketCo
+181,Frontend React Intern,Create responsive UI with React and TailwindCSS.,HTML;CSS;JavaScript;React,Kolkata,2 months,Tech Startup
+182,Web Development Intern,Front-end using React and backend Node.js.,HTML;CSS;JavaScript;React;Node,Noida,6 months,FinLabs
+183,Web Development Intern,Front-end using React and backend Node.js.,HTML;CSS;JavaScript;React;Node,Ahmedabad,2 months,Analytics Hub
+184,UI/UX Design Intern,Design wireframes and prototypes using Figma and Adobe XD.,Figma;Adobe XD;Design,Kolkata,5 weeks,MobileWorks
+185,Data Analyst Intern,Perform data cleaning and visualization using Python and Excel.,Python;SQL;Excel,Mumbai,2 months,Analytics Hub
+186,Java Backend Intern,Develop REST APIs and services using Java Spring Boot.,Java;Spring;REST API,Goa,5 weeks,College Labs
+187,Frontend React Intern,Create responsive UI with React and TailwindCSS.,HTML;CSS;JavaScript;React,Kolkata,1 month,College Labs
+188,Web Development Intern,Front-end using React and backend Node.js.,HTML;CSS;JavaScript;React;Node,Jaipur,3 months,DataWorks
+189,Java Backend Intern,Develop REST APIs and services using Java Spring Boot.,Java;Spring;REST API,Gurgaon,4 months,FinLabs
+190,Marketing Intern,Manage social media and content creation.,Communication;Marketing;Social Media,Gurgaon,5 weeks,Analytics Hub
+191,UI/UX Design Intern,Design wireframes and prototypes using Figma and Adobe XD.,Figma;Adobe XD;Design,Kolkata,5 weeks,WebSolutions
+192,Android Developer Intern,Build Android apps with Java/Kotlin.,Java;Kotlin;APIs,Gurgaon,5 weeks,Analytics Hub
+193,Web Development Intern,Front-end using React and backend Node.js.,HTML;CSS;JavaScript;React;Node,Bengaluru,4 months,DesignStudios
+194,Data Science Intern,Work on ML models and data analysis.,Python;SQL;Machine Learning,Delhi,1 month,MarketCo
+195,UI/UX Design Intern,Design wireframes and prototypes using Figma and Adobe XD.,Figma;Adobe XD;Design,Noida,2 months,College Labs
+196,Marketing Intern,Manage social media and content creation.,Communication;Marketing;Social Media,Gurgaon,5 weeks,FinLabs
+197,Machine Learning Intern,Work on predictive analytics using Python and scikit-learn.,Python;Machine Learning;Statistics,Kolkata,5 weeks,WebSolutions
+198,Marketing Intern,Manage social media and content creation.,Communication;Marketing;Social Media,Lucknow,4 months,CodeCrafters
+199,UI/UX Design Intern,Design wireframes and prototypes using Figma and Adobe XD.,Figma;Adobe XD;Design,Hyderabad,4 months,DataWorks
+200,Marketing Intern,Manage social media and content creation.,Communication;Marketing;Social Media,Bengaluru,6 months,Analytics Hub
+201,Frontend React Intern,Create responsive UI with React and TailwindCSS.,HTML;CSS;JavaScript;React,Mumbai,1 month,Tech Startup
+202,UI/UX Design Intern,Design wireframes and prototypes using Figma and Adobe XD.,Figma;Adobe XD;Design,Jaipur,3 months,Tech Startup
+203,UI/UX Design Intern,Design wireframes and prototypes using Figma and Adobe XD.,Figma;Adobe XD;Design,Bengaluru,4 months,DataWorks
+204,Java Backend Intern,Develop REST APIs and services using Java Spring Boot.,Java;Spring;REST API,Goa,1 month,Analytics Hub
+205,Web Development Intern,Front-end using React and backend Node.js.,HTML;CSS;JavaScript;React;Node,Chennai,6 months,DesignStudios
+206,Data Science Intern,Work on ML models and data analysis.,Python;SQL;Machine Learning,Lucknow,6 months,Analytics Hub
+207,Machine Learning Intern,Work on predictive analytics using Python and scikit-learn.,Python;Machine Learning;Statistics,Mumbai,3 months,DataWorks
+208,Web Development Intern,Front-end using React and backend Node.js.,HTML;CSS;JavaScript;React;Node,Goa,4 months,DesignStudios
+209,Marketing Intern,Manage social media and content creation.,Communication;Marketing;Social Media,Lucknow,2 months,CodeCrafters
+210,BCA Project Intern,"Help with college project using PHP, MySQL.",PHP;MySQL;HTML;CSS,Bhubaneswar,2 months,Analytics Hub
+211,Java Backend Intern,Develop REST APIs and services using Java Spring Boot.,Java;Spring;REST API,Mumbai,2 months,DesignStudios
+212,UI/UX Design Intern,Design wireframes and prototypes using Figma and Adobe XD.,Figma;Adobe XD;Design,Ahmedabad,2 months,MobileWorks
+213,Marketing Intern,Manage social media and content creation.,Communication;Marketing;Social Media,Gurgaon,3 months,Analytics Hub
+214,Web Development Intern,Front-end using React and backend Node.js.,HTML;CSS;JavaScript;React;Node,Jaipur,5 weeks,Tech Startup
+215,Android Developer Intern,Build Android apps with Java/Kotlin.,Java;Kotlin;APIs,Bhubaneswar,4 months,DesignStudios
+216,UI/UX Design Intern,Design wireframes and prototypes using Figma and Adobe XD.,Figma;Adobe XD;Design,Delhi,6 months,Analytics Hub
+217,Data Science Intern,Work on ML models and data analysis.,Python;SQL;Machine Learning,Goa,2 months,WebSolutions
+218,Java Backend Intern,Develop REST APIs and services using Java Spring Boot.,Java;Spring;REST API,Lucknow,5 weeks,MobileWorks
+219,Web Development Intern,Front-end using React and backend Node.js.,HTML;CSS;JavaScript;React;Node,Delhi,3 months,DesignStudios
+220,Data Analyst Intern,Perform data cleaning and visualization using Python and Excel.,Python;SQL;Excel,Gurgaon,2 months,FinLabs
+221,Data Analyst Intern,Perform data cleaning and visualization using Python and Excel.,Python;SQL;Excel,Lucknow,5 weeks,Tech Startup
+222,Frontend React Intern,Create responsive UI with React and TailwindCSS.,HTML;CSS;JavaScript;React,Chennai,4 months,Tech Startup
+223,Machine Learning Intern,Work on predictive analytics using Python and scikit-learn.,Python;Machine Learning;Statistics,Pune,1 month,Analytics Hub
+224,Java Backend Intern,Develop REST APIs and services using Java Spring Boot.,Java;Spring;REST API,Gurgaon,2 months,College Labs
+225,UI/UX Design Intern,Design wireframes and prototypes using Figma and Adobe XD.,Figma;Adobe XD;Design,Bhubaneswar,2 months,MarketCo
+226,UI/UX Design Intern,Design wireframes and prototypes using Figma and Adobe XD.,Figma;Adobe XD;Design,Lucknow,3 months,Analytics Hub
+227,Java Backend Intern,Develop REST APIs and services using Java Spring Boot.,Java;Spring;REST API,Bhubaneswar,3 months,FinLabs
+228,Android Developer Intern,Build Android apps with Java/Kotlin.,Java;Kotlin;APIs,Gurgaon,6 months,FinLabs
+229,Web Development Intern,Front-end using React and backend Node.js.,HTML;CSS;JavaScript;React;Node,Mumbai,5 weeks,DesignStudios
+230,Web Development Intern,Front-end using React and backend Node.js.,HTML;CSS;JavaScript;React;Node,Delhi,5 weeks,WebSolutions
+231,Java Backend Intern,Develop REST APIs and services using Java Spring Boot.,Java;Spring;REST API,Chennai,5 weeks,MarketCo
+232,Frontend React Intern,Create responsive UI with React and TailwindCSS.,HTML;CSS;JavaScript;React,Hyderabad,6 months,DesignStudios
+233,Java Backend Intern,Develop REST APIs and services using Java Spring Boot.,Java;Spring;REST API,Hyderabad,2 months,FinLabs
+234,Data Analyst Intern,Perform data cleaning and visualization using Python and Excel.,Python;SQL;Excel,Bhubaneswar,5 weeks,CodeCrafters
+235,Android Developer Intern,Build Android apps with Java/Kotlin.,Java;Kotlin;APIs,Dehradun,2 months,WebSolutions
+236,Marketing Intern,Manage social media and content creation.,Communication;Marketing;Social Media,Lucknow,2 months,DataWorks
+237,Android Developer Intern,Build Android apps with Java/Kotlin.,Java;Kotlin;APIs,Noida,1 month,MobileWorks
+238,Frontend React Intern,Create responsive UI with React and TailwindCSS.,HTML;CSS;JavaScript;React,Dehradun,4 months,CodeCrafters
+239,Marketing Intern,Manage social media and content creation.,Communication;Marketing;Social Media,Pune,4 months,MarketCo
+240,Web Development Intern,Front-end using React and backend Node.js.,HTML;CSS;JavaScript;React;Node,Lucknow,3 months,MarketCo
+241,Frontend React Intern,Create responsive UI with React and TailwindCSS.,HTML;CSS;JavaScript;React,Dehradun,1 month,Analytics Hub
+242,BCA Project Intern,"Help with college project using PHP, MySQL.",PHP;MySQL;HTML;CSS,Noida,6 months,FinLabs
+243,BCA Project Intern,"Help with college project using PHP, MySQL.",PHP;MySQL;HTML;CSS,Dehradun,3 months,MobileWorks
+244,Java Backend Intern,Develop REST APIs and services using Java Spring Boot.,Java;Spring;REST API,Chennai,5 weeks,DesignStudios
+245,Frontend React Intern,Create responsive UI with React and TailwindCSS.,HTML;CSS;JavaScript;React,Dehradun,6 months,DesignStudios
+246,Marketing Intern,Manage social media and content creation.,Communication;Marketing;Social Media,Delhi,4 months,Tech Startup
+247,BCA Project Intern,"Help with college project using PHP, MySQL.",PHP;MySQL;HTML;CSS,Dehradun,4 months,CodeCrafters
+248,UI/UX Design Intern,Design wireframes and prototypes using Figma and Adobe XD.,Figma;Adobe XD;Design,Hyderabad,2 months,MobileWorks
+249,Data Analyst Intern,Perform data cleaning and visualization using Python and Excel.,Python;SQL;Excel,Dehradun,3 months,WebSolutions
+250,Java Backend Intern,Develop REST APIs and services using Java Spring Boot.,Java;Spring;REST API,Goa,4 months,WebSolutions
+251,UI/UX Design Intern,Design wireframes and prototypes using Figma and Adobe XD.,Figma;Adobe XD;Design,Lucknow,3 months,FinLabs
+252,Marketing Intern,Manage social media and content creation.,Communication;Marketing;Social Media,Jaipur,4 months,College Labs
+253,Java Backend Intern,Develop REST APIs and services using Java Spring Boot.,Java;Spring;REST API,Jaipur,1 month,MobileWorks
+254,Android Developer Intern,Build Android apps with Java/Kotlin.,Java;Kotlin;APIs,Gurgaon,1 month,WebSolutions
+255,Android Developer Intern,Build Android apps with Java/Kotlin.,Java;Kotlin;APIs,Mumbai,6 months,Tech Startup
+256,UI/UX Design Intern,Design wireframes and prototypes using Figma and Adobe XD.,Figma;Adobe XD;Design,Lucknow,5 weeks,CodeCrafters
+257,Java Backend Intern,Develop REST APIs and services using Java Spring Boot.,Java;Spring;REST API,Jaipur,6 months,MarketCo
+258,UI/UX Design Intern,Design wireframes and prototypes using Figma and Adobe XD.,Figma;Adobe XD;Design,Dehradun,6 months,Tech Startup
+259,Machine Learning Intern,Work on predictive analytics using Python and scikit-learn.,Python;Machine Learning;Statistics,Bhubaneswar,4 months,CodeCrafters
+260,Machine Learning Intern,Work on predictive analytics using Python and scikit-learn.,Python;Machine Learning;Statistics,Hyderabad,5 weeks,DesignStudios
+261,UI/UX Design Intern,Design wireframes and prototypes using Figma and Adobe XD.,Figma;Adobe XD;Design,Noida,3 months,CodeCrafters
+262,UI/UX Design Intern,Design wireframes and prototypes using Figma and Adobe XD.,Figma;Adobe XD;Design,Bhubaneswar,5 weeks,College Labs
+263,Marketing Intern,Manage social media and content creation.,Communication;Marketing;Social Media,Goa,5 weeks,MobileWorks
+264,UI/UX Design Intern,Design wireframes and prototypes using Figma and Adobe XD.,Figma;Adobe XD;Design,Dehradun,2 months,Tech Startup
+265,BCA Project Intern,"Help with college project using PHP, MySQL.",PHP;MySQL;HTML;CSS,Bhubaneswar,5 weeks,Analytics Hub
+266,Data Analyst Intern,Perform data cleaning and visualization using Python and Excel.,Python;SQL;Excel,Noida,2 months,College Labs
+267,Data Science Intern,Work on ML models and data analysis.,Python;SQL;Machine Learning,Jaipur,3 months,WebSolutions
+268,Data Analyst Intern,Perform data cleaning and visualization using Python and Excel.,Python;SQL;Excel,Pune,6 months,Tech Startup
+269,BCA Project Intern,"Help with college project using PHP, MySQL.",PHP;MySQL;HTML;CSS,Jaipur,1 month,CodeCrafters
+270,Frontend React Intern,Create responsive UI with React and TailwindCSS.,HTML;CSS;JavaScript;React,Kolkata,5 weeks,FinLabs
+271,Android Developer Intern,Build Android apps with Java/Kotlin.,Java;Kotlin;APIs,Delhi,5 weeks,CodeCrafters
+272,Data Science Intern,Work on ML models and data analysis.,Python;SQL;Machine Learning,Jaipur,1 month,MobileWorks
+273,Android Developer Intern,Build Android apps with Java/Kotlin.,Java;Kotlin;APIs,Ahmedabad,1 month,Tech Startup
+274,Machine Learning Intern,Work on predictive analytics using Python and scikit-learn.,Python;Machine Learning;Statistics,Noida,6 months,FinLabs
+275,Java Backend Intern,Develop REST APIs and services using Java Spring Boot.,Java;Spring;REST API,Bhubaneswar,6 months,Tech Startup
+276,Frontend React Intern,Create responsive UI with React and TailwindCSS.,HTML;CSS;JavaScript;React,Pune,3 months,WebSolutions
+277,Marketing Intern,Manage social media and content creation.,Communication;Marketing;Social Media,Chennai,6 months,Tech Startup
+278,Frontend React Intern,Create responsive UI with React and TailwindCSS.,HTML;CSS;JavaScript;React,Hyderabad,2 months,CodeCrafters
+279,UI/UX Design Intern,Design wireframes and prototypes using Figma and Adobe XD.,Figma;Adobe XD;Design,Kolkata,5 weeks,MobileWorks
+280,Frontend React Intern,Create responsive UI with React and TailwindCSS.,HTML;CSS;JavaScript;React,Bhubaneswar,5 weeks,DataWorks
+281,Data Analyst Intern,Perform data cleaning and visualization using Python and Excel.,Python;SQL;Excel,Noida,4 months,WebSolutions
+282,Machine Learning Intern,Work on predictive analytics using Python and scikit-learn.,Python;Machine Learning;Statistics,Chennai,4 months,Tech Startup
+283,UI/UX Design Intern,Design wireframes and prototypes using Figma and Adobe XD.,Figma;Adobe XD;Design,Delhi,2 months,College Labs
+284,Java Backend Intern,Develop REST APIs and services using Java Spring Boot.,Java;Spring;REST API,Ahmedabad,5 weeks,MobileWorks
+285,Android Developer Intern,Build Android apps with Java/Kotlin.,Java;Kotlin;APIs,Jaipur,4 months,MobileWorks
+286,Java Backend Intern,Develop REST APIs and services using Java Spring Boot.,Java;Spring;REST API,Goa,6 months,MarketCo
+287,Data Science Intern,Work on ML models and data analysis.,Python;SQL;Machine Learning,Dehradun,3 months,Analytics Hub
+288,Machine Learning Intern,Work on predictive analytics using Python and scikit-learn.,Python;Machine Learning;Statistics,Ahmedabad,4 months,CodeCrafters
+289,Data Science Intern,Work on ML models and data analysis.,Python;SQL;Machine Learning,Noida,3 months,College Labs
+290,BCA Project Intern,"Help with college project using PHP, MySQL.",PHP;MySQL;HTML;CSS,Delhi,6 months,WebSolutions
+291,Frontend React Intern,Create responsive UI with React and TailwindCSS.,HTML;CSS;JavaScript;React,Bhubaneswar,4 months,CodeCrafters
+292,Java Backend Intern,Develop REST APIs and services using Java Spring Boot.,Java;Spring;REST API,Pune,3 months,Analytics Hub
+293,UI/UX Design Intern,Design wireframes and prototypes using Figma and Adobe XD.,Figma;Adobe XD;Design,Noida,2 months,College Labs
+294,Data Analyst Intern,Perform data cleaning and visualization using Python and Excel.,Python;SQL;Excel,Ahmedabad,2 months,Tech Startup
+295,Frontend React Intern,Create responsive UI with React and TailwindCSS.,HTML;CSS;JavaScript;React,Hyderabad,1 month,College Labs
+296,Data Analyst Intern,Perform data cleaning and visualization using Python and Excel.,Python;SQL;Excel,Gurgaon,3 months,CodeCrafters
+297,Data Science Intern,Work on ML models and data analysis.,Python;SQL;Machine Learning,Noida,2 months,WebSolutions
+298,Marketing Intern,Manage social media and content creation.,Communication;Marketing;Social Media,Goa,6 months,WebSolutions
+299,Data Science Intern,Work on ML models and data analysis.,Python;SQL;Machine Learning,Mumbai,2 months,MarketCo
+300,Web Development Intern,Front-end using React and backend Node.js.,HTML;CSS;JavaScript;React;Node,Gurgaon,3 months,DesignStudios
+301,Marketing Intern,Manage social media and content creation.,Communication;Marketing;Social Media,Gurgaon,1 month,College Labs
+302,Machine Learning Intern,Work on predictive analytics using Python and scikit-learn.,Python;Machine Learning;Statistics,Hyderabad,2 months,Analytics Hub
+303,Frontend React Intern,Create responsive UI with React and TailwindCSS.,HTML;CSS;JavaScript;React,Dehradun,3 months,CodeCrafters
+304,Data Analyst Intern,Perform data cleaning and visualization using Python and Excel.,Python;SQL;Excel,Goa,3 months,DataWorks
+305,Marketing Intern,Manage social media and content creation.,Communication;Marketing;Social Media,Ahmedabad,2 months,DesignStudios
+306,Web Development Intern,Front-end using React and backend Node.js.,HTML;CSS;JavaScript;React;Node,Lucknow,1 month,College Labs
+307,Data Analyst Intern,Perform data cleaning and visualization using Python and Excel.,Python;SQL;Excel,Chennai,1 month,Analytics Hub
+308,Machine Learning Intern,Work on predictive analytics using Python and scikit-learn.,Python;Machine Learning;Statistics,Noida,6 months,CodeCrafters
+309,BCA Project Intern,"Help with college project using PHP, MySQL.",PHP;MySQL;HTML;CSS,Dehradun,3 months,CodeCrafters
+310,Web Development Intern,Front-end using React and backend Node.js.,HTML;CSS;JavaScript;React;Node,Delhi,4 months,DesignStudios
+311,Machine Learning Intern,Work on predictive analytics using Python and scikit-learn.,Python;Machine Learning;Statistics,Ahmedabad,6 months,College Labs
+312,Data Analyst Intern,Perform data cleaning and visualization using Python and Excel.,Python;SQL;Excel,Lucknow,1 month,CodeCrafters
+313,Web Development Intern,Front-end using React and backend Node.js.,HTML;CSS;JavaScript;React;Node,Pune,3 months,DesignStudios
+314,UI/UX Design Intern,Design wireframes and prototypes using Figma and Adobe XD.,Figma;Adobe XD;Design,Lucknow,3 months,CodeCrafters
+315,Web Development Intern,Front-end using React and backend Node.js.,HTML;CSS;JavaScript;React;Node,Ahmedabad,4 months,Tech Startup
+316,Frontend React Intern,Create responsive UI with React and TailwindCSS.,HTML;CSS;JavaScript;React,Noida,3 months,FinLabs
+317,Data Science Intern,Work on ML models and data analysis.,Python;SQL;Machine Learning,Ahmedabad,2 months,MobileWorks
+318,Frontend React Intern,Create responsive UI with React and TailwindCSS.,HTML;CSS;JavaScript;React,Mumbai,3 months,Analytics Hub
+319,Data Analyst Intern,Perform data cleaning and visualization using Python and Excel.,Python;SQL;Excel,Mumbai,3 months,DesignStudios
+320,Java Backend Intern,Develop REST APIs and services using Java Spring Boot.,Java;Spring;REST API,Kolkata,1 month,CodeCrafters
+321,Data Science Intern,Work on ML models and data analysis.,Python;SQL;Machine Learning,Gurgaon,2 months,MobileWorks
+322,UI/UX Design Intern,Design wireframes and prototypes using Figma and Adobe XD.,Figma;Adobe XD;Design,Hyderabad,2 months,MobileWorks
+323,Machine Learning Intern,Work on predictive analytics using Python and scikit-learn.,Python;Machine Learning;Statistics,Noida,3 months,Analytics Hub
+324,Data Analyst Intern,Perform data cleaning and visualization using Python and Excel.,Python;SQL;Excel,Bengaluru,3 months,Analytics Hub
+325,UI/UX Design Intern,Design wireframes and prototypes using Figma and Adobe XD.,Figma;Adobe XD;Design,Dehradun,4 months,MarketCo
+326,Marketing Intern,Manage social media and content creation.,Communication;Marketing;Social Media,Bhubaneswar,2 months,DesignStudios
+327,Data Analyst Intern,Perform data cleaning and visualization using Python and Excel.,Python;SQL;Excel,Chennai,1 month,WebSolutions
+328,Android Developer Intern,Build Android apps with Java/Kotlin.,Java;Kotlin;APIs,Delhi,5 weeks,MarketCo
+329,Machine Learning Intern,Work on predictive analytics using Python and scikit-learn.,Python;Machine Learning;Statistics,Goa,1 month,CodeCrafters
+330,Java Backend Intern,Develop REST APIs and services using Java Spring Boot.,Java;Spring;REST API,Hyderabad,1 month,DesignStudios
+331,Web Development Intern,Front-end using React and backend Node.js.,HTML;CSS;JavaScript;React;Node,Mumbai,1 month,Analytics Hub
+332,Android Developer Intern,Build Android apps with Java/Kotlin.,Java;Kotlin;APIs,Lucknow,5 weeks,Tech Startup
+333,Frontend React Intern,Create responsive UI with React and TailwindCSS.,HTML;CSS;JavaScript;React,Ahmedabad,6 months,DataWorks
+334,UI/UX Design Intern,Design wireframes and prototypes using Figma and Adobe XD.,Figma;Adobe XD;Design,Bengaluru,4 months,DesignStudios
+335,BCA Project Intern,"Help with college project using PHP, MySQL.",PHP;MySQL;HTML;CSS,Delhi,1 month,College Labs
+336,Android Developer Intern,Build Android apps with Java/Kotlin.,Java;Kotlin;APIs,Ahmedabad,6 months,DataWorks
+337,Data Analyst Intern,Perform data cleaning and visualization using Python and Excel.,Python;SQL;Excel,Gurgaon,6 months,DataWorks
+338,UI/UX Design Intern,Design wireframes and prototypes using Figma and Adobe XD.,Figma;Adobe XD;Design,Bengaluru,3 months,Tech Startup
+339,Android Developer Intern,Build Android apps with Java/Kotlin.,Java;Kotlin;APIs,Dehradun,2 months,MobileWorks
+340,Web Development Intern,Front-end using React and backend Node.js.,HTML;CSS;JavaScript;React;Node,Hyderabad,2 months,MobileWorks
+341,Web Development Intern,Front-end using React and backend Node.js.,HTML;CSS;JavaScript;React;Node,Pune,2 months,Analytics Hub
+342,UI/UX Design Intern,Design wireframes and prototypes using Figma and Adobe XD.,Figma;Adobe XD;Design,Bhubaneswar,5 weeks,MarketCo
+343,Web Development Intern,Front-end using React and backend Node.js.,HTML;CSS;JavaScript;React;Node,Lucknow,6 months,DataWorks
+344,Marketing Intern,Manage social media and content creation.,Communication;Marketing;Social Media,Jaipur,2 months,WebSolutions
+345,Data Analyst Intern,Perform data cleaning and visualization using Python and Excel.,Python;SQL;Excel,Bhubaneswar,5 weeks,CodeCrafters
+346,Frontend React Intern,Create responsive UI with React and TailwindCSS.,HTML;CSS;JavaScript;React,Lucknow,1 month,College Labs
+347,Android Developer Intern,Build Android apps with Java/Kotlin.,Java;Kotlin;APIs,Pune,1 month,MarketCo
+348,BCA Project Intern,"Help with college project using PHP, MySQL.",PHP;MySQL;HTML;CSS,Goa,3 months,DataWorks
+349,BCA Project Intern,"Help with college project using PHP, MySQL.",PHP;MySQL;HTML;CSS,Kolkata,4 months,Analytics Hub
+350,Web Development Intern,Front-end using React and backend Node.js.,HTML;CSS;JavaScript;React;Node,Bhubaneswar,3 months,College Labs
+351,Web Development Intern,Front-end using React and backend Node.js.,HTML;CSS;JavaScript;React;Node,Bengaluru,4 months,Analytics Hub
+352,Web Development Intern,Front-end using React and backend Node.js.,HTML;CSS;JavaScript;React;Node,Pune,6 months,CodeCrafters
+353,Machine Learning Intern,Work on predictive analytics using Python and scikit-learn.,Python;Machine Learning;Statistics,Ahmedabad,3 months,Tech Startup
+354,Marketing Intern,Manage social media and content creation.,Communication;Marketing;Social Media,Pune,6 months,Analytics Hub
+355,Web Development Intern,Front-end using React and backend Node.js.,HTML;CSS;JavaScript;React;Node,Dehradun,5 weeks,DesignStudios
+356,Data Analyst Intern,Perform data cleaning and visualization using Python and Excel.,Python;SQL;Excel,Mumbai,4 months,FinLabs
+357,Android Developer Intern,Build Android apps with Java/Kotlin.,Java;Kotlin;APIs,Delhi,5 weeks,DataWorks
+358,Frontend React Intern,Create responsive UI with React and TailwindCSS.,HTML;CSS;JavaScript;React,Kolkata,4 months,DesignStudios
+359,Machine Learning Intern,Work on predictive analytics using Python and scikit-learn.,Python;Machine Learning;Statistics,Noida,4 months,College Labs
+360,UI/UX Design Intern,Design wireframes and prototypes using Figma and Adobe XD.,Figma;Adobe XD;Design,Delhi,2 months,FinLabs
+361,Marketing Intern,Manage social media and content creation.,Communication;Marketing;Social Media,Lucknow,6 months,CodeCrafters
+362,Data Analyst Intern,Perform data cleaning and visualization using Python and Excel.,Python;SQL;Excel,Mumbai,3 months,MarketCo
+363,BCA Project Intern,"Help with college project using PHP, MySQL.",PHP;MySQL;HTML;CSS,Chennai,5 weeks,CodeCrafters
+364,UI/UX Design Intern,Design wireframes and prototypes using Figma and Adobe XD.,Figma;Adobe XD;Design,Pune,1 month,MobileWorks
+365,Data Science Intern,Work on ML models and data analysis.,Python;SQL;Machine Learning,Kolkata,3 months,CodeCrafters
+366,Java Backend Intern,Develop REST APIs and services using Java Spring Boot.,Java;Spring;REST API,Jaipur,6 months,MarketCo
+367,Data Science Intern,Work on ML models and data analysis.,Python;SQL;Machine Learning,Goa,2 months,MarketCo
+368,Android Developer Intern,Build Android apps with Java/Kotlin.,Java;Kotlin;APIs,Jaipur,6 months,CodeCrafters
+369,Android Developer Intern,Build Android apps with Java/Kotlin.,Java;Kotlin;APIs,Lucknow,5 weeks,DesignStudios
+370,Data Science Intern,Work on ML models and data analysis.,Python;SQL;Machine Learning,Pune,6 months,DesignStudios
+371,Frontend React Intern,Create responsive UI with React and TailwindCSS.,HTML;CSS;JavaScript;React,Noida,1 month,CodeCrafters
+372,Data Science Intern,Work on ML models and data analysis.,Python;SQL;Machine Learning,Dehradun,2 months,College Labs
+373,BCA Project Intern,"Help with college project using PHP, MySQL.",PHP;MySQL;HTML;CSS,Gurgaon,4 months,WebSolutions
+374,Java Backend Intern,Develop REST APIs and services using Java Spring Boot.,Java;Spring;REST API,Chennai,1 month,College Labs
+375,UI/UX Design Intern,Design wireframes and prototypes using Figma and Adobe XD.,Figma;Adobe XD;Design,Pune,5 weeks,MobileWorks
+376,Marketing Intern,Manage social media and content creation.,Communication;Marketing;Social Media,Gurgaon,3 months,College Labs
+377,Web Development Intern,Front-end using React and backend Node.js.,HTML;CSS;JavaScript;React;Node,Jaipur,6 months,DataWorks
+378,Data Analyst Intern,Perform data cleaning and visualization using Python and Excel.,Python;SQL;Excel,Jaipur,1 month,MarketCo
+379,Frontend React Intern,Create responsive UI with React and TailwindCSS.,HTML;CSS;JavaScript;React,Ahmedabad,6 months,DataWorks
+380,Machine Learning Intern,Work on predictive analytics using Python and scikit-learn.,Python;Machine Learning;Statistics,Ahmedabad,3 months,CodeCrafters
+381,Web Development Intern,Front-end using React and backend Node.js.,HTML;CSS;JavaScript;React;Node,Ahmedabad,1 month,Tech Startup
+382,Marketing Intern,Manage social media and content creation.,Communication;Marketing;Social Media,Bhubaneswar,4 months,FinLabs
+383,Machine Learning Intern,Work on predictive analytics using Python and scikit-learn.,Python;Machine Learning;Statistics,Goa,1 month,DesignStudios
+384,BCA Project Intern,"Help with college project using PHP, MySQL.",PHP;MySQL;HTML;CSS,Bhubaneswar,6 months,MarketCo
+385,Frontend React Intern,Create responsive UI with React and TailwindCSS.,HTML;CSS;JavaScript;React,Pune,5 weeks,College Labs
+386,Android Developer Intern,Build Android apps with Java/Kotlin.,Java;Kotlin;APIs,Lucknow,1 month,Tech Startup
+387,Java Backend Intern,Develop REST APIs and services using Java Spring Boot.,Java;Spring;REST API,Jaipur,3 months,Analytics Hub
+388,BCA Project Intern,"Help with college project using PHP, MySQL.",PHP;MySQL;HTML;CSS,Delhi,2 months,Analytics Hub
+389,Web Development Intern,Front-end using React and backend Node.js.,HTML;CSS;JavaScript;React;Node,Dehradun,4 months,MarketCo
+390,Marketing Intern,Manage social media and content creation.,Communication;Marketing;Social Media,Kolkata,3 months,MobileWorks
+391,Marketing Intern,Manage social media and content creation.,Communication;Marketing;Social Media,Mumbai,3 months,DataWorks
+392,Marketing Intern,Manage social media and content creation.,Communication;Marketing;Social Media,Goa,6 months,DesignStudios
+393,Frontend React Intern,Create responsive UI with React and TailwindCSS.,HTML;CSS;JavaScript;React,Delhi,3 months,Analytics Hub
+394,Java Backend Intern,Develop REST APIs and services using Java Spring Boot.,Java;Spring;REST API,Noida,1 month,Analytics Hub
+395,Marketing Intern,Manage social media and content creation.,Communication;Marketing;Social Media,Kolkata,6 months,WebSolutions
+396,Android Developer Intern,Build Android apps with Java/Kotlin.,Java;Kotlin;APIs,Delhi,3 months,DataWorks
+397,Java Backend Intern,Develop REST APIs and services using Java Spring Boot.,Java;Spring;REST API,Bengaluru,5 weeks,WebSolutions
+398,BCA Project Intern,"Help with college project using PHP, MySQL.",PHP;MySQL;HTML;CSS,Bhubaneswar,5 weeks,Tech Startup
+399,Web Development Intern,Front-end using React and backend Node.js.,HTML;CSS;JavaScript;React;Node,Bengaluru,4 months,FinLabs
+400,Java Backend Intern,Develop REST APIs and services using Java Spring Boot.,Java;Spring;REST API,Delhi,3 months,CodeCrafters
+401,Java Backend Intern,Develop REST APIs and services using Java Spring Boot.,Java;Spring;REST API,Lucknow,1 month,MobileWorks
+402,Web Development Intern,Front-end using React and backend Node.js.,HTML;CSS;JavaScript;React;Node,Mumbai,6 months,DataWorks
+403,UI/UX Design Intern,Design wireframes and prototypes using Figma and Adobe XD.,Figma;Adobe XD;Design,Bhubaneswar,1 month,FinLabs
+404,Data Science Intern,Work on ML models and data analysis.,Python;SQL;Machine Learning,Hyderabad,4 months,DesignStudios
+405,Android Developer Intern,Build Android apps with Java/Kotlin.,Java;Kotlin;APIs,Dehradun,4 months,FinLabs
+406,Android Developer Intern,Build Android apps with Java/Kotlin.,Java;Kotlin;APIs,Chennai,4 months,MobileWorks
+407,Frontend React Intern,Create responsive UI with React and TailwindCSS.,HTML;CSS;JavaScript;React,Hyderabad,6 months,CodeCrafters
+408,Data Analyst Intern,Perform data cleaning and visualization using Python and Excel.,Python;SQL;Excel,Hyderabad,2 months,MobileWorks
+409,Marketing Intern,Manage social media and content creation.,Communication;Marketing;Social Media,Pune,4 months,DataWorks
+410,Marketing Intern,Manage social media and content creation.,Communication;Marketing;Social Media,Bhubaneswar,4 months,DataWorks
+411,Web Development Intern,Front-end using React and backend Node.js.,HTML;CSS;JavaScript;React;Node,Bengaluru,5 weeks,MarketCo
+412,Java Backend Intern,Develop REST APIs and services using Java Spring Boot.,Java;Spring;REST API,Dehradun,2 months,CodeCrafters
+413,Frontend React Intern,Create responsive UI with React and TailwindCSS.,HTML;CSS;JavaScript;React,Ahmedabad,4 months,WebSolutions
+414,Android Developer Intern,Build Android apps with Java/Kotlin.,Java;Kotlin;APIs,Chennai,4 months,DesignStudios
+415,Web Development Intern,Front-end using React and backend Node.js.,HTML;CSS;JavaScript;React;Node,Dehradun,4 months,WebSolutions
+416,Data Analyst Intern,Perform data cleaning and visualization using Python and Excel.,Python;SQL;Excel,Mumbai,5 weeks,DataWorks
+417,UI/UX Design Intern,Design wireframes and prototypes using Figma and Adobe XD.,Figma;Adobe XD;Design,Bhubaneswar,6 months,WebSolutions
+418,BCA Project Intern,"Help with college project using PHP, MySQL.",PHP;MySQL;HTML;CSS,Kolkata,2 months,College Labs
+419,Frontend React Intern,Create responsive UI with React and TailwindCSS.,HTML;CSS;JavaScript;React,Gurgaon,6 months,DesignStudios
+420,BCA Project Intern,"Help with college project using PHP, MySQL.",PHP;MySQL;HTML;CSS,Pune,1 month,Tech Startup
+421,Machine Learning Intern,Work on predictive analytics using Python and scikit-learn.,Python;Machine Learning;Statistics,Hyderabad,3 months,CodeCrafters
+422,Marketing Intern,Manage social media and content creation.,Communication;Marketing;Social Media,Hyderabad,3 months,College Labs
+423,Android Developer Intern,Build Android apps with Java/Kotlin.,Java;Kotlin;APIs,Jaipur,6 months,College Labs
+424,Java Backend Intern,Develop REST APIs and services using Java Spring Boot.,Java;Spring;REST API,Ahmedabad,5 weeks,College Labs
+425,Android Developer Intern,Build Android apps with Java/Kotlin.,Java;Kotlin;APIs,Lucknow,2 months,DataWorks
+426,Android Developer Intern,Build Android apps with Java/Kotlin.,Java;Kotlin;APIs,Lucknow,4 months,FinLabs
+427,Android Developer Intern,Build Android apps with Java/Kotlin.,Java;Kotlin;APIs,Delhi,2 months,MarketCo
+428,Frontend React Intern,Create responsive UI with React and TailwindCSS.,HTML;CSS;JavaScript;React,Mumbai,6 months,College Labs
+429,BCA Project Intern,"Help with college project using PHP, MySQL.",PHP;MySQL;HTML;CSS,Mumbai,2 months,Tech Startup
+430,UI/UX Design Intern,Design wireframes and prototypes using Figma and Adobe XD.,Figma;Adobe XD;Design,Bhubaneswar,1 month,CodeCrafters
+431,Machine Learning Intern,Work on predictive analytics using Python and scikit-learn.,Python;Machine Learning;Statistics,Jaipur,5 weeks,MarketCo
+432,Marketing Intern,Manage social media and content creation.,Communication;Marketing;Social Media,Mumbai,4 months,DesignStudios
+433,Android Developer Intern,Build Android apps with Java/Kotlin.,Java;Kotlin;APIs,Bhubaneswar,5 weeks,MarketCo
+434,Machine Learning Intern,Work on predictive analytics using Python and scikit-learn.,Python;Machine Learning;Statistics,Delhi,4 months,Analytics Hub
+435,Machine Learning Intern,Work on predictive analytics using Python and scikit-learn.,Python;Machine Learning;Statistics,Ahmedabad,4 months,WebSolutions
+436,Data Analyst Intern,Perform data cleaning and visualization using Python and Excel.,Python;SQL;Excel,Delhi,5 weeks,Analytics Hub
+437,Frontend React Intern,Create responsive UI with React and TailwindCSS.,HTML;CSS;JavaScript;React,Goa,2 months,MarketCo
+438,Marketing Intern,Manage social media and content creation.,Communication;Marketing;Social Media,Hyderabad,1 month,CodeCrafters
+439,Data Analyst Intern,Perform data cleaning and visualization using Python and Excel.,Python;SQL;Excel,Delhi,6 months,Tech Startup
+440,Web Development Intern,Front-end using React and backend Node.js.,HTML;CSS;JavaScript;React;Node,Goa,1 month,Analytics Hub
+441,Data Analyst Intern,Perform data cleaning and visualization using Python and Excel.,Python;SQL;Excel,Hyderabad,4 months,College Labs
+442,Frontend React Intern,Create responsive UI with React and TailwindCSS.,HTML;CSS;JavaScript;React,Ahmedabad,1 month,DesignStudios
+443,Data Analyst Intern,Perform data cleaning and visualization using Python and Excel.,Python;SQL;Excel,Noida,6 months,College Labs
+444,Java Backend Intern,Develop REST APIs and services using Java Spring Boot.,Java;Spring;REST API,Delhi,2 months,FinLabs
+445,Java Backend Intern,Develop REST APIs and services using Java Spring Boot.,Java;Spring;REST API,Ahmedabad,4 months,MarketCo
+446,Web Development Intern,Front-end using React and backend Node.js.,HTML;CSS;JavaScript;React;Node,Jaipur,1 month,Analytics Hub
+447,BCA Project Intern,"Help with college project using PHP, MySQL.",PHP;MySQL;HTML;CSS,Dehradun,5 weeks,Tech Startup
+448,Android Developer Intern,Build Android apps with Java/Kotlin.,Java;Kotlin;APIs,Bhubaneswar,1 month,Tech Startup
+449,Web Development Intern,Front-end using React and backend Node.js.,HTML;CSS;JavaScript;React;Node,Pune,1 month,DataWorks
+450,Data Science Intern,Work on ML models and data analysis.,Python;SQL;Machine Learning,Dehradun,4 months,MobileWorks
+451,Frontend React Intern,Create responsive UI with React and TailwindCSS.,HTML;CSS;JavaScript;React,Pune,6 months,Analytics Hub
+452,Machine Learning Intern,Work on predictive analytics using Python and scikit-learn.,Python;Machine Learning;Statistics,Chennai,6 months,WebSolutions
+453,UI/UX Design Intern,Design wireframes and prototypes using Figma and Adobe XD.,Figma;Adobe XD;Design,Goa,1 month,Analytics Hub
+454,Frontend React Intern,Create responsive UI with React and TailwindCSS.,HTML;CSS;JavaScript;React,Goa,6 months,Analytics Hub
+455,Web Development Intern,Front-end using React and backend Node.js.,HTML;CSS;JavaScript;React;Node,Hyderabad,5 weeks,CodeCrafters
+456,Data Science Intern,Work on ML models and data analysis.,Python;SQL;Machine Learning,Delhi,5 weeks,CodeCrafters
+457,Machine Learning Intern,Work on predictive analytics using Python and scikit-learn.,Python;Machine Learning;Statistics,Mumbai,6 months,FinLabs
+458,Android Developer Intern,Build Android apps with Java/Kotlin.,Java;Kotlin;APIs,Noida,1 month,CodeCrafters
+459,Machine Learning Intern,Work on predictive analytics using Python and scikit-learn.,Python;Machine Learning;Statistics,Ahmedabad,6 months,Analytics Hub
+460,Web Development Intern,Front-end using React and backend Node.js.,HTML;CSS;JavaScript;React;Node,Delhi,1 month,Analytics Hub
+461,Data Analyst Intern,Perform data cleaning and visualization using Python and Excel.,Python;SQL;Excel,Bengaluru,1 month,Tech Startup
+462,Data Analyst Intern,Perform data cleaning and visualization using Python and Excel.,Python;SQL;Excel,Gurgaon,4 months,CodeCrafters
+463,Web Development Intern,Front-end using React and backend Node.js.,HTML;CSS;JavaScript;React;Node,Gurgaon,3 months,WebSolutions
+464,Machine Learning Intern,Work on predictive analytics using Python and scikit-learn.,Python;Machine Learning;Statistics,Pune,1 month,MarketCo
+465,Frontend React Intern,Create responsive UI with React and TailwindCSS.,HTML;CSS;JavaScript;React,Bhubaneswar,4 months,MarketCo
+466,UI/UX Design Intern,Design wireframes and prototypes using Figma and Adobe XD.,Figma;Adobe XD;Design,Bengaluru,4 months,WebSolutions
+467,UI/UX Design Intern,Design wireframes and prototypes using Figma and Adobe XD.,Figma;Adobe XD;Design,Chennai,6 months,CodeCrafters
+468,BCA Project Intern,"Help with college project using PHP, MySQL.",PHP;MySQL;HTML;CSS,Pune,5 weeks,College Labs
+469,Data Analyst Intern,Perform data cleaning and visualization using Python and Excel.,Python;SQL;Excel,Gurgaon,1 month,DataWorks
+470,Java Backend Intern,Develop REST APIs and services using Java Spring Boot.,Java;Spring;REST API,Ahmedabad,3 months,DataWorks
+471,Data Science Intern,Work on ML models and data analysis.,Python;SQL;Machine Learning,Lucknow,1 month,WebSolutions
+472,UI/UX Design Intern,Design wireframes and prototypes using Figma and Adobe XD.,Figma;Adobe XD;Design,Mumbai,3 months,DesignStudios
+473,Marketing Intern,Manage social media and content creation.,Communication;Marketing;Social Media,Pune,3 months,WebSolutions
+474,Data Analyst Intern,Perform data cleaning and visualization using Python and Excel.,Python;SQL;Excel,Kolkata,6 months,College Labs
+475,Data Science Intern,Work on ML models and data analysis.,Python;SQL;Machine Learning,Gurgaon,5 weeks,MobileWorks
+476,Data Analyst Intern,Perform data cleaning and visualization using Python and Excel.,Python;SQL;Excel,Mumbai,4 months,WebSolutions
+477,BCA Project Intern,"Help with college project using PHP, MySQL.",PHP;MySQL;HTML;CSS,Jaipur,4 months,Tech Startup
+478,Machine Learning Intern,Work on predictive analytics using Python and scikit-learn.,Python;Machine Learning;Statistics,Chennai,3 months,CodeCrafters
+479,Web Development Intern,Front-end using React and backend Node.js.,HTML;CSS;JavaScript;React;Node,Gurgaon,3 months,Tech Startup
+480,Frontend React Intern,Create responsive UI with React and TailwindCSS.,HTML;CSS;JavaScript;React,Bengaluru,5 weeks,CodeCrafters
+481,Java Backend Intern,Develop REST APIs and services using Java Spring Boot.,Java;Spring;REST API,Lucknow,2 months,Analytics Hub
+482,Marketing Intern,Manage social media and content creation.,Communication;Marketing;Social Media,Dehradun,3 months,DesignStudios
+483,UI/UX Design Intern,Design wireframes and prototypes using Figma and Adobe XD.,Figma;Adobe XD;Design,Chennai,6 months,MobileWorks
+484,Android Developer Intern,Build Android apps with Java/Kotlin.,Java;Kotlin;APIs,Chennai,5 weeks,Tech Startup
+485,BCA Project Intern,"Help with college project using PHP, MySQL.",PHP;MySQL;HTML;CSS,Hyderabad,5 weeks,Tech Startup
+486,Machine Learning Intern,Work on predictive analytics using Python and scikit-learn.,Python;Machine Learning;Statistics,Ahmedabad,6 months,FinLabs
+487,Machine Learning Intern,Work on predictive analytics using Python and scikit-learn.,Python;Machine Learning;Statistics,Noida,1 month,Analytics Hub
+488,UI/UX Design Intern,Design wireframes and prototypes using Figma and Adobe XD.,Figma;Adobe XD;Design,Bhubaneswar,1 month,Analytics Hub
+489,Marketing Intern,Manage social media and content creation.,Communication;Marketing;Social Media,Noida,2 months,College Labs
+490,Machine Learning Intern,Work on predictive analytics using Python and scikit-learn.,Python;Machine Learning;Statistics,Goa,1 month,CodeCrafters
+491,Machine Learning Intern,Work on predictive analytics using Python and scikit-learn.,Python;Machine Learning;Statistics,Dehradun,1 month,WebSolutions
+492,BCA Project Intern,"Help with college project using PHP, MySQL.",PHP;MySQL;HTML;CSS,Pune,4 months,MarketCo
+493,Data Science Intern,Work on ML models and data analysis.,Python;SQL;Machine Learning,Pune,3 months,DesignStudios
+494,Web Development Intern,Front-end using React and backend Node.js.,HTML;CSS;JavaScript;React;Node,Mumbai,2 months,CodeCrafters
+495,Marketing Intern,Manage social media and content creation.,Communication;Marketing;Social Media,Lucknow,5 weeks,DesignStudios
+496,Frontend React Intern,Create responsive UI with React and TailwindCSS.,HTML;CSS;JavaScript;React,Kolkata,3 months,FinLabs
+497,Data Science Intern,Work on ML models and data analysis.,Python;SQL;Machine Learning,Lucknow,4 months,FinLabs
+498,Frontend React Intern,Create responsive UI with React and TailwindCSS.,HTML;CSS;JavaScript;React,Goa,4 months,FinLabs
+499,Java Backend Intern,Develop REST APIs and services using Java Spring Boot.,Java;Spring;REST API,Ahmedabad,3 months,College Labs
+500,Web Development Intern,Front-end using React and backend Node.js.,HTML;CSS;JavaScript;React;Node,Delhi,6 months,DataWorks
+501,UI/UX Design Intern,Design wireframes and prototypes using Figma and Adobe XD.,Figma;Adobe XD;Design,Kolkata,3 months,DesignStudios
+502,Data Analyst Intern,Perform data cleaning and visualization using Python and Excel.,Python;SQL;Excel,Dehradun,6 months,DesignStudios
+503,Java Backend Intern,Develop REST APIs and services using Java Spring Boot.,Java;Spring;REST API,Kolkata,4 months,MarketCo
+504,Frontend React Intern,Create responsive UI with React and TailwindCSS.,HTML;CSS;JavaScript;React,Goa,1 month,MarketCo
+505,Machine Learning Intern,Work on predictive analytics using Python and scikit-learn.,Python;Machine Learning;Statistics,Lucknow,3 months,Tech Startup
+506,UI/UX Design Intern,Design wireframes and prototypes using Figma and Adobe XD.,Figma;Adobe XD;Design,Bhubaneswar,1 month,CodeCrafters
+507,Android Developer Intern,Build Android apps with Java/Kotlin.,Java;Kotlin;APIs,Pune,1 month,College Labs
+508,BCA Project Intern,"Help with college project using PHP, MySQL.",PHP;MySQL;HTML;CSS,Delhi,3 months,MobileWorks
+509,Marketing Intern,Manage social media and content creation.,Communication;Marketing;Social Media,Hyderabad,2 months,WebSolutions
+510,Data Analyst Intern,Perform data cleaning and visualization using Python and Excel.,Python;SQL;Excel,Noida,3 months,College Labs
+511,Data Science Intern,Work on ML models and data analysis.,Python;SQL;Machine Learning,Bhubaneswar,4 months,DesignStudios
+512,UI/UX Design Intern,Design wireframes and prototypes using Figma and Adobe XD.,Figma;Adobe XD;Design,Hyderabad,2 months,WebSolutions
+513,Web Development Intern,Front-end using React and backend Node.js.,HTML;CSS;JavaScript;React;Node,Noida,1 month,Analytics Hub
+514,Machine Learning Intern,Work on predictive analytics using Python and scikit-learn.,Python;Machine Learning;Statistics,Lucknow,4 months,Analytics Hub
+515,UI/UX Design Intern,Design wireframes and prototypes using Figma and Adobe XD.,Figma;Adobe XD;Design,Pune,4 months,FinLabs
+516,Java Backend Intern,Develop REST APIs and services using Java Spring Boot.,Java;Spring;REST API,Gurgaon,1 month,CodeCrafters
+517,Machine Learning Intern,Work on predictive analytics using Python and scikit-learn.,Python;Machine Learning;Statistics,Jaipur,6 months,WebSolutions
+518,Machine Learning Intern,Work on predictive analytics using Python and scikit-learn.,Python;Machine Learning;Statistics,Mumbai,3 months,College Labs
+519,Java Backend Intern,Develop REST APIs and services using Java Spring Boot.,Java;Spring;REST API,Lucknow,1 month,College Labs
+520,Data Science Intern,Work on ML models and data analysis.,Python;SQL;Machine Learning,Pune,1 month,MobileWorks
+521,Android Developer Intern,Build Android apps with Java/Kotlin.,Java;Kotlin;APIs,Goa,1 month,DataWorks
+522,Web Development Intern,Front-end using React and backend Node.js.,HTML;CSS;JavaScript;React;Node,Lucknow,4 months,CodeCrafters
+523,Web Development Intern,Front-end using React and backend Node.js.,HTML;CSS;JavaScript;React;Node,Delhi,3 months,WebSolutions
+524,Java Backend Intern,Develop REST APIs and services using Java Spring Boot.,Java;Spring;REST API,Hyderabad,4 months,DesignStudios
+525,Android Developer Intern,Build Android apps with Java/Kotlin.,Java;Kotlin;APIs,Bhubaneswar,6 months,CodeCrafters
+526,Marketing Intern,Manage social media and content creation.,Communication;Marketing;Social Media,Ahmedabad,1 month,Analytics Hub
+527,Machine Learning Intern,Work on predictive analytics using Python and scikit-learn.,Python;Machine Learning;Statistics,Ahmedabad,6 months,WebSolutions
+528,Data Science Intern,Work on ML models and data analysis.,Python;SQL;Machine Learning,Gurgaon,2 months,FinLabs
+529,Data Analyst Intern,Perform data cleaning and visualization using Python and Excel.,Python;SQL;Excel,Goa,3 months,FinLabs
+530,Data Analyst Intern,Perform data cleaning and visualization using Python and Excel.,Python;SQL;Excel,Lucknow,1 month,College Labs
+531,Machine Learning Intern,Work on predictive analytics using Python and scikit-learn.,Python;Machine Learning;Statistics,Noida,3 months,MarketCo
+532,Data Analyst Intern,Perform data cleaning and visualization using Python and Excel.,Python;SQL;Excel,Mumbai,6 months,Analytics Hub
+533,Marketing Intern,Manage social media and content creation.,Communication;Marketing;Social Media,Bhubaneswar,3 months,WebSolutions
+534,Machine Learning Intern,Work on predictive analytics using Python and scikit-learn.,Python;Machine Learning;Statistics,Bhubaneswar,1 month,College Labs
+535,UI/UX Design Intern,Design wireframes and prototypes using Figma and Adobe XD.,Figma;Adobe XD;Design,Bengaluru,2 months,DesignStudios
+536,UI/UX Design Intern,Design wireframes and prototypes using Figma and Adobe XD.,Figma;Adobe XD;Design,Noida,6 months,CodeCrafters
+537,Java Backend Intern,Develop REST APIs and services using Java Spring Boot.,Java;Spring;REST API,Bengaluru,1 month,DesignStudios
+538,Web Development Intern,Front-end using React and backend Node.js.,HTML;CSS;JavaScript;React;Node,Goa,1 month,MarketCo
+539,Java Backend Intern,Develop REST APIs and services using Java Spring Boot.,Java;Spring;REST API,Noida,5 weeks,Analytics Hub
+540,Web Development Intern,Front-end using React and backend Node.js.,HTML;CSS;JavaScript;React;Node,Pune,3 months,FinLabs
+541,Web Development Intern,Front-end using React and backend Node.js.,HTML;CSS;JavaScript;React;Node,Bhubaneswar,2 months,DesignStudios
+542,Machine Learning Intern,Work on predictive analytics using Python and scikit-learn.,Python;Machine Learning;Statistics,Bengaluru,1 month,MobileWorks
+543,UI/UX Design Intern,Design wireframes and prototypes using Figma and Adobe XD.,Figma;Adobe XD;Design,Chennai,5 weeks,MobileWorks
+544,Marketing Intern,Manage social media and content creation.,Communication;Marketing;Social Media,Gurgaon,6 months,College Labs
+545,Frontend React Intern,Create responsive UI with React and TailwindCSS.,HTML;CSS;JavaScript;React,Bengaluru,6 months,WebSolutions
+546,Frontend React Intern,Create responsive UI with React and TailwindCSS.,HTML;CSS;JavaScript;React,Hyderabad,1 month,DesignStudios
+547,Java Backend Intern,Develop REST APIs and services using Java Spring Boot.,Java;Spring;REST API,Ahmedabad,4 months,Analytics Hub
+548,BCA Project Intern,"Help with college project using PHP, MySQL.",PHP;MySQL;HTML;CSS,Kolkata,3 months,MarketCo
+549,UI/UX Design Intern,Design wireframes and prototypes using Figma and Adobe XD.,Figma;Adobe XD;Design,Mumbai,2 months,Tech Startup
+550,Data Science Intern,Work on ML models and data analysis.,Python;SQL;Machine Learning,Dehradun,4 months,Analytics Hub
+551,Marketing Intern,Manage social media and content creation.,Communication;Marketing;Social Media,Ahmedabad,4 months,FinLabs
+552,UI/UX Design Intern,Design wireframes and prototypes using Figma and Adobe XD.,Figma;Adobe XD;Design,Gurgaon,1 month,DataWorks
+553,Data Analyst Intern,Perform data cleaning and visualization using Python and Excel.,Python;SQL;Excel,Goa,3 months,DataWorks
+554,BCA Project Intern,"Help with college project using PHP, MySQL.",PHP;MySQL;HTML;CSS,Dehradun,5 weeks,MobileWorks
+555,Data Science Intern,Work on ML models and data analysis.,Python;SQL;Machine Learning,Chennai,1 month,CodeCrafters
+556,Machine Learning Intern,Work on predictive analytics using Python and scikit-learn.,Python;Machine Learning;Statistics,Hyderabad,4 months,DataWorks
+557,Web Development Intern,Front-end using React and backend Node.js.,HTML;CSS;JavaScript;React;Node,Jaipur,4 months,DataWorks
+558,Android Developer Intern,Build Android apps with Java/Kotlin.,Java;Kotlin;APIs,Gurgaon,1 month,College Labs
+559,UI/UX Design Intern,Design wireframes and prototypes using Figma and Adobe XD.,Figma;Adobe XD;Design,Bengaluru,3 months,College Labs
+560,Web Development Intern,Front-end using React and backend Node.js.,HTML;CSS;JavaScript;React;Node,Jaipur,5 weeks,FinLabs
+561,Frontend React Intern,Create responsive UI with React and TailwindCSS.,HTML;CSS;JavaScript;React,Ahmedabad,1 month,CodeCrafters
+562,BCA Project Intern,"Help with college project using PHP, MySQL.",PHP;MySQL;HTML;CSS,Gurgaon,1 month,WebSolutions
+563,Data Analyst Intern,Perform data cleaning and visualization using Python and Excel.,Python;SQL;Excel,Bhubaneswar,3 months,WebSolutions
+564,Data Science Intern,Work on ML models and data analysis.,Python;SQL;Machine Learning,Noida,4 months,CodeCrafters
+565,Data Analyst Intern,Perform data cleaning and visualization using Python and Excel.,Python;SQL;Excel,Mumbai,3 months,Analytics Hub
+566,Data Analyst Intern,Perform data cleaning and visualization using Python and Excel.,Python;SQL;Excel,Noida,4 months,MarketCo
+567,Marketing Intern,Manage social media and content creation.,Communication;Marketing;Social Media,Bengaluru,1 month,CodeCrafters
+568,Data Science Intern,Work on ML models and data analysis.,Python;SQL;Machine Learning,Dehradun,2 months,DataWorks
+569,Android Developer Intern,Build Android apps with Java/Kotlin.,Java;Kotlin;APIs,Bengaluru,6 months,WebSolutions
+570,Web Development Intern,Front-end using React and backend Node.js.,HTML;CSS;JavaScript;React;Node,Jaipur,3 months,DataWorks
+571,Data Science Intern,Work on ML models and data analysis.,Python;SQL;Machine Learning,Mumbai,6 months,Analytics Hub
+572,Marketing Intern,Manage social media and content creation.,Communication;Marketing;Social Media,Goa,3 months,FinLabs
+573,Marketing Intern,Manage social media and content creation.,Communication;Marketing;Social Media,Goa,2 months,College Labs
+574,Data Analyst Intern,Perform data cleaning and visualization using Python and Excel.,Python;SQL;Excel,Bengaluru,4 months,FinLabs
+575,Frontend React Intern,Create responsive UI with React and TailwindCSS.,HTML;CSS;JavaScript;React,Jaipur,6 months,WebSolutions
+576,UI/UX Design Intern,Design wireframes and prototypes using Figma and Adobe XD.,Figma;Adobe XD;Design,Ahmedabad,6 months,Analytics Hub
+577,Marketing Intern,Manage social media and content creation.,Communication;Marketing;Social Media,Hyderabad,1 month,DataWorks
+578,Machine Learning Intern,Work on predictive analytics using Python and scikit-learn.,Python;Machine Learning;Statistics,Chennai,6 months,DataWorks
+579,UI/UX Design Intern,Design wireframes and prototypes using Figma and Adobe XD.,Figma;Adobe XD;Design,Chennai,1 month,MarketCo
+580,Web Development Intern,Front-end using React and backend Node.js.,HTML;CSS;JavaScript;React;Node,Ahmedabad,5 weeks,WebSolutions
+581,Android Developer Intern,Build Android apps with Java/Kotlin.,Java;Kotlin;APIs,Chennai,2 months,CodeCrafters
+582,BCA Project Intern,"Help with college project using PHP, MySQL.",PHP;MySQL;HTML;CSS,Pune,6 months,College Labs
+583,Web Development Intern,Front-end using React and backend Node.js.,HTML;CSS;JavaScript;React;Node,Lucknow,3 months,Analytics Hub
+584,Machine Learning Intern,Work on predictive analytics using Python and scikit-learn.,Python;Machine Learning;Statistics,Goa,2 months,CodeCrafters
+585,Android Developer Intern,Build Android apps with Java/Kotlin.,Java;Kotlin;APIs,Gurgaon,1 month,MobileWorks
+586,Data Analyst Intern,Perform data cleaning and visualization using Python and Excel.,Python;SQL;Excel,Bhubaneswar,2 months,Analytics Hub
+587,Data Science Intern,Work on ML models and data analysis.,Python;SQL;Machine Learning,Bhubaneswar,5 weeks,FinLabs
+588,Data Analyst Intern,Perform data cleaning and visualization using Python and Excel.,Python;SQL;Excel,Lucknow,3 months,FinLabs
+589,Frontend React Intern,Create responsive UI with React and TailwindCSS.,HTML;CSS;JavaScript;React,Noida,3 months,Tech Startup
+590,UI/UX Design Intern,Design wireframes and prototypes using Figma and Adobe XD.,Figma;Adobe XD;Design,Pune,4 months,MarketCo
+591,Web Development Intern,Front-end using React and backend Node.js.,HTML;CSS;JavaScript;React;Node,Noida,6 months,DataWorks
+592,Android Developer Intern,Build Android apps with Java/Kotlin.,Java;Kotlin;APIs,Mumbai,3 months,Tech Startup
+593,Frontend React Intern,Create responsive UI with React and TailwindCSS.,HTML;CSS;JavaScript;React,Dehradun,1 month,CodeCrafters
+594,UI/UX Design Intern,Design wireframes and prototypes using Figma and Adobe XD.,Figma;Adobe XD;Design,Lucknow,5 weeks,MobileWorks
+595,UI/UX Design Intern,Design wireframes and prototypes using Figma and Adobe XD.,Figma;Adobe XD;Design,Dehradun,2 months,FinLabs
+596,Web Development Intern,Front-end using React and backend Node.js.,HTML;CSS;JavaScript;React;Node,Gurgaon,1 month,DesignStudios
+597,UI/UX Design Intern,Design wireframes and prototypes using Figma and Adobe XD.,Figma;Adobe XD;Design,Hyderabad,1 month,DataWorks
+598,Machine Learning Intern,Work on predictive analytics using Python and scikit-learn.,Python;Machine Learning;Statistics,Pune,6 months,FinLabs
+599,Android Developer Intern,Build Android apps with Java/Kotlin.,Java;Kotlin;APIs,Chennai,2 months,WebSolutions
+600,Java Backend Intern,Develop REST APIs and services using Java Spring Boot.,Java;Spring;REST API,Kolkata,4 months,Analytics Hub
+601,Data Analyst Intern,Perform data cleaning and visualization using Python and Excel.,Python;SQL;Excel,Ahmedabad,6 months,Analytics Hub
+602,Data Science Intern,Work on ML models and data analysis.,Python;SQL;Machine Learning,Mumbai,1 month,College Labs
+603,Web Development Intern,Front-end using React and backend Node.js.,HTML;CSS;JavaScript;React;Node,Hyderabad,5 weeks,CodeCrafters
+604,Java Backend Intern,Develop REST APIs and services using Java Spring Boot.,Java;Spring;REST API,Bhubaneswar,6 months,Tech Startup
+605,Marketing Intern,Manage social media and content creation.,Communication;Marketing;Social Media,Dehradun,1 month,DesignStudios
+606,Data Analyst Intern,Perform data cleaning and visualization using Python and Excel.,Python;SQL;Excel,Bengaluru,2 months,FinLabs
+607,BCA Project Intern,"Help with college project using PHP, MySQL.",PHP;MySQL;HTML;CSS,Noida,3 months,WebSolutions
+608,Data Analyst Intern,Perform data cleaning and visualization using Python and Excel.,Python;SQL;Excel,Jaipur,3 months,Analytics Hub
+609,BCA Project Intern,"Help with college project using PHP, MySQL.",PHP;MySQL;HTML;CSS,Jaipur,3 months,College Labs
+610,Frontend React Intern,Create responsive UI with React and TailwindCSS.,HTML;CSS;JavaScript;React,Lucknow,3 months,MobileWorks
+611,Android Developer Intern,Build Android apps with Java/Kotlin.,Java;Kotlin;APIs,Noida,5 weeks,CodeCrafters
+612,Data Analyst Intern,Perform data cleaning and visualization using Python and Excel.,Python;SQL;Excel,Mumbai,5 weeks,College Labs
+613,Android Developer Intern,Build Android apps with Java/Kotlin.,Java;Kotlin;APIs,Bengaluru,6 months,College Labs
+614,Frontend React Intern,Create responsive UI with React and TailwindCSS.,HTML;CSS;JavaScript;React,Ahmedabad,5 weeks,CodeCrafters
+615,Machine Learning Intern,Work on predictive analytics using Python and scikit-learn.,Python;Machine Learning;Statistics,Mumbai,6 months,FinLabs
+616,UI/UX Design Intern,Design wireframes and prototypes using Figma and Adobe XD.,Figma;Adobe XD;Design,Gurgaon,1 month,MobileWorks
+617,BCA Project Intern,"Help with college project using PHP, MySQL.",PHP;MySQL;HTML;CSS,Gurgaon,6 months,Tech Startup
+618,Data Analyst Intern,Perform data cleaning and visualization using Python and Excel.,Python;SQL;Excel,Pune,3 months,MobileWorks
+619,Data Analyst Intern,Perform data cleaning and visualization using Python and Excel.,Python;SQL;Excel,Dehradun,1 month,DesignStudios
+620,UI/UX Design Intern,Design wireframes and prototypes using Figma and Adobe XD.,Figma;Adobe XD;Design,Jaipur,3 months,DataWorks
+621,Machine Learning Intern,Work on predictive analytics using Python and scikit-learn.,Python;Machine Learning;Statistics,Ahmedabad,4 months,MobileWorks
+622,Marketing Intern,Manage social media and content creation.,Communication;Marketing;Social Media,Goa,1 month,MobileWorks
+623,BCA Project Intern,"Help with college project using PHP, MySQL.",PHP;MySQL;HTML;CSS,Delhi,6 months,WebSolutions
+624,UI/UX Design Intern,Design wireframes and prototypes using Figma and Adobe XD.,Figma;Adobe XD;Design,Bhubaneswar,5 weeks,MobileWorks
+625,Machine Learning Intern,Work on predictive analytics using Python and scikit-learn.,Python;Machine Learning;Statistics,Gurgaon,5 weeks,Analytics Hub
+626,UI/UX Design Intern,Design wireframes and prototypes using Figma and Adobe XD.,Figma;Adobe XD;Design,Gurgaon,4 months,CodeCrafters
+627,Data Science Intern,Work on ML models and data analysis.,Python;SQL;Machine Learning,Bengaluru,5 weeks,DataWorks
+628,Java Backend Intern,Develop REST APIs and services using Java Spring Boot.,Java;Spring;REST API,Noida,1 month,FinLabs
+629,Machine Learning Intern,Work on predictive analytics using Python and scikit-learn.,Python;Machine Learning;Statistics,Pune,2 months,CodeCrafters
+630,Data Science Intern,Work on ML models and data analysis.,Python;SQL;Machine Learning,Ahmedabad,3 months,WebSolutions
+631,Marketing Intern,Manage social media and content creation.,Communication;Marketing;Social Media,Kolkata,2 months,MarketCo
+632,UI/UX Design Intern,Design wireframes and prototypes using Figma and Adobe XD.,Figma;Adobe XD;Design,Mumbai,2 months,MobileWorks
+633,Android Developer Intern,Build Android apps with Java/Kotlin.,Java;Kotlin;APIs,Jaipur,1 month,WebSolutions
+634,Web Development Intern,Front-end using React and backend Node.js.,HTML;CSS;JavaScript;React;Node,Bhubaneswar,6 months,Analytics Hub
+635,Marketing Intern,Manage social media and content creation.,Communication;Marketing;Social Media,Bhubaneswar,5 weeks,DataWorks
+636,Android Developer Intern,Build Android apps with Java/Kotlin.,Java;Kotlin;APIs,Noida,3 months,DesignStudios
+637,Data Science Intern,Work on ML models and data analysis.,Python;SQL;Machine Learning,Lucknow,4 months,Analytics Hub
+638,Android Developer Intern,Build Android apps with Java/Kotlin.,Java;Kotlin;APIs,Bengaluru,5 weeks,Analytics Hub
+639,Android Developer Intern,Build Android apps with Java/Kotlin.,Java;Kotlin;APIs,Delhi,5 weeks,WebSolutions
+640,Android Developer Intern,Build Android apps with Java/Kotlin.,Java;Kotlin;APIs,Jaipur,4 months,MarketCo
+641,Data Analyst Intern,Perform data cleaning and visualization using Python and Excel.,Python;SQL;Excel,Goa,6 months,DataWorks
+642,BCA Project Intern,"Help with college project using PHP, MySQL.",PHP;MySQL;HTML;CSS,Dehradun,5 weeks,MarketCo
+643,Data Science Intern,Work on ML models and data analysis.,Python;SQL;Machine Learning,Jaipur,4 months,DataWorks
+644,Frontend React Intern,Create responsive UI with React and TailwindCSS.,HTML;CSS;JavaScript;React,Dehradun,1 month,Tech Startup
+645,Machine Learning Intern,Work on predictive analytics using Python and scikit-learn.,Python;Machine Learning;Statistics,Bengaluru,2 months,WebSolutions
+646,Data Analyst Intern,Perform data cleaning and visualization using Python and Excel.,Python;SQL;Excel,Goa,6 months,DataWorks
+647,Marketing Intern,Manage social media and content creation.,Communication;Marketing;Social Media,Jaipur,6 months,Analytics Hub
+648,Machine Learning Intern,Work on predictive analytics using Python and scikit-learn.,Python;Machine Learning;Statistics,Chennai,1 month,DesignStudios
+649,Web Development Intern,Front-end using React and backend Node.js.,HTML;CSS;JavaScript;React;Node,Jaipur,6 months,DesignStudios
+650,Marketing Intern,Manage social media and content creation.,Communication;Marketing;Social Media,Pune,4 months,WebSolutions
+651,Machine Learning Intern,Work on predictive analytics using Python and scikit-learn.,Python;Machine Learning;Statistics,Dehradun,4 months,DesignStudios
+652,Data Science Intern,Work on ML models and data analysis.,Python;SQL;Machine Learning,Kolkata,4 months,MobileWorks
+653,Java Backend Intern,Develop REST APIs and services using Java Spring Boot.,Java;Spring;REST API,Kolkata,1 month,MobileWorks
+654,Data Science Intern,Work on ML models and data analysis.,Python;SQL;Machine Learning,Hyderabad,4 months,MobileWorks
+655,Data Science Intern,Work on ML models and data analysis.,Python;SQL;Machine Learning,Ahmedabad,5 weeks,Analytics Hub
+656,Machine Learning Intern,Work on predictive analytics using Python and scikit-learn.,Python;Machine Learning;Statistics,Delhi,6 months,MobileWorks
+657,UI/UX Design Intern,Design wireframes and prototypes using Figma and Adobe XD.,Figma;Adobe XD;Design,Pune,5 weeks,MarketCo
+658,UI/UX Design Intern,Design wireframes and prototypes using Figma and Adobe XD.,Figma;Adobe XD;Design,Ahmedabad,5 weeks,Tech Startup
+659,Data Analyst Intern,Perform data cleaning and visualization using Python and Excel.,Python;SQL;Excel,Pune,1 month,DesignStudios
+660,BCA Project Intern,"Help with college project using PHP, MySQL.",PHP;MySQL;HTML;CSS,Gurgaon,5 weeks,MarketCo
+661,Java Backend Intern,Develop REST APIs and services using Java Spring Boot.,Java;Spring;REST API,Ahmedabad,4 months,DataWorks
+662,Frontend React Intern,Create responsive UI with React and TailwindCSS.,HTML;CSS;JavaScript;React,Noida,2 months,Analytics Hub
+663,Frontend React Intern,Create responsive UI with React and TailwindCSS.,HTML;CSS;JavaScript;React,Hyderabad,5 weeks,MobileWorks
+664,BCA Project Intern,"Help with college project using PHP, MySQL.",PHP;MySQL;HTML;CSS,Mumbai,4 months,FinLabs
+665,Frontend React Intern,Create responsive UI with React and TailwindCSS.,HTML;CSS;JavaScript;React,Hyderabad,2 months,CodeCrafters
+666,Data Analyst Intern,Perform data cleaning and visualization using Python and Excel.,Python;SQL;Excel,Pune,2 months,Tech Startup
+667,Frontend React Intern,Create responsive UI with React and TailwindCSS.,HTML;CSS;JavaScript;React,Chennai,1 month,DataWorks
+668,Frontend React Intern,Create responsive UI with React and TailwindCSS.,HTML;CSS;JavaScript;React,Jaipur,6 months,DataWorks
+669,Java Backend Intern,Develop REST APIs and services using Java Spring Boot.,Java;Spring;REST API,Dehradun,2 months,CodeCrafters
+670,BCA Project Intern,"Help with college project using PHP, MySQL.",PHP;MySQL;HTML;CSS,Bhubaneswar,5 weeks,DataWorks
+671,Data Analyst Intern,Perform data cleaning and visualization using Python and Excel.,Python;SQL;Excel,Ahmedabad,6 months,Analytics Hub
+672,Android Developer Intern,Build Android apps with Java/Kotlin.,Java;Kotlin;APIs,Mumbai,3 months,DesignStudios
+673,Web Development Intern,Front-end using React and backend Node.js.,HTML;CSS;JavaScript;React;Node,Goa,4 months,MobileWorks
+674,Frontend React Intern,Create responsive UI with React and TailwindCSS.,HTML;CSS;JavaScript;React,Dehradun,4 months,DesignStudios
+675,BCA Project Intern,"Help with college project using PHP, MySQL.",PHP;MySQL;HTML;CSS,Hyderabad,4 months,MobileWorks
+676,UI/UX Design Intern,Design wireframes and prototypes using Figma and Adobe XD.,Figma;Adobe XD;Design,Bhubaneswar,2 months,Tech Startup
+677,Marketing Intern,Manage social media and content creation.,Communication;Marketing;Social Media,Hyderabad,5 weeks,Analytics Hub
+678,Data Science Intern,Work on ML models and data analysis.,Python;SQL;Machine Learning,Bhubaneswar,4 months,Tech Startup
+679,Data Science Intern,Work on ML models and data analysis.,Python;SQL;Machine Learning,Delhi,3 months,DataWorks
+680,Web Development Intern,Front-end using React and backend Node.js.,HTML;CSS;JavaScript;React;Node,Kolkata,3 months,Analytics Hub
+681,Web Development Intern,Front-end using React and backend Node.js.,HTML;CSS;JavaScript;React;Node,Pune,2 months,DataWorks
+682,Data Analyst Intern,Perform data cleaning and visualization using Python and Excel.,Python;SQL;Excel,Kolkata,1 month,Analytics Hub
+683,Data Analyst Intern,Perform data cleaning and visualization using Python and Excel.,Python;SQL;Excel,Dehradun,3 months,DesignStudios
+684,UI/UX Design Intern,Design wireframes and prototypes using Figma and Adobe XD.,Figma;Adobe XD;Design,Pune,3 months,FinLabs
+685,Java Backend Intern,Develop REST APIs and services using Java Spring Boot.,Java;Spring;REST API,Dehradun,4 months,CodeCrafters
+686,UI/UX Design Intern,Design wireframes and prototypes using Figma and Adobe XD.,Figma;Adobe XD;Design,Goa,5 weeks,College Labs
+687,UI/UX Design Intern,Design wireframes and prototypes using Figma and Adobe XD.,Figma;Adobe XD;Design,Gurgaon,4 months,Analytics Hub
+688,BCA Project Intern,"Help with college project using PHP, MySQL.",PHP;MySQL;HTML;CSS,Chennai,2 months,DataWorks
+689,Marketing Intern,Manage social media and content creation.,Communication;Marketing;Social Media,Lucknow,2 months,DesignStudios
+690,UI/UX Design Intern,Design wireframes and prototypes using Figma and Adobe XD.,Figma;Adobe XD;Design,Jaipur,1 month,MobileWorks
+691,Data Analyst Intern,Perform data cleaning and visualization using Python and Excel.,Python;SQL;Excel,Dehradun,1 month,College Labs
+692,Frontend React Intern,Create responsive UI with React and TailwindCSS.,HTML;CSS;JavaScript;React,Goa,6 months,Analytics Hub
+693,Machine Learning Intern,Work on predictive analytics using Python and scikit-learn.,Python;Machine Learning;Statistics,Goa,5 weeks,DataWorks
+694,Data Analyst Intern,Perform data cleaning and visualization using Python and Excel.,Python;SQL;Excel,Lucknow,1 month,DataWorks
+695,BCA Project Intern,"Help with college project using PHP, MySQL.",PHP;MySQL;HTML;CSS,Pune,6 months,CodeCrafters
+696,Machine Learning Intern,Work on predictive analytics using Python and scikit-learn.,Python;Machine Learning;Statistics,Bhubaneswar,6 months,College Labs
+697,Android Developer Intern,Build Android apps with Java/Kotlin.,Java;Kotlin;APIs,Hyderabad,3 months,MarketCo
+698,BCA Project Intern,"Help with college project using PHP, MySQL.",PHP;MySQL;HTML;CSS,Chennai,2 months,Tech Startup
+699,UI/UX Design Intern,Design wireframes and prototypes using Figma and Adobe XD.,Figma;Adobe XD;Design,Kolkata,2 months,Analytics Hub
+700,Data Science Intern,Work on ML models and data analysis.,Python;SQL;Machine Learning,Hyderabad,3 months,Analytics Hub
+701,UI/UX Design Intern,Design wireframes and prototypes using Figma and Adobe XD.,Figma;Adobe XD;Design,Bhubaneswar,4 months,MobileWorks
+702,Marketing Intern,Manage social media and content creation.,Communication;Marketing;Social Media,Noida,1 month,MarketCo
+703,Machine Learning Intern,Work on predictive analytics using Python and scikit-learn.,Python;Machine Learning;Statistics,Kolkata,4 months,MarketCo
+704,Data Science Intern,Work on ML models and data analysis.,Python;SQL;Machine Learning,Delhi,4 months,DesignStudios
+705,Data Science Intern,Work on ML models and data analysis.,Python;SQL;Machine Learning,Chennai,6 months,DesignStudios
+706,Marketing Intern,Manage social media and content creation.,Communication;Marketing;Social Media,Noida,1 month,FinLabs
+707,Data Analyst Intern,Perform data cleaning and visualization using Python and Excel.,Python;SQL;Excel,Noida,4 months,Tech Startup
+708,UI/UX Design Intern,Design wireframes and prototypes using Figma and Adobe XD.,Figma;Adobe XD;Design,Gurgaon,5 weeks,MarketCo
+709,Web Development Intern,Front-end using React and backend Node.js.,HTML;CSS;JavaScript;React;Node,Lucknow,2 months,DesignStudios
+710,Data Science Intern,Work on ML models and data analysis.,Python;SQL;Machine Learning,Gurgaon,3 months,DesignStudios
+711,Frontend React Intern,Create responsive UI with React and TailwindCSS.,HTML;CSS;JavaScript;React,Pune,6 months,CodeCrafters
+712,UI/UX Design Intern,Design wireframes and prototypes using Figma and Adobe XD.,Figma;Adobe XD;Design,Dehradun,5 weeks,MarketCo
+713,Web Development Intern,Front-end using React and backend Node.js.,HTML;CSS;JavaScript;React;Node,Jaipur,4 months,FinLabs
+714,Android Developer Intern,Build Android apps with Java/Kotlin.,Java;Kotlin;APIs,Gurgaon,3 months,Tech Startup
+715,BCA Project Intern,"Help with college project using PHP, MySQL.",PHP;MySQL;HTML;CSS,Lucknow,1 month,College Labs
+716,Data Science Intern,Work on ML models and data analysis.,Python;SQL;Machine Learning,Delhi,5 weeks,WebSolutions
+717,Data Science Intern,Work on ML models and data analysis.,Python;SQL;Machine Learning,Chennai,1 month,FinLabs
+718,BCA Project Intern,"Help with college project using PHP, MySQL.",PHP;MySQL;HTML;CSS,Hyderabad,5 weeks,FinLabs
+719,Android Developer Intern,Build Android apps with Java/Kotlin.,Java;Kotlin;APIs,Delhi,1 month,CodeCrafters
+720,Web Development Intern,Front-end using React and backend Node.js.,HTML;CSS;JavaScript;React;Node,Kolkata,5 weeks,College Labs
+721,Data Analyst Intern,Perform data cleaning and visualization using Python and Excel.,Python;SQL;Excel,Delhi,2 months,Tech Startup
+722,Android Developer Intern,Build Android apps with Java/Kotlin.,Java;Kotlin;APIs,Mumbai,2 months,Tech Startup
+723,Frontend React Intern,Create responsive UI with React and TailwindCSS.,HTML;CSS;JavaScript;React,Ahmedabad,1 month,Tech Startup
+724,Marketing Intern,Manage social media and content creation.,Communication;Marketing;Social Media,Dehradun,3 months,DesignStudios
+725,Java Backend Intern,Develop REST APIs and services using Java Spring Boot.,Java;Spring;REST API,Bhubaneswar,4 months,MarketCo
+726,Marketing Intern,Manage social media and content creation.,Communication;Marketing;Social Media,Chennai,5 weeks,WebSolutions
+727,Data Analyst Intern,Perform data cleaning and visualization using Python and Excel.,Python;SQL;Excel,Noida,5 weeks,Tech Startup
+728,BCA Project Intern,"Help with college project using PHP, MySQL.",PHP;MySQL;HTML;CSS,Jaipur,3 months,WebSolutions
+729,Frontend React Intern,Create responsive UI with React and TailwindCSS.,HTML;CSS;JavaScript;React,Dehradun,4 months,DesignStudios
+730,UI/UX Design Intern,Design wireframes and prototypes using Figma and Adobe XD.,Figma;Adobe XD;Design,Goa,4 months,FinLabs
+731,Web Development Intern,Front-end using React and backend Node.js.,HTML;CSS;JavaScript;React;Node,Kolkata,5 weeks,DesignStudios
+732,Frontend React Intern,Create responsive UI with React and TailwindCSS.,HTML;CSS;JavaScript;React,Chennai,3 months,MobileWorks
+733,Java Backend Intern,Develop REST APIs and services using Java Spring Boot.,Java;Spring;REST API,Bhubaneswar,6 months,CodeCrafters
+734,Data Science Intern,Work on ML models and data analysis.,Python;SQL;Machine Learning,Mumbai,4 months,FinLabs
+735,BCA Project Intern,"Help with college project using PHP, MySQL.",PHP;MySQL;HTML;CSS,Dehradun,2 months,College Labs
+736,Android Developer Intern,Build Android apps with Java/Kotlin.,Java;Kotlin;APIs,Goa,2 months,FinLabs
+737,BCA Project Intern,"Help with college project using PHP, MySQL.",PHP;MySQL;HTML;CSS,Bhubaneswar,4 months,DesignStudios
+738,Marketing Intern,Manage social media and content creation.,Communication;Marketing;Social Media,Dehradun,3 months,MobileWorks
+739,Marketing Intern,Manage social media and content creation.,Communication;Marketing;Social Media,Ahmedabad,5 weeks,DesignStudios
+740,Data Science Intern,Work on ML models and data analysis.,Python;SQL;Machine Learning,Chennai,3 months,MarketCo
+741,Data Science Intern,Work on ML models and data analysis.,Python;SQL;Machine Learning,Dehradun,3 months,Analytics Hub
+742,Java Backend Intern,Develop REST APIs and services using Java Spring Boot.,Java;Spring;REST API,Bengaluru,3 months,WebSolutions
+743,Frontend React Intern,Create responsive UI with React and TailwindCSS.,HTML;CSS;JavaScript;React,Jaipur,4 months,DesignStudios
+744,UI/UX Design Intern,Design wireframes and prototypes using Figma and Adobe XD.,Figma;Adobe XD;Design,Bengaluru,5 weeks,WebSolutions
+745,Data Science Intern,Work on ML models and data analysis.,Python;SQL;Machine Learning,Ahmedabad,5 weeks,DesignStudios
+746,Data Science Intern,Work on ML models and data analysis.,Python;SQL;Machine Learning,Bengaluru,5 weeks,WebSolutions
+747,Data Analyst Intern,Perform data cleaning and visualization using Python and Excel.,Python;SQL;Excel,Kolkata,6 months,Tech Startup
+748,Java Backend Intern,Develop REST APIs and services using Java Spring Boot.,Java;Spring;REST API,Delhi,1 month,DataWorks
+749,Web Development Intern,Front-end using React and backend Node.js.,HTML;CSS;JavaScript;React;Node,Mumbai,4 months,Tech Startup
+750,Marketing Intern,Manage social media and content creation.,Communication;Marketing;Social Media,Gurgaon,5 weeks,MarketCo
+751,Web Development Intern,Front-end using React and backend Node.js.,HTML;CSS;JavaScript;React;Node,Bengaluru,5 weeks,CodeCrafters
+752,BCA Project Intern,"Help with college project using PHP, MySQL.",PHP;MySQL;HTML;CSS,Bhubaneswar,4 months,College Labs
+753,Machine Learning Intern,Work on predictive analytics using Python and scikit-learn.,Python;Machine Learning;Statistics,Kolkata,4 months,MobileWorks
+754,Android Developer Intern,Build Android apps with Java/Kotlin.,Java;Kotlin;APIs,Dehradun,6 months,MarketCo
+755,BCA Project Intern,"Help with college project using PHP, MySQL.",PHP;MySQL;HTML;CSS,Lucknow,4 months,DataWorks
+756,BCA Project Intern,"Help with college project using PHP, MySQL.",PHP;MySQL;HTML;CSS,Pune,1 month,Tech Startup
+757,Data Analyst Intern,Perform data cleaning and visualization using Python and Excel.,Python;SQL;Excel,Noida,4 months,FinLabs
+758,Data Science Intern,Work on ML models and data analysis.,Python;SQL;Machine Learning,Hyderabad,5 weeks,MarketCo
+759,Machine Learning Intern,Work on predictive analytics using Python and scikit-learn.,Python;Machine Learning;Statistics,Delhi,1 month,Tech Startup
+760,Data Analyst Intern,Perform data cleaning and visualization using Python and Excel.,Python;SQL;Excel,Mumbai,2 months,DesignStudios
+761,Frontend React Intern,Create responsive UI with React and TailwindCSS.,HTML;CSS;JavaScript;React,Pune,3 months,Tech Startup
+762,BCA Project Intern,"Help with college project using PHP, MySQL.",PHP;MySQL;HTML;CSS,Jaipur,6 months,MobileWorks
+763,UI/UX Design Intern,Design wireframes and prototypes using Figma and Adobe XD.,Figma;Adobe XD;Design,Kolkata,2 months,DataWorks
+764,Java Backend Intern,Develop REST APIs and services using Java Spring Boot.,Java;Spring;REST API,Kolkata,6 months,MarketCo
+765,Frontend React Intern,Create responsive UI with React and TailwindCSS.,HTML;CSS;JavaScript;React,Chennai,2 months,CodeCrafters
+766,Data Science Intern,Work on ML models and data analysis.,Python;SQL;Machine Learning,Delhi,2 months,DataWorks
+767,Data Science Intern,Work on ML models and data analysis.,Python;SQL;Machine Learning,Hyderabad,4 months,MarketCo
+768,Java Backend Intern,Develop REST APIs and services using Java Spring Boot.,Java;Spring;REST API,Noida,6 months,MobileWorks
+769,BCA Project Intern,"Help with college project using PHP, MySQL.",PHP;MySQL;HTML;CSS,Chennai,4 months,WebSolutions
+770,Frontend React Intern,Create responsive UI with React and TailwindCSS.,HTML;CSS;JavaScript;React,Delhi,4 months,CodeCrafters
+771,Marketing Intern,Manage social media and content creation.,Communication;Marketing;Social Media,Pune,2 months,Analytics Hub
+772,UI/UX Design Intern,Design wireframes and prototypes using Figma and Adobe XD.,Figma;Adobe XD;Design,Mumbai,2 months,MarketCo
+773,Data Analyst Intern,Perform data cleaning and visualization using Python and Excel.,Python;SQL;Excel,Jaipur,5 weeks,Tech Startup
+774,Marketing Intern,Manage social media and content creation.,Communication;Marketing;Social Media,Gurgaon,2 months,College Labs
+775,BCA Project Intern,"Help with college project using PHP, MySQL.",PHP;MySQL;HTML;CSS,Delhi,3 months,DataWorks
+776,BCA Project Intern,"Help with college project using PHP, MySQL.",PHP;MySQL;HTML;CSS,Jaipur,3 months,College Labs
+777,Frontend React Intern,Create responsive UI with React and TailwindCSS.,HTML;CSS;JavaScript;React,Mumbai,5 weeks,Tech Startup
+778,Java Backend Intern,Develop REST APIs and services using Java Spring Boot.,Java;Spring;REST API,Kolkata,5 weeks,DataWorks
+779,BCA Project Intern,"Help with college project using PHP, MySQL.",PHP;MySQL;HTML;CSS,Gurgaon,2 months,DesignStudios
+780,Machine Learning Intern,Work on predictive analytics using Python and scikit-learn.,Python;Machine Learning;Statistics,Delhi,3 months,College Labs
+781,BCA Project Intern,"Help with college project using PHP, MySQL.",PHP;MySQL;HTML;CSS,Mumbai,5 weeks,MarketCo
+782,UI/UX Design Intern,Design wireframes and prototypes using Figma and Adobe XD.,Figma;Adobe XD;Design,Bhubaneswar,2 months,DesignStudios
+783,Data Analyst Intern,Perform data cleaning and visualization using Python and Excel.,Python;SQL;Excel,Pune,4 months,College Labs
+784,BCA Project Intern,"Help with college project using PHP, MySQL.",PHP;MySQL;HTML;CSS,Lucknow,4 months,Tech Startup
+785,Java Backend Intern,Develop REST APIs and services using Java Spring Boot.,Java;Spring;REST API,Bengaluru,1 month,FinLabs
+786,Data Science Intern,Work on ML models and data analysis.,Python;SQL;Machine Learning,Hyderabad,5 weeks,CodeCrafters
+787,UI/UX Design Intern,Design wireframes and prototypes using Figma and Adobe XD.,Figma;Adobe XD;Design,Chennai,2 months,MobileWorks
+788,Java Backend Intern,Develop REST APIs and services using Java Spring Boot.,Java;Spring;REST API,Ahmedabad,2 months,DataWorks
+789,Machine Learning Intern,Work on predictive analytics using Python and scikit-learn.,Python;Machine Learning;Statistics,Chennai,5 weeks,DataWorks
+790,Data Analyst Intern,Perform data cleaning and visualization using Python and Excel.,Python;SQL;Excel,Gurgaon,3 months,Tech Startup
+791,Data Science Intern,Work on ML models and data analysis.,Python;SQL;Machine Learning,Jaipur,4 months,Tech Startup
+792,BCA Project Intern,"Help with college project using PHP, MySQL.",PHP;MySQL;HTML;CSS,Gurgaon,2 months,CodeCrafters
+793,UI/UX Design Intern,Design wireframes and prototypes using Figma and Adobe XD.,Figma;Adobe XD;Design,Bhubaneswar,2 months,College Labs
+794,Web Development Intern,Front-end using React and backend Node.js.,HTML;CSS;JavaScript;React;Node,Goa,1 month,DesignStudios
+795,BCA Project Intern,"Help with college project using PHP, MySQL.",PHP;MySQL;HTML;CSS,Bhubaneswar,1 month,WebSolutions
+796,Java Backend Intern,Develop REST APIs and services using Java Spring Boot.,Java;Spring;REST API,Mumbai,5 weeks,College Labs
+797,Data Analyst Intern,Perform data cleaning and visualization using Python and Excel.,Python;SQL;Excel,Jaipur,6 months,FinLabs
+798,UI/UX Design Intern,Design wireframes and prototypes using Figma and Adobe XD.,Figma;Adobe XD;Design,Pune,3 months,FinLabs
+799,Java Backend Intern,Develop REST APIs and services using Java Spring Boot.,Java;Spring;REST API,Lucknow,1 month,WebSolutions
+800,Data Analyst Intern,Perform data cleaning and visualization using Python and Excel.,Python;SQL;Excel,Delhi,2 months,WebSolutions
+801,Android Developer Intern,Build Android apps with Java/Kotlin.,Java;Kotlin;APIs,Bengaluru,6 months,WebSolutions
+802,Java Backend Intern,Develop REST APIs and services using Java Spring Boot.,Java;Spring;REST API,Dehradun,1 month,Tech Startup
+803,Java Backend Intern,Develop REST APIs and services using Java Spring Boot.,Java;Spring;REST API,Delhi,1 month,CodeCrafters
+804,Marketing Intern,Manage social media and content creation.,Communication;Marketing;Social Media,Pune,3 months,DesignStudios
+805,Java Backend Intern,Develop REST APIs and services using Java Spring Boot.,Java;Spring;REST API,Lucknow,2 months,WebSolutions
+806,Frontend React Intern,Create responsive UI with React and TailwindCSS.,HTML;CSS;JavaScript;React,Goa,5 weeks,MarketCo
+807,Machine Learning Intern,Work on predictive analytics using Python and scikit-learn.,Python;Machine Learning;Statistics,Chennai,1 month,Analytics Hub
+808,Data Science Intern,Work on ML models and data analysis.,Python;SQL;Machine Learning,Bhubaneswar,5 weeks,College Labs
+809,Data Science Intern,Work on ML models and data analysis.,Python;SQL;Machine Learning,Bengaluru,6 months,MarketCo
+810,Java Backend Intern,Develop REST APIs and services using Java Spring Boot.,Java;Spring;REST API,Kolkata,5 weeks,Analytics Hub
+811,Machine Learning Intern,Work on predictive analytics using Python and scikit-learn.,Python;Machine Learning;Statistics,Chennai,4 months,College Labs
+812,Data Science Intern,Work on ML models and data analysis.,Python;SQL;Machine Learning,Dehradun,2 months,WebSolutions
+813,Android Developer Intern,Build Android apps with Java/Kotlin.,Java;Kotlin;APIs,Jaipur,6 months,College Labs
+814,Machine Learning Intern,Work on predictive analytics using Python and scikit-learn.,Python;Machine Learning;Statistics,Mumbai,4 months,MobileWorks
+815,Java Backend Intern,Develop REST APIs and services using Java Spring Boot.,Java;Spring;REST API,Mumbai,1 month,Tech Startup
+816,Marketing Intern,Manage social media and content creation.,Communication;Marketing;Social Media,Chennai,4 months,DataWorks
+817,Data Science Intern,Work on ML models and data analysis.,Python;SQL;Machine Learning,Goa,4 months,MarketCo
+818,Machine Learning Intern,Work on predictive analytics using Python and scikit-learn.,Python;Machine Learning;Statistics,Dehradun,1 month,College Labs
+819,Machine Learning Intern,Work on predictive analytics using Python and scikit-learn.,Python;Machine Learning;Statistics,Kolkata,1 month,MobileWorks
+820,Marketing Intern,Manage social media and content creation.,Communication;Marketing;Social Media,Jaipur,6 months,College Labs
+821,Data Science Intern,Work on ML models and data analysis.,Python;SQL;Machine Learning,Dehradun,6 months,Tech Startup
+822,Data Science Intern,Work on ML models and data analysis.,Python;SQL;Machine Learning,Goa,5 weeks,WebSolutions
+823,Frontend React Intern,Create responsive UI with React and TailwindCSS.,HTML;CSS;JavaScript;React,Dehradun,3 months,DesignStudios
+824,BCA Project Intern,"Help with college project using PHP, MySQL.",PHP;MySQL;HTML;CSS,Pune,3 months,DataWorks
+825,Data Science Intern,Work on ML models and data analysis.,Python;SQL;Machine Learning,Ahmedabad,1 month,DesignStudios
+826,Web Development Intern,Front-end using React and backend Node.js.,HTML;CSS;JavaScript;React;Node,Pune,4 months,Tech Startup
+827,UI/UX Design Intern,Design wireframes and prototypes using Figma and Adobe XD.,Figma;Adobe XD;Design,Lucknow,2 months,DesignStudios
+828,Machine Learning Intern,Work on predictive analytics using Python and scikit-learn.,Python;Machine Learning;Statistics,Lucknow,2 months,WebSolutions
+829,Frontend React Intern,Create responsive UI with React and TailwindCSS.,HTML;CSS;JavaScript;React,Mumbai,5 weeks,Analytics Hub
+830,Machine Learning Intern,Work on predictive analytics using Python and scikit-learn.,Python;Machine Learning;Statistics,Chennai,5 weeks,Analytics Hub
+831,Web Development Intern,Front-end using React and backend Node.js.,HTML;CSS;JavaScript;React;Node,Jaipur,1 month,CodeCrafters
+832,UI/UX Design Intern,Design wireframes and prototypes using Figma and Adobe XD.,Figma;Adobe XD;Design,Noida,6 months,DataWorks
+833,UI/UX Design Intern,Design wireframes and prototypes using Figma and Adobe XD.,Figma;Adobe XD;Design,Gurgaon,5 weeks,CodeCrafters
+834,Data Science Intern,Work on ML models and data analysis.,Python;SQL;Machine Learning,Noida,6 months,Analytics Hub
+835,UI/UX Design Intern,Design wireframes and prototypes using Figma and Adobe XD.,Figma;Adobe XD;Design,Delhi,6 months,WebSolutions
+836,Data Science Intern,Work on ML models and data analysis.,Python;SQL;Machine Learning,Ahmedabad,6 months,FinLabs
+837,Marketing Intern,Manage social media and content creation.,Communication;Marketing;Social Media,Jaipur,4 months,WebSolutions
+838,UI/UX Design Intern,Design wireframes and prototypes using Figma and Adobe XD.,Figma;Adobe XD;Design,Chennai,5 weeks,College Labs
+839,Machine Learning Intern,Work on predictive analytics using Python and scikit-learn.,Python;Machine Learning;Statistics,Gurgaon,4 months,WebSolutions
+840,Android Developer Intern,Build Android apps with Java/Kotlin.,Java;Kotlin;APIs,Delhi,5 weeks,Analytics Hub
+841,Machine Learning Intern,Work on predictive analytics using Python and scikit-learn.,Python;Machine Learning;Statistics,Kolkata,5 weeks,College Labs
+842,Android Developer Intern,Build Android apps with Java/Kotlin.,Java;Kotlin;APIs,Ahmedabad,2 months,DataWorks
+843,Android Developer Intern,Build Android apps with Java/Kotlin.,Java;Kotlin;APIs,Bengaluru,6 months,Analytics Hub
+844,Machine Learning Intern,Work on predictive analytics using Python and scikit-learn.,Python;Machine Learning;Statistics,Chennai,4 months,College Labs
+845,Web Development Intern,Front-end using React and backend Node.js.,HTML;CSS;JavaScript;React;Node,Lucknow,6 months,FinLabs
+846,Java Backend Intern,Develop REST APIs and services using Java Spring Boot.,Java;Spring;REST API,Mumbai,1 month,WebSolutions
+847,Web Development Intern,Front-end using React and backend Node.js.,HTML;CSS;JavaScript;React;Node,Kolkata,4 months,CodeCrafters
+848,Java Backend Intern,Develop REST APIs and services using Java Spring Boot.,Java;Spring;REST API,Bhubaneswar,6 months,WebSolutions
+849,Java Backend Intern,Develop REST APIs and services using Java Spring Boot.,Java;Spring;REST API,Kolkata,1 month,CodeCrafters
+850,Web Development Intern,Front-end using React and backend Node.js.,HTML;CSS;JavaScript;React;Node,Ahmedabad,2 months,MobileWorks
+851,Android Developer Intern,Build Android apps with Java/Kotlin.,Java;Kotlin;APIs,Lucknow,4 months,CodeCrafters
+852,Data Analyst Intern,Perform data cleaning and visualization using Python and Excel.,Python;SQL;Excel,Dehradun,1 month,Tech Startup
+853,Machine Learning Intern,Work on predictive analytics using Python and scikit-learn.,Python;Machine Learning;Statistics,Gurgaon,2 months,MarketCo
+854,Marketing Intern,Manage social media and content creation.,Communication;Marketing;Social Media,Dehradun,2 months,FinLabs
+855,UI/UX Design Intern,Design wireframes and prototypes using Figma and Adobe XD.,Figma;Adobe XD;Design,Dehradun,6 months,DesignStudios
+856,Marketing Intern,Manage social media and content creation.,Communication;Marketing;Social Media,Hyderabad,2 months,Tech Startup
+857,Frontend React Intern,Create responsive UI with React and TailwindCSS.,HTML;CSS;JavaScript;React,Kolkata,2 months,Analytics Hub
+858,Machine Learning Intern,Work on predictive analytics using Python and scikit-learn.,Python;Machine Learning;Statistics,Lucknow,6 months,College Labs
+859,Marketing Intern,Manage social media and content creation.,Communication;Marketing;Social Media,Jaipur,4 months,College Labs
+860,Data Science Intern,Work on ML models and data analysis.,Python;SQL;Machine Learning,Lucknow,2 months,MarketCo
+861,UI/UX Design Intern,Design wireframes and prototypes using Figma and Adobe XD.,Figma;Adobe XD;Design,Jaipur,2 months,MarketCo
+862,Machine Learning Intern,Work on predictive analytics using Python and scikit-learn.,Python;Machine Learning;Statistics,Ahmedabad,2 months,Tech Startup
+863,Web Development Intern,Front-end using React and backend Node.js.,HTML;CSS;JavaScript;React;Node,Pune,5 weeks,CodeCrafters
+864,Android Developer Intern,Build Android apps with Java/Kotlin.,Java;Kotlin;APIs,Chennai,1 month,MobileWorks
+865,BCA Project Intern,"Help with college project using PHP, MySQL.",PHP;MySQL;HTML;CSS,Delhi,2 months,MobileWorks
+866,Web Development Intern,Front-end using React and backend Node.js.,HTML;CSS;JavaScript;React;Node,Dehradun,4 months,CodeCrafters
+867,Machine Learning Intern,Work on predictive analytics using Python and scikit-learn.,Python;Machine Learning;Statistics,Gurgaon,3 months,CodeCrafters
+868,BCA Project Intern,"Help with college project using PHP, MySQL.",PHP;MySQL;HTML;CSS,Hyderabad,2 months,Tech Startup
+869,Android Developer Intern,Build Android apps with Java/Kotlin.,Java;Kotlin;APIs,Chennai,2 months,DataWorks
+870,Java Backend Intern,Develop REST APIs and services using Java Spring Boot.,Java;Spring;REST API,Lucknow,6 months,WebSolutions
+871,Machine Learning Intern,Work on predictive analytics using Python and scikit-learn.,Python;Machine Learning;Statistics,Hyderabad,3 months,DesignStudios
+872,Android Developer Intern,Build Android apps with Java/Kotlin.,Java;Kotlin;APIs,Noida,2 months,MobileWorks
+873,Android Developer Intern,Build Android apps with Java/Kotlin.,Java;Kotlin;APIs,Mumbai,6 months,WebSolutions
+874,Data Analyst Intern,Perform data cleaning and visualization using Python and Excel.,Python;SQL;Excel,Jaipur,2 months,Tech Startup
+875,Android Developer Intern,Build Android apps with Java/Kotlin.,Java;Kotlin;APIs,Hyderabad,3 months,CodeCrafters
+876,UI/UX Design Intern,Design wireframes and prototypes using Figma and Adobe XD.,Figma;Adobe XD;Design,Pune,1 month,College Labs
+877,Web Development Intern,Front-end using React and backend Node.js.,HTML;CSS;JavaScript;React;Node,Lucknow,1 month,Analytics Hub
+878,Data Analyst Intern,Perform data cleaning and visualization using Python and Excel.,Python;SQL;Excel,Dehradun,1 month,MobileWorks
+879,Machine Learning Intern,Work on predictive analytics using Python and scikit-learn.,Python;Machine Learning;Statistics,Mumbai,3 months,Tech Startup
+880,Android Developer Intern,Build Android apps with Java/Kotlin.,Java;Kotlin;APIs,Bhubaneswar,5 weeks,Analytics Hub
+881,Marketing Intern,Manage social media and content creation.,Communication;Marketing;Social Media,Delhi,4 months,CodeCrafters
+882,UI/UX Design Intern,Design wireframes and prototypes using Figma and Adobe XD.,Figma;Adobe XD;Design,Dehradun,2 months,MobileWorks
+883,Web Development Intern,Front-end using React and backend Node.js.,HTML;CSS;JavaScript;React;Node,Bengaluru,5 weeks,College Labs
+884,UI/UX Design Intern,Design wireframes and prototypes using Figma and Adobe XD.,Figma;Adobe XD;Design,Mumbai,6 months,Tech Startup
+885,Web Development Intern,Front-end using React and backend Node.js.,HTML;CSS;JavaScript;React;Node,Delhi,3 months,FinLabs
+886,Data Science Intern,Work on ML models and data analysis.,Python;SQL;Machine Learning,Gurgaon,6 months,MarketCo
+887,Machine Learning Intern,Work on predictive analytics using Python and scikit-learn.,Python;Machine Learning;Statistics,Pune,6 months,Analytics Hub
+888,Frontend React Intern,Create responsive UI with React and TailwindCSS.,HTML;CSS;JavaScript;React,Bengaluru,4 months,FinLabs
+889,BCA Project Intern,"Help with college project using PHP, MySQL.",PHP;MySQL;HTML;CSS,Dehradun,3 months,Analytics Hub
+890,BCA Project Intern,"Help with college project using PHP, MySQL.",PHP;MySQL;HTML;CSS,Delhi,6 months,Analytics Hub
+891,Android Developer Intern,Build Android apps with Java/Kotlin.,Java;Kotlin;APIs,Delhi,3 months,MobileWorks
+892,Data Analyst Intern,Perform data cleaning and visualization using Python and Excel.,Python;SQL;Excel,Lucknow,6 months,CodeCrafters
+893,Data Science Intern,Work on ML models and data analysis.,Python;SQL;Machine Learning,Bhubaneswar,6 months,College Labs
+894,Data Analyst Intern,Perform data cleaning and visualization using Python and Excel.,Python;SQL;Excel,Jaipur,6 months,DataWorks
+895,Frontend React Intern,Create responsive UI with React and TailwindCSS.,HTML;CSS;JavaScript;React,Dehradun,6 months,FinLabs
+896,UI/UX Design Intern,Design wireframes and prototypes using Figma and Adobe XD.,Figma;Adobe XD;Design,Jaipur,4 months,CodeCrafters
+897,Android Developer Intern,Build Android apps with Java/Kotlin.,Java;Kotlin;APIs,Bengaluru,3 months,WebSolutions
+898,Data Science Intern,Work on ML models and data analysis.,Python;SQL;Machine Learning,Delhi,2 months,Analytics Hub
+899,Machine Learning Intern,Work on predictive analytics using Python and scikit-learn.,Python;Machine Learning;Statistics,Bhubaneswar,4 months,Analytics Hub
+900,UI/UX Design Intern,Design wireframes and prototypes using Figma and Adobe XD.,Figma;Adobe XD;Design,Ahmedabad,5 weeks,College Labs
+901,Data Science Intern,Work on ML models and data analysis.,Python;SQL;Machine Learning,Bhubaneswar,6 months,MobileWorks
+902,Data Analyst Intern,Perform data cleaning and visualization using Python and Excel.,Python;SQL;Excel,Pune,2 months,DataWorks
+903,BCA Project Intern,"Help with college project using PHP, MySQL.",PHP;MySQL;HTML;CSS,Bengaluru,3 months,Analytics Hub
+904,UI/UX Design Intern,Design wireframes and prototypes using Figma and Adobe XD.,Figma;Adobe XD;Design,Kolkata,2 months,DataWorks
+905,Android Developer Intern,Build Android apps with Java/Kotlin.,Java;Kotlin;APIs,Delhi,1 month,WebSolutions
+906,UI/UX Design Intern,Design wireframes and prototypes using Figma and Adobe XD.,Figma;Adobe XD;Design,Gurgaon,2 months,CodeCrafters
+907,Data Science Intern,Work on ML models and data analysis.,Python;SQL;Machine Learning,Bengaluru,4 months,FinLabs
+908,Android Developer Intern,Build Android apps with Java/Kotlin.,Java;Kotlin;APIs,Noida,5 weeks,Analytics Hub
+909,Frontend React Intern,Create responsive UI with React and TailwindCSS.,HTML;CSS;JavaScript;React,Jaipur,1 month,MobileWorks
+910,Machine Learning Intern,Work on predictive analytics using Python and scikit-learn.,Python;Machine Learning;Statistics,Dehradun,3 months,MobileWorks
+911,Web Development Intern,Front-end using React and backend Node.js.,HTML;CSS;JavaScript;React;Node,Mumbai,6 months,Analytics Hub
+912,Marketing Intern,Manage social media and content creation.,Communication;Marketing;Social Media,Chennai,5 weeks,Tech Startup
+913,Marketing Intern,Manage social media and content creation.,Communication;Marketing;Social Media,Hyderabad,6 months,FinLabs
+914,Data Science Intern,Work on ML models and data analysis.,Python;SQL;Machine Learning,Mumbai,4 months,CodeCrafters
+915,BCA Project Intern,"Help with college project using PHP, MySQL.",PHP;MySQL;HTML;CSS,Jaipur,4 months,DesignStudios
+916,UI/UX Design Intern,Design wireframes and prototypes using Figma and Adobe XD.,Figma;Adobe XD;Design,Bengaluru,6 months,DataWorks
+917,Android Developer Intern,Build Android apps with Java/Kotlin.,Java;Kotlin;APIs,Gurgaon,4 months,WebSolutions
+918,Java Backend Intern,Develop REST APIs and services using Java Spring Boot.,Java;Spring;REST API,Chennai,1 month,CodeCrafters
+919,Data Science Intern,Work on ML models and data analysis.,Python;SQL;Machine Learning,Chennai,3 months,DataWorks
+920,BCA Project Intern,"Help with college project using PHP, MySQL.",PHP;MySQL;HTML;CSS,Jaipur,3 months,WebSolutions
+921,UI/UX Design Intern,Design wireframes and prototypes using Figma and Adobe XD.,Figma;Adobe XD;Design,Chennai,1 month,MobileWorks
+922,UI/UX Design Intern,Design wireframes and prototypes using Figma and Adobe XD.,Figma;Adobe XD;Design,Mumbai,5 weeks,College Labs
+923,Marketing Intern,Manage social media and content creation.,Communication;Marketing;Social Media,Jaipur,6 months,DesignStudios
+924,Frontend React Intern,Create responsive UI with React and TailwindCSS.,HTML;CSS;JavaScript;React,Goa,2 months,MarketCo
+925,BCA Project Intern,"Help with college project using PHP, MySQL.",PHP;MySQL;HTML;CSS,Mumbai,5 weeks,CodeCrafters
+926,Marketing Intern,Manage social media and content creation.,Communication;Marketing;Social Media,Jaipur,6 months,CodeCrafters
+927,Data Science Intern,Work on ML models and data analysis.,Python;SQL;Machine Learning,Noida,2 months,FinLabs
+928,Marketing Intern,Manage social media and content creation.,Communication;Marketing;Social Media,Gurgaon,1 month,MarketCo
+929,Data Science Intern,Work on ML models and data analysis.,Python;SQL;Machine Learning,Pune,5 weeks,MobileWorks
+930,Web Development Intern,Front-end using React and backend Node.js.,HTML;CSS;JavaScript;React;Node,Gurgaon,6 months,DesignStudios
+931,Marketing Intern,Manage social media and content creation.,Communication;Marketing;Social Media,Gurgaon,1 month,DataWorks
+932,Marketing Intern,Manage social media and content creation.,Communication;Marketing;Social Media,Mumbai,5 weeks,FinLabs
+933,BCA Project Intern,"Help with college project using PHP, MySQL.",PHP;MySQL;HTML;CSS,Delhi,2 months,College Labs
+934,Web Development Intern,Front-end using React and backend Node.js.,HTML;CSS;JavaScript;React;Node,Delhi,2 months,FinLabs
+935,Web Development Intern,Front-end using React and backend Node.js.,HTML;CSS;JavaScript;React;Node,Hyderabad,6 months,MarketCo
+936,Data Analyst Intern,Perform data cleaning and visualization using Python and Excel.,Python;SQL;Excel,Mumbai,4 months,Analytics Hub
+937,Data Analyst Intern,Perform data cleaning and visualization using Python and Excel.,Python;SQL;Excel,Dehradun,1 month,CodeCrafters
+938,Java Backend Intern,Develop REST APIs and services using Java Spring Boot.,Java;Spring;REST API,Dehradun,6 months,FinLabs
+939,Java Backend Intern,Develop REST APIs and services using Java Spring Boot.,Java;Spring;REST API,Chennai,2 months,FinLabs
+940,Marketing Intern,Manage social media and content creation.,Communication;Marketing;Social Media,Chennai,3 months,DesignStudios
+941,UI/UX Design Intern,Design wireframes and prototypes using Figma and Adobe XD.,Figma;Adobe XD;Design,Goa,5 weeks,WebSolutions
+942,Marketing Intern,Manage social media and content creation.,Communication;Marketing;Social Media,Kolkata,4 months,Tech Startup
+943,Data Analyst Intern,Perform data cleaning and visualization using Python and Excel.,Python;SQL;Excel,Ahmedabad,6 months,DesignStudios
+944,Frontend React Intern,Create responsive UI with React and TailwindCSS.,HTML;CSS;JavaScript;React,Mumbai,1 month,CodeCrafters
+945,Web Development Intern,Front-end using React and backend Node.js.,HTML;CSS;JavaScript;React;Node,Delhi,4 months,MobileWorks
+946,UI/UX Design Intern,Design wireframes and prototypes using Figma and Adobe XD.,Figma;Adobe XD;Design,Jaipur,5 weeks,WebSolutions
+947,Android Developer Intern,Build Android apps with Java/Kotlin.,Java;Kotlin;APIs,Hyderabad,1 month,MarketCo
+948,BCA Project Intern,"Help with college project using PHP, MySQL.",PHP;MySQL;HTML;CSS,Bengaluru,6 months,MobileWorks
+949,Machine Learning Intern,Work on predictive analytics using Python and scikit-learn.,Python;Machine Learning;Statistics,Hyderabad,5 weeks,Analytics Hub
+950,Frontend React Intern,Create responsive UI with React and TailwindCSS.,HTML;CSS;JavaScript;React,Chennai,6 months,DataWorks
+951,Java Backend Intern,Develop REST APIs and services using Java Spring Boot.,Java;Spring;REST API,Chennai,6 months,CodeCrafters
+952,UI/UX Design Intern,Design wireframes and prototypes using Figma and Adobe XD.,Figma;Adobe XD;Design,Ahmedabad,5 weeks,WebSolutions
+953,Android Developer Intern,Build Android apps with Java/Kotlin.,Java;Kotlin;APIs,Bhubaneswar,3 months,Tech Startup
+954,Data Science Intern,Work on ML models and data analysis.,Python;SQL;Machine Learning,Goa,4 months,Tech Startup
+955,BCA Project Intern,"Help with college project using PHP, MySQL.",PHP;MySQL;HTML;CSS,Jaipur,5 weeks,MobileWorks
+956,Data Science Intern,Work on ML models and data analysis.,Python;SQL;Machine Learning,Noida,6 months,MobileWorks
+957,Web Development Intern,Front-end using React and backend Node.js.,HTML;CSS;JavaScript;React;Node,Lucknow,6 months,CodeCrafters
+958,Marketing Intern,Manage social media and content creation.,Communication;Marketing;Social Media,Goa,2 months,MarketCo
+959,Data Analyst Intern,Perform data cleaning and visualization using Python and Excel.,Python;SQL;Excel,Ahmedabad,6 months,FinLabs
+960,Android Developer Intern,Build Android apps with Java/Kotlin.,Java;Kotlin;APIs,Ahmedabad,2 months,College Labs
+961,Data Analyst Intern,Perform data cleaning and visualization using Python and Excel.,Python;SQL;Excel,Ahmedabad,3 months,MarketCo
+962,BCA Project Intern,"Help with college project using PHP, MySQL.",PHP;MySQL;HTML;CSS,Mumbai,3 months,MobileWorks
+963,Marketing Intern,Manage social media and content creation.,Communication;Marketing;Social Media,Bengaluru,2 months,DataWorks
+964,Data Science Intern,Work on ML models and data analysis.,Python;SQL;Machine Learning,Bengaluru,3 months,DesignStudios
+965,Frontend React Intern,Create responsive UI with React and TailwindCSS.,HTML;CSS;JavaScript;React,Bhubaneswar,3 months,CodeCrafters
+966,Data Science Intern,Work on ML models and data analysis.,Python;SQL;Machine Learning,Bengaluru,4 months,College Labs
+967,Data Science Intern,Work on ML models and data analysis.,Python;SQL;Machine Learning,Pune,2 months,Analytics Hub
+968,Data Science Intern,Work on ML models and data analysis.,Python;SQL;Machine Learning,Jaipur,1 month,WebSolutions
+969,Android Developer Intern,Build Android apps with Java/Kotlin.,Java;Kotlin;APIs,Delhi,2 months,DesignStudios
+970,BCA Project Intern,"Help with college project using PHP, MySQL.",PHP;MySQL;HTML;CSS,Goa,2 months,Tech Startup
+971,Android Developer Intern,Build Android apps with Java/Kotlin.,Java;Kotlin;APIs,Lucknow,6 months,DataWorks
+972,BCA Project Intern,"Help with college project using PHP, MySQL.",PHP;MySQL;HTML;CSS,Dehradun,5 weeks,MobileWorks
+973,Data Analyst Intern,Perform data cleaning and visualization using Python and Excel.,Python;SQL;Excel,Dehradun,5 weeks,DataWorks
+974,Java Backend Intern,Develop REST APIs and services using Java Spring Boot.,Java;Spring;REST API,Chennai,1 month,MobileWorks
+975,Data Science Intern,Work on ML models and data analysis.,Python;SQL;Machine Learning,Lucknow,4 months,MobileWorks
+976,Frontend React Intern,Create responsive UI with React and TailwindCSS.,HTML;CSS;JavaScript;React,Ahmedabad,2 months,WebSolutions
+977,Android Developer Intern,Build Android apps with Java/Kotlin.,Java;Kotlin;APIs,Delhi,2 months,MobileWorks
+978,Android Developer Intern,Build Android apps with Java/Kotlin.,Java;Kotlin;APIs,Gurgaon,2 months,MobileWorks
+979,Web Development Intern,Front-end using React and backend Node.js.,HTML;CSS;JavaScript;React;Node,Kolkata,4 months,Tech Startup
+980,Data Analyst Intern,Perform data cleaning and visualization using Python and Excel.,Python;SQL;Excel,Kolkata,2 months,FinLabs
+981,BCA Project Intern,"Help with college project using PHP, MySQL.",PHP;MySQL;HTML;CSS,Mumbai,5 weeks,Analytics Hub
+982,Data Science Intern,Work on ML models and data analysis.,Python;SQL;Machine Learning,Bhubaneswar,3 months,Tech Startup
+983,Data Analyst Intern,Perform data cleaning and visualization using Python and Excel.,Python;SQL;Excel,Jaipur,4 months,MarketCo
+984,Frontend React Intern,Create responsive UI with React and TailwindCSS.,HTML;CSS;JavaScript;React,Pune,6 months,CodeCrafters
+985,Machine Learning Intern,Work on predictive analytics using Python and scikit-learn.,Python;Machine Learning;Statistics,Gurgaon,1 month,DesignStudios
+986,Data Analyst Intern,Perform data cleaning and visualization using Python and Excel.,Python;SQL;Excel,Gurgaon,5 weeks,Analytics Hub
+987,Android Developer Intern,Build Android apps with Java/Kotlin.,Java;Kotlin;APIs,Chennai,2 months,Tech Startup
+988,Web Development Intern,Front-end using React and backend Node.js.,HTML;CSS;JavaScript;React;Node,Lucknow,3 months,FinLabs
+989,Java Backend Intern,Develop REST APIs and services using Java Spring Boot.,Java;Spring;REST API,Bhubaneswar,6 months,FinLabs
+990,Data Science Intern,Work on ML models and data analysis.,Python;SQL;Machine Learning,Kolkata,3 months,College Labs
+991,Java Backend Intern,Develop REST APIs and services using Java Spring Boot.,Java;Spring;REST API,Chennai,1 month,DataWorks
+992,Machine Learning Intern,Work on predictive analytics using Python and scikit-learn.,Python;Machine Learning;Statistics,Pune,1 month,College Labs
+993,Data Analyst Intern,Perform data cleaning and visualization using Python and Excel.,Python;SQL;Excel,Pune,4 months,WebSolutions
+994,Web Development Intern,Front-end using React and backend Node.js.,HTML;CSS;JavaScript;React;Node,Kolkata,1 month,MarketCo
+995,Marketing Intern,Manage social media and content creation.,Communication;Marketing;Social Media,Gurgaon,3 months,CodeCrafters
+996,Java Backend Intern,Develop REST APIs and services using Java Spring Boot.,Java;Spring;REST API,Goa,2 months,FinLabs
+997,BCA Project Intern,"Help with college project using PHP, MySQL.",PHP;MySQL;HTML;CSS,Hyderabad,2 months,Analytics Hub
+998,UI/UX Design Intern,Design wireframes and prototypes using Figma and Adobe XD.,Figma;Adobe XD;Design,Noida,2 months,DesignStudios
+999,Marketing Intern,Manage social media and content creation.,Communication;Marketing;Social Media,Gurgaon,5 weeks,MarketCo
+1000,Frontend React Intern,Create responsive UI with React and TailwindCSS.,HTML;CSS;JavaScript;React,Bengaluru,6 months,CodeCrafters
