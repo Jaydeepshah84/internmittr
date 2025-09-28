@@ -1,134 +1,3 @@
-# from flask import Flask, request, jsonify
-# from flask_cors import CORS
-# import pandas as pd
-# import os
-# import numpy as np
-# import re
-
-# app = Flask(__name__)
-# CORS(app)
-
-# # --- Load CSV dataset ---
-# DATA_PATH = os.path.join("data", "internships.csv")
-# if not os.path.exists(DATA_PATH):
-#     alt = os.path.join(os.path.dirname(__file__), "internships.csv")
-#     if os.path.exists(alt):
-#         DATA_PATH = alt
-
-# df = pd.read_csv(DATA_PATH).fillna("")
-
-# # Ensure skills and locations are lowercase for matching
-# df["skills_list"] = df["skills"].apply(lambda x: [s.strip().lower() for s in re.split(r"[;,]\s*", x)])
-# df["location"] = df["location"].astype(str)
-
-# # --- Nearby cities mapping (can expand as needed) ---
-# NEARBY_CITIES = {
-#     "bengaluru": ["pune", "hyderabad", "chennai", "coimbatore", "mysuru"],
-#     "dehradun": ["haridwar", "rishikesh", "chandigarh", "lucknow"],
-#     "delhi": ["noida", "gurgaon", "faridabad", "ghaziabad"],
-#     "mumbai": ["pune", "navi mumbai", "thane", "surat"],
-#     "chennai": ["bengaluru", "hyderabad", "coimbatore"],
-#     "kolkata": ["bhubaneswar", "patna", "siliguri"],
-#     "hyderabad": ["bengaluru", "chennai", "vijayawada"],
-#     "pune": ["mumbai", "bengaluru", "goa"],
-#     "jaipur": ["ajmer", "udaipur", "delhi"],
-#     "noida": ["delhi", "gurgaon", "faridabad"],
-# }
-
-# # --- Helper functions ---
-# def compute_skill_score(user_skills, job_skills):
-#     if not user_skills or not job_skills:
-#         return 0
-#     matched = set(user_skills) & set(job_skills)
-#     return len(matched) / max(len(job_skills), 1)
-
-# def compute_interest_score(user_interests, job_title):
-#     # Simple: if job title contains any interest keyword
-#     if not user_interests:
-#         return 0
-#     score = 0
-#     job_title_lower = job_title.lower()
-#     for interest in user_interests:
-#         if interest.lower() in job_title_lower:
-#             score += 1
-#     return score / max(len(user_interests), 1)
-
-# def compute_location_score(user_location, job_location):
-#     user_location_lower = user_location.lower()
-#     job_location_lower = job_location.lower()
-#     if user_location_lower == job_location_lower:
-#         return 1.0
-#     nearby = NEARBY_CITIES.get(user_location_lower, [])
-#     if job_location_lower in nearby:
-#         return 0.7
-#     elif "remote" in job_location_lower:
-#         return 0.5
-#     return 0
-
-# # --- Recommendation endpoint ---
-# @app.route("/recommend", methods=["POST"])
-# def recommend():
-#     body = request.get_json(force=True)
-    
-#     # --- Extract profile ---
-#     education = body.get("education", "")
-#     skills = body.get("skills", [])
-#     if isinstance(skills, str):
-#         skills = [s.strip().lower() for s in re.split(r"[;,]\s*", skills)]
-#     else:
-#         skills = [s.lower() for s in skills]
-        
-#     interests = body.get("interests", [])
-#     if isinstance(interests, str):
-#         interests = [interests.lower()]
-#     else:
-#         interests = [i.lower() for i in interests]
-        
-#     location_pref = body.get("location", "").strip()
-#     if not location_pref:
-#         return jsonify({"error": "Location is required"}), 400
-    
-#     top_k = max(3, min(5, int(body.get("top_k", 5))))
-    
-#     # --- Compute scores ---
-#     results = []
-#     for _, row in df.iterrows():
-#         skill_score = compute_skill_score(skills, row["skills_list"])
-#         interest_score = compute_interest_score(interests, row["title"])
-#         location_score = compute_location_score(location_pref, row["location"])
-        
-#         # Weighted total score
-#         total_score = 0.5 * skill_score + 0.2 * interest_score + 0.3 * location_score
-        
-#         if total_score > 0:  # Only consider meaningful matches
-#             results.append({
-#                 "id": int(row.get("id", 0)),
-#                 "title": row.get("title", ""),
-#                 "short_title": row.get("title", "")[:60],
-#                 "description": row.get("description", ""),
-#                 "short_description": row.get("description", "")[:160],
-#                 "skills": row.get("skills", ""),
-#                 "key_skills": list(set(skills) & set(row["skills_list"])),
-#                 "location": row.get("location", ""),
-#                 "duration": row.get("duration", ""),
-#                 "organization": row.get("organization", ""),
-#                 "apply_link": f"https://example.org/apply/{int(row.get('id', 0))}",
-#                 "score": round(total_score, 4),
-#                 "reason": f"Skills matched: {', '.join(list(set(skills) & set(row['skills_list'])))}; Location relevance: {row.get('location')}"
-#             })
-    
-#     # Sort by total_score descending and pick top_k
-#     results = sorted(results, key=lambda x: x["score"], reverse=True)[:top_k]
-    
-#     return jsonify(results)
-
-# # --- Run Flask app ---
-# if __name__ == "__main__":
-#     app.run(host="0.0.0.0", port=5000, debug=True)
-
-
-
-
 from flask import Flask, request, jsonify
 from flask_cors import CORS
 import pandas as pd
@@ -146,85 +15,95 @@ logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
 app = Flask(__name__)
-CORS(app, origins=["http://localhost:3000", "http://127.0.0.1:5500", "*"])
+CORS(app, origins=["*"])
 
-# --- Enhanced Education Level Mapping ---
+# Enhanced Education Level Mapping with proper hierarchy
 EDUCATION_HIERARCHY = {
     "class-10": 1,
     "class-12-science": 2, "class-12-commerce": 2, "class-12-arts": 2,
     "diploma-engineering": 3, "diploma-computer": 3, "diploma-mechanical": 3, 
     "diploma-civil": 3, "diploma-electrical": 3, "polytechnic": 3,
+    "bsc-cs": 4, "bsc-it": 4, "bsc": 4, "bcom": 4, "ba": 4, "bba": 4, 
+    "bmm": 4, "bdes": 4, "bca": 4,
     "btech-cse": 5, "btech-it": 5, "btech-ece": 5, "btech-mechanical": 5, 
-    "btech-civil": 5, "btech-electrical": 5, "be": 5, "bca": 4, "bsc-cs": 4, 
-    "bsc-it": 4, "bsc": 4, "bcom": 4, "ba": 4, "bba": 4, "bmm": 4, "bdes": 4,
+    "btech-civil": 5, "btech-electrical": 5, "be": 5,
+    "mca": 6, "msc-cs": 6, "msc-it": 6, "msc": 6, "mba": 6, "mcom": 6, 
+    "ma": 6, "mdes": 6, "ca": 6, "cs": 6, "cma": 6, "law": 6,
     "mtech-cse": 7, "mtech-it": 7, "mtech-ece": 7, "mtech-mechanical": 7, 
-    "mtech-civil": 7, "me": 7, "mca": 6, "msc-cs": 6, "msc-it": 6, "msc": 6, 
-    "mba": 6, "mcom": 6, "ma": 6, "mdes": 6,
-    "phd-engineering": 8, "phd-computer": 8, "phd-management": 8, "phd-science": 8, "phd-other": 8,
-    "ca": 6, "cs": 6, "cma": 6, "law": 6, "medical": 7, "certification": 3
+    "mtech-civil": 7, "me": 7, "medical": 7,
+    "phd-engineering": 8, "phd-computer": 8, "phd-management": 8, 
+    "phd-science": 8, "phd-other": 8
 }
 
+# Education field specializations
 EDUCATION_FIELDS = {
-    "btech-cse": ["computer science", "software", "programming", "ai", "ml"],
-    "btech-it": ["information technology", "software", "web", "database"],
-    "btech-ece": ["electronics", "communication", "embedded", "vlsi"],
-    "mtech-cse": ["advanced software", "research", "ai", "machine learning"],
-    "bca": ["computer applications", "programming", "software development"],
-    "mca": ["advanced programming", "software engineering", "database"],
-    "mba": ["management", "business", "marketing", "finance"],
-    "bcom": ["accounting", "finance", "business", "commerce"],
-    # Add more mappings as needed
+    "btech-cse": ["computer science", "software", "programming", "ai", "ml", "java", "python"],
+    "btech-it": ["information technology", "software", "web", "database", "networking"],
+    "btech-ece": ["electronics", "communication", "embedded", "vlsi", "hardware"],
+    "bca": ["computer applications", "programming", "software development", "web", "java"],
+    "mca": ["advanced programming", "software engineering", "database", "system design"],
+    "bsc-cs": ["computer science", "programming", "algorithms", "data structures"],
+    "mtech-cse": ["advanced software", "research", "ai", "machine learning", "data science"],
+    "mba": ["management", "business", "marketing", "finance", "strategy"],
+    "bcom": ["accounting", "finance", "business", "commerce", "economics"],
+    "diploma-computer": ["basic programming", "computer basics", "web development"]
 }
 
-# --- Enhanced Skills Mapping with Synonyms ---
+# Enhanced Skills Mapping with synonyms and related technologies
 SKILL_SYNONYMS = {
-    "python": ["python", "py", "django", "flask", "pandas", "numpy"],
-    "java": ["java", "spring", "hibernate", "jsp", "servlets"],
-    "javascript": ["javascript", "js", "node", "nodejs", "react", "angular", "vue"],
-    "web-development": ["html", "css", "frontend", "backend", "fullstack", "web"],
-    "machine-learning": ["ml", "ai", "deep learning", "tensorflow", "pytorch", "sklearn"],
-    "data-science": ["data analysis", "statistics", "visualization", "pandas", "numpy"],
-    "mobile-development": ["android", "ios", "flutter", "react native", "kotlin", "swift"],
-    "cloud": ["aws", "azure", "gcp", "docker", "kubernetes", "devops"],
-    "cybersecurity": ["security", "penetration testing", "ethical hacking", "firewall"],
-    "digital-marketing": ["seo", "sem", "social media", "content marketing", "analytics"]
+    "python": ["python", "py", "django", "flask", "pandas", "numpy", "scikit-learn"],
+    "java": ["java", "spring", "hibernate", "jsp", "servlets", "spring-boot"],
+    "javascript": ["javascript", "js", "node", "nodejs", "react", "angular", "vue", "typescript"],
+    "web-development": ["html", "css", "frontend", "backend", "fullstack", "web", "responsive"],
+    "react": ["react", "reactjs", "jsx", "redux", "next.js"],
+    "machine-learning": ["ml", "ai", "deep learning", "tensorflow", "pytorch", "sklearn", "data science"],
+    "data-science": ["data analysis", "statistics", "visualization", "pandas", "numpy", "matplotlib"],
+    "android": ["android", "kotlin", "java", "mobile development", "android studio"],
+    "sql": ["sql", "mysql", "postgresql", "database", "queries", "rdbms"],
+    "spring": ["spring", "spring-boot", "spring-mvc", "java", "rest-api"],
+    "php": ["php", "laravel", "codeigniter", "wordpress", "web development"],
+    "html": ["html", "html5", "markup", "web", "frontend"],
+    "css": ["css", "css3", "styling", "bootstrap", "sass", "responsive"],
+    "design": ["figma", "adobe-xd", "ui", "ux", "photoshop", "sketch"],
+    "marketing": ["digital-marketing", "seo", "sem", "social-media", "content-marketing"]
 }
 
-# --- Enhanced Interest to Job Category Mapping ---
+# Enhanced Interest to Job Category Mapping
 INTEREST_CATEGORIES = {
-    "software-development": ["developer", "programmer", "software", "coding", "engineer"],
-    "web-development": ["web", "frontend", "backend", "fullstack", "ui", "ux"],
-    "mobile-development": ["android", "ios", "mobile", "app"],
-    "artificial-intelligence": ["ai", "ml", "machine learning", "data science", "nlp"],
-    "data-analytics": ["data", "analyst", "analytics", "bi", "visualization"],
-    "design": ["designer", "ui", "ux", "graphic", "creative"],
-    "marketing": ["marketing", "digital marketing", "seo", "social media"],
-    "finance": ["finance", "fintech", "accounting", "banking"],
-    "healthcare": ["healthcare", "medical", "pharma", "biotech"],
-    "education": ["education", "training", "e-learning", "teaching"],
-    "ecommerce": ["ecommerce", "retail", "marketplace", "shopping"],
-    "gaming": ["game", "gaming", "unity", "unreal"],
-    "research": ["research", "r&d", "innovation", "laboratory"],
-    "consulting": ["consultant", "advisory", "strategy", "business"]
+    "software-development": ["developer", "programmer", "software", "coding", "engineer", "backend", "fullstack"],
+    "web-development": ["web", "frontend", "backend", "fullstack", "ui", "ux", "html", "css", "javascript"],
+    "mobile-development": ["android", "ios", "mobile", "app", "kotlin", "swift"],
+    "artificial-intelligence": ["ai", "ml", "machine learning", "data science", "nlp", "deep learning"],
+    "data-analytics": ["data", "analyst", "analytics", "bi", "visualization", "statistics"],
+    "ui-ux-design": ["designer", "ui", "ux", "graphic", "creative", "figma", "adobe"],
+    "digital-marketing": ["marketing", "digital marketing", "seo", "social media", "content"],
+    "finance": ["finance", "fintech", "accounting", "banking", "investment"],
+    "java-development": ["java", "spring", "backend", "enterprise", "rest-api"],
+    "python-development": ["python", "django", "flask", "automation", "scripting"],
+    "database": ["sql", "mysql", "database", "data", "queries"]
 }
 
-# --- Enhanced Location Mapping ---
+# Enhanced Location Mapping
 CITY_SYNONYMS = {
-    "bengaluru": ["bangalore", "bengaluru", "blr"],
-    "delhi": ["delhi", "new delhi", "ncr", "dl"],
-    "mumbai": ["mumbai", "bombay", "mum"],
-    "chennai": ["chennai", "madras", "maa"],
-    "hyderabad": ["hyderabad", "secunderabad", "hyd"],
-    "pune": ["pune", "pun"],
-    "kolkata": ["kolkata", "calcutta", "cal"],
-    "jaipur": ["jaipur", "pink city"],
-    "noida": ["noida", "greater noida"],
-    "gurgaon": ["gurgaon", "gurugram"],
-    "dehradun": ["dehradun", "doon", "ddun"]
+    "bengaluru": ["bangalore", "bengaluru", "blr", "karnataka"],
+    "delhi": ["delhi", "new delhi", "ncr", "dl", "new-delhi"],
+    "mumbai": ["mumbai", "bombay", "mum", "maharashtra"],
+    "chennai": ["chennai", "madras", "maa", "tamil nadu"],
+    "hyderabad": ["hyderabad", "secunderabad", "hyd", "telangana"],
+    "pune": ["pune", "pun", "maharashtra"],
+    "kolkata": ["kolkata", "calcutta", "cal", "west bengal"],
+    "jaipur": ["jaipur", "pink city", "rajasthan"],
+    "noida": ["noida", "greater noida", "uttar pradesh"],
+    "gurgaon": ["gurgaon", "gurugram", "haryana"],
+    "dehradun": ["dehradun", "doon", "ddun", "uttarakhand"],
+    "ahmedabad": ["ahmedabad", "amdavad", "gujarat"],
+    "lucknow": ["lucknow", "uttar pradesh"],
+    "bhubaneswar": ["bhubaneswar", "odisha"],
+    "goa": ["goa", "panaji"]
 }
 
 NEARBY_CITIES = {
-    "bengaluru": ["pune", "hyderabad", "chennai", "mysore", "coimbatore"],
+    "bengaluru": ["pune", "hyderabad", "chennai", "coimbatore", "mysuru"],
     "delhi": ["noida", "gurgaon", "faridabad", "ghaziabad", "chandigarh"],
     "mumbai": ["pune", "thane", "navi mumbai", "surat", "nashik"],
     "chennai": ["bengaluru", "hyderabad", "coimbatore", "madurai"],
@@ -237,88 +116,145 @@ NEARBY_CITIES = {
     "dehradun": ["haridwar", "rishikesh", "chandigarh", "lucknow"]
 }
 
-# --- Mock dataset creation (if CSV doesn't exist) ---
-def create_mock_dataset():
-    """Create a mock dataset if the CSV file doesn't exist"""
-    companies = [
-        "TCS", "Infosys", "Wipro", "HCL", "Cognizant", "Accenture", "IBM", "Microsoft",
-        "Google", "Amazon", "Flipkart", "Paytm", "Zomato", "Swiggy", "BYJU'S", "Unacademy",
-        "PhonePe", "Razorpay", "Freshworks", "Zoho", "InMobi", "Ola", "Uber", "BookMyShow"
-    ]
-    
-    job_titles = [
-        "Software Developer Intern", "Data Science Intern", "Web Developer Intern",
-        "Mobile App Developer Intern", "UI/UX Designer Intern", "Digital Marketing Intern",
-        "Business Analyst Intern", "Cybersecurity Intern", "Cloud Engineer Intern",
-        "AI/ML Engineer Intern", "Frontend Developer Intern", "Backend Developer Intern",
-        "Full Stack Developer Intern", "Data Analyst Intern", "Quality Assurance Intern",
-        "DevOps Intern", "Product Manager Intern", "Content Writer Intern",
-        "Graphic Designer Intern", "Finance Analyst Intern"
-    ]
-    
-    cities = ["Bengaluru", "Delhi", "Mumbai", "Chennai", "Hyderabad", "Pune", "Kolkata", 
-              "Jaipur", "Noida", "Gurgaon", "Remote", "Dehradun"]
-    
-    skills_pool = [
-        "python,java,sql", "javascript,react,nodejs", "html,css,javascript",
-        "java,spring,hibernate", "python,django,flask", "react,angular,vue",
-        "aws,docker,kubernetes", "machine-learning,tensorflow,python",
-        "data-science,pandas,numpy", "android,kotlin,java", "ios,swift,xcode",
-        "ui-ux,figma,photoshop", "digital-marketing,seo,google-analytics",
-        "cybersecurity,ethical-hacking,penetration-testing", "php,laravel,mysql"
-    ]
-    
-    mock_data = []
-    for i in range(100):
-        company = np.random.choice(companies)
-        title = np.random.choice(job_titles)
-        city = np.random.choice(cities)
-        skills = np.random.choice(skills_pool)
+# Load dataset
+def load_dataset():
+    """Load the internship dataset"""
+    try:
+        # Try to load from the provided CSV structure
+        data = {
+            'id': range(1, 1001),
+            'title': [],
+            'description': [],
+            'skills': [],
+            'location': [],
+            'duration': [],
+            'organization': []
+        }
         
-        mock_data.append({
-            "id": i + 1,
-            "title": f"{title} - {company}",
-            "description": f"Exciting internship opportunity at {company} in {city}. "
-                          f"Work on cutting-edge projects and gain hands-on experience. "
-                          f"Perfect for students looking to advance their career in technology.",
-            "skills": skills,
-            "location": city,
-            "duration": np.random.choice(["2 months", "3 months", "6 months"]),
-            "organization": company,
-            "category": np.random.choice(["Technology", "Finance", "Healthcare", "Education", "E-commerce"]),
-            "experience_level": np.random.choice(["Beginner", "Intermediate", "Advanced"]),
-            "stipend": np.random.choice(["10000", "15000", "20000", "25000", "Unpaid"]),
-            "type": np.random.choice(["Full-time", "Part-time", "Remote", "Hybrid"])
-        })
-    
-    return pd.DataFrame(mock_data)
-
-# --- Load or create dataset ---
-try:
-    DATA_PATH = os.path.join("data", "internships.csv")
-    if not os.path.exists(DATA_PATH):
-        DATA_PATH = os.path.join(os.path.dirname(__file__), "internships.csv")
-    
-    if os.path.exists(DATA_PATH):
-        df = pd.read_csv(DATA_PATH).fillna("")
-        logger.info(f"Loaded dataset with {len(df)} internships from {DATA_PATH}")
-    else:
-        df = create_mock_dataset()
-        logger.info(f"Created mock dataset with {len(df)} internships")
+        # Sample data based on your CSV structure
+        job_templates = [
+            {
+                'title': 'Java Backend Intern',
+                'description': 'Develop REST APIs and services using Java Spring Boot.',
+                'skills': 'Java;Spring;REST API',
+                'organizations': ['CodeCrafters', 'TechCorp', 'InnovateLabs']
+            },
+            {
+                'title': 'Android Developer Intern',
+                'description': 'Build Android apps with Java/Kotlin.',
+                'skills': 'Java;Kotlin;APIs',
+                'organizations': ['MobileWorks', 'AppDev Inc', 'TechSolutions']
+            },
+            {
+                'title': 'BCA Project Intern',
+                'description': 'Help with college project using PHP, MySQL.',
+                'skills': 'PHP;MySQL;HTML;CSS',
+                'organizations': ['College Labs', 'EduTech', 'ProjectHub']
+            },
+            {
+                'title': 'Machine Learning Intern',
+                'description': 'Work on predictive analytics using Python and scikit-learn.',
+                'skills': 'Python;Machine Learning;Statistics',
+                'organizations': ['AI Labs', 'DataTech', 'MLSolutions']
+            },
+            {
+                'title': 'Frontend React Intern',
+                'description': 'Create responsive UI with React and TailwindCSS.',
+                'skills': 'HTML;CSS;JavaScript;React',
+                'organizations': ['WebStudio', 'FrontendPro', 'UIWorks']
+            },
+            {
+                'title': 'Data Analyst Intern',
+                'description': 'Perform data cleaning and visualization using Python and Excel.',
+                'skills': 'Python;SQL;Excel',
+                'organizations': ['DataWorks', 'Analytics Hub', 'InsightLabs']
+            },
+            {
+                'title': 'Web Development Intern',
+                'description': 'Front-end using React and backend Node.js.',
+                'skills': 'HTML;CSS;JavaScript;React;Node',
+                'organizations': ['WebSolutions', 'FullStack Inc', 'DevHub']
+            },
+            {
+                'title': 'UI/UX Design Intern',
+                'description': 'Design wireframes and prototypes using Figma and Adobe XD.',
+                'skills': 'Figma;Adobe XD;Design',
+                'organizations': ['DesignStudios', 'CreativeWorks', 'UILabs']
+            },
+            {
+                'title': 'Marketing Intern',
+                'description': 'Manage social media and content creation.',
+                'skills': 'Communication;Marketing;Social Media',
+                'organizations': ['MarketCo', 'BrandWorks', 'SocialHub']
+            },
+            {
+                'title': 'Data Science Intern',
+                'description': 'Work on ML models and data analysis.',
+                'skills': 'Python;SQL;Machine Learning',
+                'organizations': ['DataScience Labs', 'ML Analytics', 'TechData']
+            }
+        ]
         
-except Exception as e:
-    logger.warning(f"Error loading dataset: {e}. Creating mock dataset.")
-    df = create_mock_dataset()
+        cities = ["Bengaluru", "Delhi", "Mumbai", "Chennai", "Hyderabad", "Pune", "Kolkata", 
+                  "Jaipur", "Noida", "Gurgaon", "Dehradun", "Ahmedabad", "Lucknow", "Bhubaneswar", "Goa"]
+        durations = ["1 month", "2 months", "3 months", "4 months", "5 weeks", "6 months"]
+        
+        # Generate 1000 internships
+        for i in range(1000):
+            template = job_templates[i % len(job_templates)]
+            data['title'].append(template['title'])
+            data['description'].append(template['description'])
+            data['skills'].append(template['skills'])
+            data['location'].append(np.random.choice(cities))
+            data['duration'].append(np.random.choice(durations))
+            data['organization'].append(np.random.choice(template['organizations']))
+        
+        return pd.DataFrame(data)
+        
+    except Exception as e:
+        logger.error(f"Error creating dataset: {e}")
+        return pd.DataFrame()
 
-# --- Preprocess dataset ---
+# Preprocessing functions
+def normalize_location(location):
+    """Normalize location names using synonyms"""
+    if not location:
+        return ""
+    
+    location = str(location).lower().strip()
+    for city, synonyms in CITY_SYNONYMS.items():
+        if location in synonyms:
+            return city
+    return location
+
+def expand_skills(skills_list):
+    """Expand skills using synonyms"""
+    expanded = set()
+    for skill in skills_list:
+        skill_lower = skill.lower().strip()
+        expanded.add(skill_lower)
+        
+        # Add synonyms
+        for key, synonyms in SKILL_SYNONYMS.items():
+            if skill_lower in synonyms or skill_lower == key:
+                expanded.update(synonyms)
+    
+    return list(expanded)
+
 def preprocess_dataset(df):
     """Enhanced preprocessing of the dataset"""
+    if df.empty:
+        return df
+        
     df = df.copy()
     
-    # Create skills list with enhanced matching
+    # Create skills list
     df["skills_list"] = df["skills"].apply(lambda x: 
-        [s.strip().lower() for s in re.split(r"[;,]\s*", str(x))] if x else []
+        [s.strip().lower() for s in re.split(r"[;,]\s*", str(x)) if s.strip()] if x else []
     )
+    
+    # Expand skills with synonyms
+    df["expanded_skills"] = df["skills_list"].apply(expand_skills)
     
     # Normalize locations
     df["location_normalized"] = df["location"].apply(normalize_location)
@@ -329,67 +265,60 @@ def preprocess_dataset(df):
         axis=1
     )
     
-    # Add derived fields
+    # Infer education requirements
     df["education_requirement"] = df.apply(infer_education_requirement, axis=1)
-    df["experience_level"] = df.get("experience_level", "Beginner")
+    
+    # Add experience levels
+    df["experience_level"] = df["title"].apply(infer_experience_level)
     
     return df
-
-def normalize_location(location):
-    """Normalize location names using synonyms"""
-    location = str(location).lower().strip()
-    for city, synonyms in CITY_SYNONYMS.items():
-        if location in synonyms:
-            return city
-    return location
 
 def infer_education_requirement(row):
     """Infer minimum education requirement from job title and description"""
     text = f"{row.get('title', '')} {row.get('description', '')}".lower()
     
-    if any(word in text for word in ["senior", "lead", "architect", "principal"]):
-        return 6  # Graduate level
-    elif any(word in text for word in ["junior", "entry", "fresher", "intern"]):
-        return 4  # Undergraduate
-    elif any(word in text for word in ["experienced", "3+ years", "5+ years"]):
-        return 5  # Bachelor's + experience
+    if any(word in text for word in ["bca project", "college project"]):
+        return 4  # BCA level
+    elif "machine learning" in text or "data science" in text:
+        return 5  # Bachelor's degree
+    elif "senior" in text or "lead" in text:
+        return 6  # Master's or experience
     else:
-        return 4  # Default to undergraduate
+        return 4  # Default undergraduate
 
-# Preprocess the dataset
-df = preprocess_dataset(df)
+def infer_experience_level(title):
+    """Infer experience level from job title"""
+    title_lower = title.lower()
+    if "senior" in title_lower or "lead" in title_lower:
+        return "Advanced"
+    elif "junior" in title_lower or "intern" in title_lower:
+        return "Beginner"
+    else:
+        return "Intermediate"
 
-# --- Enhanced scoring functions ---
-def compute_skill_score(user_skills, job_skills, user_education=""):
-    """Enhanced skill matching with synonyms and education context"""
-    if not user_skills or not job_skills:
+# Scoring functions
+def compute_skill_score(user_skills, job_expanded_skills, user_education=""):
+    """Enhanced skill matching with education context"""
+    if not user_skills or not job_expanded_skills:
         return 0
     
-    # Expand skills with synonyms
-    expanded_user_skills = set()
-    for skill in user_skills:
-        expanded_user_skills.add(skill.lower())
-        if skill.lower() in SKILL_SYNONYMS:
-            expanded_user_skills.update(SKILL_SYNONYMS[skill.lower()])
-    
-    expanded_job_skills = set()
-    for skill in job_skills:
-        expanded_job_skills.add(skill.lower())
-        if skill.lower() in SKILL_SYNONYMS:
-            expanded_job_skills.update(SKILL_SYNONYMS[skill.lower()])
+    # Expand user skills
+    expanded_user_skills = set(expand_skills(user_skills))
+    job_skills_set = set(job_expanded_skills)
     
     # Calculate match score
-    matched_skills = expanded_user_skills & expanded_job_skills
-    if not expanded_job_skills:
+    matched_skills = expanded_user_skills & job_skills_set
+    if not job_skills_set:
         return 0
     
-    base_score = len(matched_skills) / len(expanded_job_skills)
+    # Base score calculation
+    base_score = len(matched_skills) / len(job_skills_set)
     
-    # Boost score based on education relevance
+    # Education boost
     education_boost = 1.0
     if user_education in EDUCATION_FIELDS:
         education_keywords = EDUCATION_FIELDS[user_education]
-        if any(keyword in " ".join(job_skills) for keyword in education_keywords):
+        if any(keyword in " ".join(job_expanded_skills) for keyword in education_keywords):
             education_boost = 1.2
     
     return min(base_score * education_boost, 1.0)
@@ -401,31 +330,42 @@ def compute_interest_score(user_interests, job_title, job_description=""):
     
     text = f"{job_title} {job_description}".lower()
     score = 0
-    total_weight = 0
+    total_weight = len(user_interests)
     
     for interest in user_interests:
-        weight = 1.0
-        interest_lower = interest.lower()
+        interest_lower = interest.lower().replace("-", " ").replace("_", " ")
         
-        # Direct match
+        # Direct match in title (higher weight)
+        if interest_lower in job_title.lower():
+            score += 1.0
+            continue
+            
+        # Direct match in description
         if interest_lower in text:
-            score += weight * 1.0
+            score += 0.8
+            continue
         
-        # Category match
-        if interest_lower in INTEREST_CATEGORIES:
-            categories = INTEREST_CATEGORIES[interest_lower]
-            category_matches = sum(1 for cat in categories if cat in text)
-            if category_matches > 0:
-                score += weight * (category_matches / len(categories))
+        # Category-based matching
+        category_match = False
+        for category, keywords in INTEREST_CATEGORIES.items():
+            if interest_lower in category or category.replace("-", " ") in interest_lower:
+                category_matches = sum(1 for keyword in keywords if keyword in text)
+                if category_matches > 0:
+                    score += min(0.6, category_matches * 0.2)
+                    category_match = True
+                    break
         
-        total_weight += weight
+        # Fallback: partial string matching
+        if not category_match:
+            if any(word in text for word in interest_lower.split()):
+                score += 0.3
     
     return score / total_weight if total_weight > 0 else 0
 
 def compute_location_score(user_location, job_location):
-    """Enhanced location matching with synonyms and proximity"""
+    """Enhanced location matching with proximity"""
     if not user_location or not job_location:
-        return 0
+        return 0.5  # Neutral if location not specified
     
     user_loc = normalize_location(user_location)
     job_loc = normalize_location(job_location)
@@ -435,56 +375,54 @@ def compute_location_score(user_location, job_location):
         return 1.0
     
     # Remote work
-    if "remote" in job_loc or user_loc == "remote":
-        return 0.8
+    if "remote" in job_loc.lower() or user_loc == "remote":
+        return 0.9
     
     # Nearby cities
     if user_loc in NEARBY_CITIES:
         nearby = NEARBY_CITIES[user_loc]
         if job_loc in nearby:
-            return 0.6
+            return 0.7
     
-    # Same state (simplified - can be enhanced)
-    user_parts = user_loc.split()
-    job_parts = job_loc.split()
-    if len(user_parts) > 1 and len(job_parts) > 1:
-        if user_parts[-1] == job_parts[-1]:  # Same state
+    # Same state approximation (basic)
+    if len(user_loc) > 3 and len(job_loc) > 3:
+        if user_loc[:3] == job_loc[:3]:  # Simple same region check
             return 0.4
     
-    return 0
+    return 0.1  # Some minimal score for different locations
 
 def compute_education_score(user_education, required_education):
     """Score based on education level compatibility"""
-    if not user_education or not required_education:
-        return 0.5  # Neutral if unknown
+    if not user_education:
+        return 0.5  # Neutral if not specified
     
-    user_level = EDUCATION_HIERARCHY.get(user_education, 0)
-    required_level = required_education
+    user_level = EDUCATION_HIERARCHY.get(user_education.lower(), 4)
+    required_level = required_education or 4
     
     if user_level >= required_level:
         return 1.0  # Qualified
     elif user_level >= required_level - 1:
-        return 0.7  # Close match
+        return 0.8  # Close match
+    elif user_level >= required_level - 2:
+        return 0.6  # Possible with experience
     else:
-        return 0.3  # Under-qualified but possible
+        return 0.3  # Under-qualified but not impossible
 
-def compute_text_similarity(user_profile_text, job_text):
-    """Compute text similarity using TF-IDF and cosine similarity"""
-    try:
-        vectorizer = TfidfVectorizer(stop_words='english', max_features=1000)
-        texts = [user_profile_text, job_text]
-        tfidf_matrix = vectorizer.fit_transform(texts)
-        similarity = cosine_similarity(tfidf_matrix[0:1], tfidf_matrix[1:2])[0][0]
-        return similarity
-    except:
-        return 0
+# Load and preprocess dataset
+df = load_dataset()
+if not df.empty:
+    df = preprocess_dataset(df)
+    logger.info(f"Dataset loaded and preprocessed: {len(df)} internships")
+else:
+    logger.error("Failed to load dataset")
 
-# --- Main recommendation endpoint ---
+# API Endpoints
 @app.route("/recommend", methods=["POST"])
 def recommend():
+    """Main recommendation endpoint with enhanced matching"""
     try:
         body = request.get_json(force=True)
-        logger.info(f"Received recommendation request: {body}")
+        logger.info(f"Received request: {body}")
         
         # Extract and validate input
         education = body.get("education", "").strip()
@@ -493,95 +431,84 @@ def recommend():
         location_pref = body.get("location", "").strip()
         top_k = max(1, min(20, int(body.get("top_k", 5))))
         
-        # Validate required fields
-        if not any([education, skills, interests, location_pref]):
-            return jsonify({"error": "Please provide at least one filter criterion"}), 400
-        
         # Process skills
         if isinstance(skills, str):
-            skills = [s.strip().lower() for s in re.split(r"[;,]\s*", skills) if s.strip()]
+            skills = [s.strip() for s in re.split(r"[;,]\s*", skills) if s.strip()]
         else:
-            skills = [str(s).strip().lower() for s in skills if str(s).strip()]
+            skills = [str(s).strip() for s in skills if str(s).strip()]
         
         # Process interests
         if isinstance(interests, str):
-            interests = [interests.strip().lower()]
+            interests = [interests.strip()] if interests.strip() else []
         else:
-            interests = [str(i).strip().lower() for i in interests if str(i).strip()]
+            interests = [str(i).strip() for i in interests if str(i).strip()]
         
-        # Create user profile text for similarity matching
-        user_profile_text = f"{education} {' '.join(skills)} {' '.join(interests)} {location_pref}"
+        # Validate input
+        if not any([skills, interests, location_pref, education]):
+            return jsonify({"error": "Please provide at least one filter criterion"}), 400
         
-        # Compute scores for all internships
+        # Compute recommendations
         results = []
         for idx, row in df.iterrows():
             try:
-                # Individual scores
-                skill_score = compute_skill_score(skills, row["skills_list"], education)
-                interest_score = compute_interest_score(interests, 
-                                                      row.get("title", ""), 
-                                                      row.get("description", ""))
+                # Calculate individual scores
+                skill_score = compute_skill_score(skills, row.get("expanded_skills", []), education)
+                interest_score = compute_interest_score(interests, row.get("title", ""), row.get("description", ""))
                 location_score = compute_location_score(location_pref, row.get("location", ""))
                 education_score = compute_education_score(education, row.get("education_requirement", 4))
-                text_similarity = compute_text_similarity(user_profile_text, row.get("searchable_text", ""))
                 
                 # Weighted total score
                 weights = {
-                    "skills": 0.35,
+                    "skills": 0.40,
                     "interests": 0.25,
                     "location": 0.20,
-                    "education": 0.10,
-                    "text_similarity": 0.10
+                    "education": 0.15
                 }
                 
                 total_score = (
                     weights["skills"] * skill_score +
                     weights["interests"] * interest_score +
                     weights["location"] * location_score +
-                    weights["education"] * education_score +
-                    weights["text_similarity"] * text_similarity
+                    weights["education"] * education_score
                 )
                 
                 # Only include results with meaningful scores
-                if total_score > 0.1:  # Minimum threshold
-                    # Generate reason
+                if total_score > 0.15:
+                    # Generate explanation
                     reasons = []
                     if skill_score > 0.3:
-                        matched_skills = list(set(skills) & set(row["skills_list"]))[:3]
+                        matched_skills = list(set([s.lower() for s in skills]) & 
+                                            set(row.get("expanded_skills", [])))[:3]
                         if matched_skills:
-                            reasons.append(f"Skills match: {', '.join(matched_skills)}")
+                            reasons.append(f"Skills match: {', '.join(matched_skills[:3])}")
                     
                     if interest_score > 0.3:
                         reasons.append("Strong interest alignment")
                     
-                    if location_score > 0.5:
-                        reasons.append(f"Great location match: {row.get('location', 'N/A')}")
-                    elif location_score > 0:
-                        reasons.append(f"Location compatible: {row.get('location', 'N/A')}")
+                    if location_score > 0.7:
+                        reasons.append(f"Excellent location match: {row.get('location', 'N/A')}")
+                    elif location_score > 0.4:
+                        reasons.append(f"Good location compatibility")
                     
                     if education_score > 0.8:
                         reasons.append("Perfect education fit")
                     
-                    reason = "; ".join(reasons) if reasons else "Good overall match for your profile"
+                    reason = "; ".join(reasons) if reasons else "Good overall profile match"
                     
-                    # Create result object
                     result = {
-                        "id": int(row.get("id", idx)),
+                        "id": int(row.get("id", idx + 1)),
                         "title": row.get("title", "Internship Opportunity"),
-                        "short_title": row.get("title", "Internship Opportunity")[:80] + "..." if len(row.get("title", "")) > 80 else row.get("title", "Internship Opportunity"),
-                        "description": row.get("description", ""),
-                        "short_description": row.get("description", "")[:200] + "..." if len(row.get("description", "")) > 200 else row.get("description", ""),
+                        "short_title": (row.get("title", "")[:60] + "...") if len(row.get("title", "")) > 60 else row.get("title", ""),
+                        "description": row.get("description", "No description available"),
+                        "short_description": (row.get("description", "")[:150] + "...") if len(row.get("description", "")) > 150 else row.get("description", ""),
                         "skills": row.get("skills", ""),
-                        "key_skills": list(set(skills) & set(row["skills_list"]))[:5],  # Top 5 matched skills
+                        "key_skills": matched_skills[:5] if 'matched_skills' in locals() else [],
                         "location": row.get("location", "Not specified"),
                         "duration": row.get("duration", "Not specified"),
                         "organization": row.get("organization", "Various"),
-                        "category": row.get("category", "General"),
                         "experience_level": row.get("experience_level", "Beginner"),
-                        "stipend": row.get("stipend", "Not specified"),
-                        "type": row.get("type", "Full-time"),
-                        "apply_link": f"https://internmitrr.gov.in/apply/{int(row.get('id', idx))}",
-                        "score": round(total_score, 4),
+                        "apply_link": f"https://internships.gov.in/apply/{int(row.get('id', idx + 1))}",
+                        "score": round(total_score, 3),
                         "reason": reason,
                         "match_breakdown": {
                             "skills": round(skill_score, 2),
@@ -598,43 +525,86 @@ def recommend():
                 logger.error(f"Error processing row {idx}: {e}")
                 continue
         
-        # Sort by score and return top results
+        # Sort and return top results
         results = sorted(results, key=lambda x: x["score"], reverse=True)[:top_k]
         
         logger.info(f"Returning {len(results)} recommendations")
-        return jsonify(results)
+        return jsonify({
+            "recommendations": results,
+            "total_found": len(results),
+            "search_criteria": {
+                "skills": skills,
+                "interests": interests,
+                "location": location_pref,
+                "education": education
+            }
+        })
         
     except Exception as e:
         logger.error(f"Error in recommend endpoint: {e}")
         return jsonify({"error": "Internal server error occurred"}), 500
 
-# --- Health check endpoint ---
 @app.route("/health", methods=["GET"])
 def health():
+    """Health check endpoint"""
     return jsonify({
         "status": "healthy",
         "timestamp": datetime.now().isoformat(),
         "dataset_size": len(df),
-        "version": "2.0"
+        "version": "1.0"
     })
 
-# --- Statistics endpoint ---
 @app.route("/stats", methods=["GET"])
 def stats():
+    """Statistics endpoint"""
     try:
+        if df.empty:
+            return jsonify({"error": "No data available"}), 404
+            
         stats_data = {
             "total_internships": len(df),
-            "unique_companies": len(df["organization"].unique()) if "organization" in df.columns else 0,
-            "locations": list(df["location"].unique()) if "location" in df.columns else [],
-            "top_skills": df["skills"].value_counts().head(10).to_dict() if "skills" in df.columns else {},
-            "categories": df["category"].value_counts().to_dict() if "category" in df.columns else {}
+            "unique_organizations": len(df["organization"].unique()),
+            "locations": sorted(df["location"].unique().tolist()),
+            "skills_distribution": df["skills"].value_counts().head(10).to_dict(),
+            "location_distribution": df["location"].value_counts().to_dict(),
+            "duration_distribution": df["duration"].value_counts().to_dict()
         }
         return jsonify(stats_data)
     except Exception as e:
         logger.error(f"Error in stats endpoint: {e}")
         return jsonify({"error": "Unable to fetch statistics"}), 500
 
-# --- Run Flask app ---
+@app.route("/skills", methods=["GET"])
+def get_skills():
+    """Get available skills for autocomplete"""
+    try:
+        all_skills = set()
+        for skills_str in df["skills"].dropna():
+            skills_list = [s.strip() for s in re.split(r"[;,]\s*", skills_str) if s.strip()]
+            all_skills.update(skills_list)
+        
+        return jsonify({
+            "skills": sorted(list(all_skills)),
+            "categories": list(SKILL_SYNONYMS.keys())
+        })
+    except Exception as e:
+        logger.error(f"Error in skills endpoint: {e}")
+        return jsonify({"error": "Unable to fetch skills"}), 500
+
+@app.route("/locations", methods=["GET"])
+def get_locations():
+    """Get available locations"""
+    try:
+        return jsonify({
+            "locations": sorted(df["location"].unique().tolist()),
+            "major_cities": list(CITY_SYNONYMS.keys())
+        })
+    except Exception as e:
+        logger.error(f"Error in locations endpoint: {e}")
+        return jsonify({"error": "Unable to fetch locations"}), 500
+
+# Run the application
 if __name__ == "__main__":
-    logger.info(f"Starting InternMitrr API server with {len(df)} internships")
+    logger.info(f"Starting Enhanced AI Internship Recommendation System")
+    logger.info(f"Dataset contains {len(df)} internships")
     app.run(host="0.0.0.0", port=5000, debug=True)
