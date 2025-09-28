@@ -17,6 +17,14 @@ logger = logging.getLogger(__name__)
 app = Flask(__name__)
 CORS(app, origins=["*"])
 
+from flask import Flask, render_template
+
+app = Flask(__name__)
+
+@app.route("/")
+def home():
+    return render_template("index.html")
+
 # Enhanced Education Level Mapping with proper hierarchy
 EDUCATION_HIERARCHY = {
     "class-10": 1,
